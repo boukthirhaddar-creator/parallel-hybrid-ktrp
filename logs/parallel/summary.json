@@ -1,0 +1,1588 @@
+{
+ "materiel": {
+  "date": "2026-09-28T22:16:47",
+  "systeme": "Windows-10-10.0.19045-SP0",
+  "processeur": "AMD64 Family 25 Model 1 Stepping 1, AuthenticAMD",
+  "coeurs_logiques": 16,
+  "python": "3.11.5",
+  "methode": "partagee",
+  "coeurs_physiques": 16,
+  "frequence_mhz": {
+   "actuelle": 2845,
+   "max": 2845
+  },
+  "memoire_totale_go": 64.0
+ },
+ "debit": {
+  "KTRP_path_CMT11": {
+   "tableau": [
+    {
+     "P": 1,
+     "debit_noyau": 89404.25714899453,
+     "debit_cadre": 89064.87803359627,
+     "acceleration": 1.0,
+     "efficacite": 1.0,
+     "karp_flatt": null,
+     "surcout_coordination": 0.0037960062106737746,
+     "cpu_coordinateur": 0.0006943294979595479,
+     "memoire_mo": 183.9
+    },
+    {
+     "P": 2,
+     "debit_noyau": 179207.99593041648,
+     "debit_cadre": 178050.78066196325,
+     "acceleration": 1.9991132822839606,
+     "efficacite": 0.9995566411419803,
+     "karp_flatt": 0.0004435555122850321,
+     "surcout_coordination": 0.006457386359605133,
+     "cpu_coordinateur": 0.0017357553259088956,
+     "memoire_mo": 201.5
+    },
+    {
+     "P": 3,
+     "debit_noyau": 269223.3202650794,
+     "debit_cadre": 266095.82611168496,
+     "acceleration": 2.9876628362002657,
+     "efficacite": 0.9958876120667552,
+     "karp_flatt": 0.0020646847512794937,
+     "surcout_coordination": 0.011616728262303089,
+     "cpu_coordinateur": 0.002430101695989352,
+     "memoire_mo": 219.5
+    },
+    {
+     "P": 4,
+     "debit_noyau": 360295.4475077808,
+     "debit_cadre": 356618.0417257768,
+     "acceleration": 4.004025487928659,
+     "efficacite": 1.0010063719821647,
+     "karp_flatt": -0.000335120071937182,
+     "surcout_coordination": 0.010206639599365408,
+     "cpu_coordinateur": 0.0019092193710252725,
+     "memoire_mo": 237.5
+    },
+    {
+     "P": 6,
+     "debit_noyau": 537777.1851045766,
+     "debit_cadre": 533373.111482441,
+     "acceleration": 5.988590825681552,
+     "efficacite": 0.9980984709469253,
+     "karp_flatt": 0.0003810303508972934,
+     "surcout_coordination": 0.00818940212437469,
+     "cpu_coordinateur": 0.0034713471929770224,
+     "memoire_mo": 272.8
+    },
+    {
+     "P": 8,
+     "debit_noyau": 719875.9199183796,
+     "debit_cadre": 710306.4668116708,
+     "acceleration": 7.975157912906312,
+     "efficacite": 0.996894739113289,
+     "karp_flatt": 0.0004449905097263824,
+     "surcout_coordination": 0.013293197955272396,
+     "cpu_coordinateur": 0.003818264026631149,
+     "memoire_mo": 307.9
+    }
+   ],
+   "fraction_sequentielle": 0.000599828210450204,
+   "borne_amdahl": 1667.143996527681
+  },
+  "KTRP_test_E76_10": {
+   "tableau": [
+    {
+     "P": 1,
+     "debit_noyau": 108884.57963641106,
+     "debit_cadre": 107954.2809932927,
+     "acceleration": 1.0,
+     "efficacite": 1.0,
+     "karp_flatt": null,
+     "surcout_coordination": 0.008543897090155683,
+     "cpu_coordinateur": 0.0006943745406461843,
+     "memoire_mo": 183.0
+    },
+    {
+     "P": 2,
+     "debit_noyau": 217446.05269647695,
+     "debit_cadre": 215747.7443346804,
+     "acceleration": 1.9985103170487977,
+     "efficacite": 0.9992551585243988,
+     "karp_flatt": 0.0007453966779626953,
+     "surcout_coordination": 0.007810251511749189,
+     "cpu_coordinateur": 0.0010415677465818044,
+     "memoire_mo": 200.3
+    },
+    {
+     "P": 3,
+     "debit_noyau": 329693.7969215769,
+     "debit_cadre": 325166.82435215876,
+     "acceleration": 3.0120790149337537,
+     "efficacite": 1.0040263383112513,
+     "karp_flatt": -0.002005095960940339,
+     "surcout_coordination": 0.013730839377893878,
+     "cpu_coordinateur": 0.0017358093909663325,
+     "memoire_mo": 217.6
+    },
+    {
+     "P": 4,
+     "debit_noyau": 439572.1840225316,
+     "debit_cadre": 432548.3797301785,
+     "acceleration": 4.006773754132577,
+     "efficacite": 1.0016934385331442,
+     "karp_flatt": -0.0005635252157333293,
+     "surcout_coordination": 0.015978727835046724,
+     "cpu_coordinateur": 0.0038185524925746996,
+     "memoire_mo": 235.2
+    },
+    {
+     "P": 6,
+     "debit_noyau": 658918.9458954775,
+     "debit_cadre": 647829.5498012333,
+     "acceleration": 6.0009621095200805,
+     "efficacite": 1.0001603515866802,
+     "karp_flatt": -3.2065175634199417e-05,
+     "surcout_coordination": 0.016829681652534068,
+     "cpu_coordinateur": 0.002430062461362945,
+     "memoire_mo": 270.1
+    },
+    {
+     "P": 8,
+     "debit_noyau": 877100.7498900126,
+     "debit_cadre": 862585.7054518856,
+     "acceleration": 7.990287161520522,
+     "efficacite": 0.9987858951900652,
+     "karp_flatt": 0.00017365437889308284,
+     "surcout_coordination": 0.01654889069465182,
+     "cpu_coordinateur": 0.00399205917654796,
+     "memoire_mo": 304.4
+    }
+   ],
+   "fraction_sequentielle": -0.000336327059090418,
+   "borne_amdahl": null
+  }
+ },
+ "cibles": {
+  "KTRP_path_CMT11": {
+   "0.01": {
+    "1": {
+     "succes": 0.4,
+     "mediane_s": null,
+     "temps": [
+      240.0,
+      240.0,
+      105.594,
+      240.0,
+      71.899,
+      240.0,
+      240.0,
+      240.0,
+      47.889,
+      176.086
+     ],
+     "atteinte": [
+      false,
+      false,
+      true,
+      false,
+      true,
+      false,
+      false,
+      false,
+      true,
+      true
+     ],
+     "acceleration": null
+    },
+    "2": {
+     "succes": 0.6,
+     "mediane_s": 62.986,
+     "temps": [
+      58.813,
+      174.25,
+      52.097,
+      240.0,
+      240.0,
+      240.0,
+      54.283,
+      21.21,
+      240.0,
+      62.986
+     ],
+     "atteinte": [
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      true,
+      true,
+      false,
+      true
+     ],
+     "acceleration": null
+    },
+    "3": {
+     "succes": 0.8,
+     "mediane_s": 189.951,
+     "temps": [
+      55.835,
+      240.0,
+      198.036,
+      240.0,
+      197.873,
+      189.951,
+      31.295,
+      60.144,
+      30.788,
+      205.671
+     ],
+     "atteinte": [
+      true,
+      false,
+      true,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+     ],
+     "acceleration": null
+    },
+    "4": {
+     "succes": 0.9,
+     "mediane_s": 78.455,
+     "temps": [
+      213.872,
+      52.473,
+      51.783,
+      78.455,
+      65.45,
+      183.489,
+      101.404,
+      186.593,
+      74.655,
+      240.0
+     ],
+     "atteinte": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "acceleration": null
+    }
+   },
+   "0.005": {
+    "1": {
+     "succes": 0.3,
+     "mediane_s": null,
+     "temps": [
+      240.0,
+      240.0,
+      115.749,
+      240.0,
+      71.899,
+      240.0,
+      240.0,
+      240.0,
+      47.889,
+      240.0
+     ],
+     "atteinte": [
+      false,
+      false,
+      true,
+      false,
+      true,
+      false,
+      false,
+      false,
+      true,
+      false
+     ],
+     "acceleration": null
+    },
+    "2": {
+     "succes": 0.5,
+     "mediane_s": 174.25,
+     "temps": [
+      58.813,
+      174.25,
+      75.306,
+      240.0,
+      240.0,
+      240.0,
+      123.294,
+      240.0,
+      240.0,
+      80.043
+     ],
+     "atteinte": [
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      true
+     ],
+     "acceleration": null
+    },
+    "3": {
+     "succes": 0.6,
+     "mediane_s": 195.081,
+     "temps": [
+      64.029,
+      240.0,
+      198.036,
+      240.0,
+      240.0,
+      189.951,
+      31.295,
+      195.081,
+      138.158,
+      240.0
+     ],
+     "atteinte": [
+      true,
+      false,
+      true,
+      false,
+      false,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "acceleration": null
+    },
+    "4": {
+     "succes": 0.8,
+     "mediane_s": 188.821,
+     "temps": [
+      213.872,
+      240.0,
+      51.783,
+      148.931,
+      159.024,
+      188.821,
+      197.854,
+      232.728,
+      74.655,
+      240.0
+     ],
+     "atteinte": [
+      true,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "acceleration": null
+    }
+   },
+   "0.002": {
+    "1": {
+     "succes": 0.3,
+     "mediane_s": null,
+     "temps": [
+      240.0,
+      240.0,
+      115.749,
+      240.0,
+      71.899,
+      240.0,
+      240.0,
+      240.0,
+      47.889,
+      240.0
+     ],
+     "atteinte": [
+      false,
+      false,
+      true,
+      false,
+      true,
+      false,
+      false,
+      false,
+      true,
+      false
+     ],
+     "acceleration": null
+    },
+    "2": {
+     "succes": 0.1,
+     "mediane_s": null,
+     "temps": [
+      240.0,
+      240.0,
+      240.0,
+      240.0,
+      240.0,
+      240.0,
+      240.0,
+      240.0,
+      240.0,
+      114.163
+     ],
+     "atteinte": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true
+     ],
+     "acceleration": null
+    },
+    "3": {
+     "succes": 0.5,
+     "mediane_s": 213.403,
+     "temps": [
+      161.386,
+      240.0,
+      198.036,
+      240.0,
+      240.0,
+      213.403,
+      240.0,
+      195.081,
+      172.067,
+      240.0
+     ],
+     "atteinte": [
+      true,
+      false,
+      true,
+      false,
+      false,
+      true,
+      false,
+      true,
+      true,
+      false
+     ],
+     "acceleration": null
+    },
+    "4": {
+     "succes": 0.4,
+     "mediane_s": null,
+     "temps": [
+      240.0,
+      240.0,
+      51.783,
+      240.0,
+      240.0,
+      193.716,
+      197.854,
+      240.0,
+      141.03,
+      240.0
+     ],
+     "atteinte": [
+      false,
+      false,
+      true,
+      false,
+      false,
+      true,
+      true,
+      false,
+      true,
+      false
+     ],
+     "acceleration": null
+    }
+   }
+  },
+  "KTRP_path_CMT3": {
+   "0.01": {
+    "1": {
+     "succes": 0.5,
+     "mediane_s": 173.594,
+     "temps": [
+      119.648,
+      240.0,
+      110.033,
+      61.384,
+      173.594,
+      240.0,
+      240.0,
+      240.0,
+      54.962,
+      240.0
+     ],
+     "atteinte": [
+      true,
+      false,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      true,
+      false
+     ],
+     "acceleration": 1.0
+    },
+    "2": {
+     "succes": 0.6,
+     "mediane_s": 203.157,
+     "temps": [
+      240.0,
+      240.0,
+      109.892,
+      151.46,
+      238.015,
+      106.719,
+      240.0,
+      117.616,
+      240.0,
+      203.157
+     ],
+     "atteinte": [
+      false,
+      false,
+      true,
+      true,
+      true,
+      true,
+      false,
+      true,
+      false,
+      true
+     ],
+     "acceleration": 0.8544820016046702
+    },
+    "3": {
+     "succes": 0.7,
+     "mediane_s": 133.834,
+     "temps": [
+      240.0,
+      113.453,
+      106.021,
+      78.241,
+      180.388,
+      68.327,
+      133.834,
+      240.0,
+      205.911,
+      240.0
+     ],
+     "atteinte": [
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      true,
+      false
+     ],
+     "acceleration": 1.2970844478981425
+    },
+    "4": {
+     "succes": 0.7,
+     "mediane_s": 156.188,
+     "temps": [
+      118.49,
+      240.0,
+      119.781,
+      179.828,
+      240.0,
+      233.115,
+      143.372,
+      240.0,
+      156.188,
+      99.063
+     ],
+     "atteinte": [
+      true,
+      false,
+      true,
+      true,
+      false,
+      true,
+      true,
+      false,
+      true,
+      true
+     ],
+     "acceleration": 1.1114426204317873
+    }
+   },
+   "0.005": {
+    "1": {
+     "succes": 0.2,
+     "mediane_s": null,
+     "temps": [
+      119.648,
+      240.0,
+      240.0,
+      240.0,
+      189.89,
+      240.0,
+      240.0,
+      240.0,
+      240.0,
+      240.0
+     ],
+     "atteinte": [
+      true,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "acceleration": null
+    },
+    "2": {
+     "succes": 0.4,
+     "mediane_s": null,
+     "temps": [
+      240.0,
+      240.0,
+      172.229,
+      151.46,
+      240.0,
+      118.423,
+      240.0,
+      117.616,
+      240.0,
+      240.0
+     ],
+     "atteinte": [
+      false,
+      false,
+      true,
+      true,
+      false,
+      true,
+      false,
+      true,
+      false,
+      false
+     ],
+     "acceleration": null
+    },
+    "3": {
+     "succes": 0.3,
+     "mediane_s": null,
+     "temps": [
+      240.0,
+      240.0,
+      106.021,
+      240.0,
+      224.155,
+      240.0,
+      240.0,
+      240.0,
+      213.216,
+      240.0
+     ],
+     "atteinte": [
+      false,
+      false,
+      true,
+      false,
+      true,
+      false,
+      false,
+      false,
+      true,
+      false
+     ],
+     "acceleration": null
+    },
+    "4": {
+     "succes": 0.6,
+     "mediane_s": 210.074,
+     "temps": [
+      126.787,
+      240.0,
+      157.165,
+      210.074,
+      240.0,
+      240.0,
+      143.372,
+      240.0,
+      234.16,
+      99.063
+     ],
+     "atteinte": [
+      true,
+      false,
+      true,
+      true,
+      false,
+      false,
+      true,
+      false,
+      true,
+      true
+     ],
+     "acceleration": null
+    }
+   },
+   "0.002": {
+    "1": {
+     "succes": 0.0,
+     "mediane_s": null,
+     "temps": [
+      240.0,
+      240.0,
+      240.0,
+      240.0,
+      240.0,
+      240.0,
+      240.0,
+      240.0,
+      240.0,
+      240.0
+     ],
+     "atteinte": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "acceleration": null
+    },
+    "2": {
+     "succes": 0.2,
+     "mediane_s": null,
+     "temps": [
+      240.0,
+      240.0,
+      240.0,
+      226.986,
+      240.0,
+      118.423,
+      240.0,
+      240.0,
+      240.0,
+      240.0
+     ],
+     "atteinte": [
+      false,
+      false,
+      false,
+      true,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false
+     ],
+     "acceleration": null
+    },
+    "3": {
+     "succes": 0.1,
+     "mediane_s": null,
+     "temps": [
+      240.0,
+      240.0,
+      185.67,
+      240.0,
+      240.0,
+      240.0,
+      240.0,
+      240.0,
+      240.0,
+      240.0
+     ],
+     "atteinte": [
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "acceleration": null
+    },
+    "4": {
+     "succes": 0.5,
+     "mediane_s": 210.074,
+     "temps": [
+      131.961,
+      240.0,
+      201.237,
+      210.074,
+      240.0,
+      240.0,
+      168.874,
+      240.0,
+      240.0,
+      111.027
+     ],
+     "atteinte": [
+      true,
+      false,
+      true,
+      true,
+      false,
+      false,
+      true,
+      false,
+      false,
+      true
+     ],
+     "acceleration": null
+    }
+   }
+  },
+  "KTRP_test_E101_8": {
+   "0.01": {
+    "1": {
+     "succes": 0.8,
+     "mediane_s": 108.374,
+     "temps": [
+      50.672,
+      134.695,
+      134.511,
+      240.0,
+      240.0,
+      76.237,
+      58.552,
+      149.376,
+      108.374,
+      41.392
+     ],
+     "atteinte": [
+      true,
+      true,
+      true,
+      false,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true
+     ],
+     "acceleration": 1.0
+    },
+    "2": {
+     "succes": 0.8,
+     "mediane_s": 135.908,
+     "temps": [
+      17.016,
+      135.908,
+      231.494,
+      36.208,
+      54.155,
+      180.496,
+      197.719,
+      240.0,
+      50.77,
+      240.0
+     ],
+     "atteinte": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      true,
+      false
+     ],
+     "acceleration": 0.7974070694881832
+    },
+    "3": {
+     "succes": 0.8,
+     "mediane_s": 124.483,
+     "temps": [
+      240.0,
+      43.647,
+      124.483,
+      210.234,
+      240.0,
+      215.836,
+      57.934,
+      222.153,
+      25.732,
+      98.396
+     ],
+     "atteinte": [
+      false,
+      true,
+      true,
+      true,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true
+     ],
+     "acceleration": 0.8705927717037667
+    },
+    "4": {
+     "succes": 1.0,
+     "mediane_s": 79.026,
+     "temps": [
+      71.436,
+      27.846,
+      182.423,
+      107.204,
+      167.746,
+      53.349,
+      111.207,
+      79.026,
+      28.688,
+      182.098
+     ],
+     "atteinte": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+     ],
+     "acceleration": 1.371371447371751
+    }
+   },
+   "0.005": {
+    "1": {
+     "succes": 0.7,
+     "mediane_s": 117.972,
+     "temps": [
+      57.484,
+      240.0,
+      134.511,
+      240.0,
+      240.0,
+      94.133,
+      68.708,
+      149.376,
+      117.972,
+      78.639
+     ],
+     "atteinte": [
+      true,
+      false,
+      true,
+      false,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true
+     ],
+     "acceleration": 1.0
+    },
+    "2": {
+     "succes": 0.8,
+     "mediane_s": 135.908,
+     "temps": [
+      28.416,
+      135.908,
+      231.494,
+      36.208,
+      69.967,
+      180.496,
+      206.813,
+      240.0,
+      60.94,
+      240.0
+     ],
+     "atteinte": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      true,
+      false
+     ],
+     "acceleration": 0.8680283721340908
+    },
+    "3": {
+     "succes": 0.8,
+     "mediane_s": 129.713,
+     "temps": [
+      240.0,
+      68.71,
+      129.713,
+      226.63,
+      240.0,
+      215.836,
+      57.934,
+      222.153,
+      33.725,
+      126.862
+     ],
+     "atteinte": [
+      false,
+      true,
+      true,
+      true,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true
+     ],
+     "acceleration": 0.9094847856421484
+    },
+    "4": {
+     "succes": 1.0,
+     "mediane_s": 79.026,
+     "temps": [
+      71.436,
+      47.789,
+      220.03,
+      119.558,
+      236.999,
+      53.349,
+      111.207,
+      79.026,
+      28.688,
+      182.098
+     ],
+     "atteinte": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+     ],
+     "acceleration": 1.4928251461544302
+    }
+   },
+   "0.002": {
+    "1": {
+     "succes": 0.5,
+     "mediane_s": 172.093,
+     "temps": [
+      240.0,
+      240.0,
+      172.093,
+      240.0,
+      240.0,
+      94.133,
+      113.319,
+      163.996,
+      240.0,
+      78.639
+     ],
+     "atteinte": [
+      false,
+      false,
+      true,
+      false,
+      false,
+      true,
+      true,
+      true,
+      false,
+      true
+     ],
+     "acceleration": 1.0
+    },
+    "2": {
+     "succes": 0.8,
+     "mediane_s": 180.496,
+     "temps": [
+      112.009,
+      187.774,
+      231.494,
+      57.971,
+      69.967,
+      180.496,
+      215.251,
+      240.0,
+      68.206,
+      240.0
+     ],
+     "atteinte": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      true,
+      false
+     ],
+     "acceleration": 0.9534449516886799
+    },
+    "3": {
+     "succes": 0.5,
+     "mediane_s": 226.63,
+     "temps": [
+      240.0,
+      68.71,
+      161.776,
+      226.63,
+      240.0,
+      240.0,
+      109.198,
+      240.0,
+      240.0,
+      170.003
+     ],
+     "atteinte": [
+      false,
+      true,
+      true,
+      true,
+      false,
+      false,
+      true,
+      false,
+      false,
+      true
+     ],
+     "acceleration": 0.7593566606362794
+    },
+    "4": {
+     "succes": 0.7,
+     "mediane_s": 111.207,
+     "temps": [
+      165.322,
+      47.789,
+      240.0,
+      140.921,
+      240.0,
+      53.349,
+      111.207,
+      79.026,
+      28.688,
+      240.0
+     ],
+     "atteinte": [
+      true,
+      true,
+      false,
+      true,
+      false,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "acceleration": 1.5475015062001494
+    }
+   }
+  },
+  "KTRP_test_E76_10": {
+   "0.01": {
+    "1": {
+     "succes": 1.0,
+     "mediane_s": 7.409,
+     "temps": [
+      11.835,
+      6.175,
+      11.731,
+      8.762,
+      3.469,
+      10.013,
+      2.627,
+      9.303,
+      1.729,
+      7.409
+     ],
+     "atteinte": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+     ],
+     "acceleration": 1.0
+    },
+    "2": {
+     "succes": 1.0,
+     "mediane_s": 4.878,
+     "temps": [
+      7.373,
+      6.192,
+      19.044,
+      3.077,
+      3.473,
+      4.878,
+      2.635,
+      4.916,
+      1.695,
+      7.568
+     ],
+     "atteinte": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+     ],
+     "acceleration": 1.518860188601886
+    },
+    "3": {
+     "succes": 1.0,
+     "mediane_s": 3.46,
+     "temps": [
+      7.274,
+      6.109,
+      2.247,
+      3.063,
+      3.46,
+      4.894,
+      2.596,
+      4.751,
+      1.66,
+      7.443
+     ],
+     "atteinte": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+     ],
+     "acceleration": 2.1413294797687863
+    },
+    "4": {
+     "succes": 1.0,
+     "mediane_s": 3.426,
+     "temps": [
+      7.428,
+      6.173,
+      2.186,
+      3.124,
+      3.426,
+      5.0,
+      2.639,
+      4.902,
+      1.692,
+      7.46
+     ],
+     "atteinte": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+     ],
+     "acceleration": 2.162580268534734
+    }
+   },
+   "0.005": {
+    "1": {
+     "succes": 1.0,
+     "mediane_s": 9.303,
+     "temps": [
+      11.835,
+      6.175,
+      11.731,
+      97.022,
+      3.469,
+      10.013,
+      2.627,
+      9.303,
+      1.729,
+      84.066
+     ],
+     "atteinte": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+     ],
+     "acceleration": 1.0
+    },
+    "2": {
+     "succes": 1.0,
+     "mediane_s": 4.878,
+     "temps": [
+      7.373,
+      6.192,
+      99.187,
+      17.172,
+      3.473,
+      4.878,
+      2.635,
+      4.916,
+      1.695,
+      4.311
+     ],
+     "atteinte": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+     ],
+     "acceleration": 1.9071340713407134
+    },
+    "3": {
+     "succes": 1.0,
+     "mediane_s": 4.269,
+     "temps": [
+      7.274,
+      6.109,
+      2.247,
+      7.072,
+      3.46,
+      4.894,
+      2.596,
+      4.751,
+      1.66,
+      4.269
+     ],
+     "atteinte": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+     ],
+     "acceleration": 2.1791988756148983
+    },
+    "4": {
+     "succes": 1.0,
+     "mediane_s": 4.294,
+     "temps": [
+      7.428,
+      6.173,
+      2.186,
+      7.005,
+      3.426,
+      5.0,
+      2.639,
+      4.902,
+      1.692,
+      4.294
+     ],
+     "atteinte": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+     ],
+     "acceleration": 2.166511411271542
+    }
+   },
+   "0.002": {
+    "1": {
+     "succes": 1.0,
+     "mediane_s": 10.013,
+     "temps": [
+      11.835,
+      6.175,
+      11.731,
+      113.092,
+      3.469,
+      10.013,
+      32.182,
+      9.303,
+      1.729,
+      84.066
+     ],
+     "atteinte": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+     ],
+     "acceleration": 1.0
+    },
+    "2": {
+     "succes": 1.0,
+     "mediane_s": 6.192,
+     "temps": [
+      7.373,
+      6.192,
+      97.099,
+      17.172,
+      3.473,
+      11.744,
+      12.248,
+      4.916,
+      1.695,
+      4.311
+     ],
+     "atteinte": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+     ],
+     "acceleration": 1.6170865633074936
+    },
+    "3": {
+     "succes": 1.0,
+     "mediane_s": 4.751,
+     "temps": [
+      7.274,
+      6.109,
+      15.703,
+      13.249,
+      3.46,
+      7.154,
+      2.153,
+      4.751,
+      1.66,
+      4.269
+     ],
+     "atteinte": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+     ],
+     "acceleration": 2.1075563039360135
+    },
+    "4": {
+     "succes": 1.0,
+     "mediane_s": 4.902,
+     "temps": [
+      7.428,
+      6.173,
+      15.756,
+      23.244,
+      3.426,
+      7.27,
+      2.155,
+      4.902,
+      1.692,
+      4.294
+     ],
+     "atteinte": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+     ],
+     "acceleration": 2.0426356589147288
+    }
+   }
+  }
+ }
+}

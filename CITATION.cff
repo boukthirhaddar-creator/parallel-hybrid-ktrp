@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this software or these data, please cite the paper below."
+title: "Replication package: Parallel Multi-Agent Tabu Search with Adaptive Tenure for the K-Traveling Repairman Problem"
+authors:
+  - family-names: Jmal
+    given-names: Sirine
+  - family-names: Haddar
+    given-names: Boukthir
+    orcid: "https://orcid.org/0000-0002-1620-0993"
+  - family-names: Chabchoub
+    given-names: Habib
+license: MIT
+preferred-citation:
+  type: article
+  title: "Parallel Multi-Agent Tabu Search with Adaptive Tenure for the K-Traveling Repairman Problem: A Pre-specified Assessment of Learning and Cooperation"
+  authors:
+    - family-names: Jmal
+      given-names: Sirine
+    - family-names: Haddar
+      given-names: Boukthir
+    - family-names: Chabchoub
+      given-names: Habib
+  journal: "The Journal of Supercomputing"
+  year: 2026
+  status: submitted

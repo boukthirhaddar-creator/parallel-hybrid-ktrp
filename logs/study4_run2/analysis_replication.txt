@@ -1,0 +1,48 @@
+exécutions valides : 198
+instances : 11, tours : [0, 1, 2, 3, 4, 5]
+
+--- Écart moyen (pp) par tour et par bras ---
+  tour     A2       B2       C2
+     0   0.4180  0.4536  0.4365
+     1   0.1859  0.2982  0.2231
+     2   0.3263  0.2048  0.2022
+     3   0.4734  0.5949  0.3632
+     4   0.4274  0.2824  0.3987
+     5   0.4045  0.2566  0.4181
+  A2 global :   0.3726
+  B2 global :   0.3484
+  C2 global :   0.3403
+
+--- Candidats joués ---
+  bras B2 : {'G12': 12, 'G20': 14, 'G3': 18, 'G6': 9, 'G30': 10, 'U': 3}
+  bras C2 : {'G20': 14, 'G3': 3, 'G30': 22, 'U': 5, 'G6': 14, 'G12': 8}
+
+--- B2 contre A2 (pré-spécifié) ---
+  66 paires, victoires/égalités/défaites 33/3/30
+  moyenne -0.0242 pp, HL -0.0059 pp, IC 95 % [-0.0473, +0.0362]
+  p = 0.7659
+  sensibilité instances : 6/11 moyennes négatives, moyenne -0.0242 pp
+
+--- C2 contre A2 (pré-spécifié) ---
+  66 paires, victoires/égalités/défaites 36/3/27
+  moyenne -0.0323 pp, HL -0.0218 pp, IC 95 % [-0.0695, +0.0211]
+  p = 0.2871
+  sensibilité instances : 6/11 moyennes négatives, moyenne -0.0323 pp
+
+--- Holm correction over the two comparisons ---
+  C2 versus A2: p = 0.2871, adjusted p (Holm) = 0.5741 not significant
+  B2 versus A2: p = 0.7659, adjusted p (Holm) = 0.7659 not significant
+
+--- Écart moyen par instance et par bras (pp) ---
+  instance                 A2       B2       C2    C2-A2   B2-A2
+  KTRP_path_X101K25        0.0996  0.1550  0.1257  +0.0262 +0.0554
+  KTRP_path_X106K14        0.1034  0.0748  0.0933  -0.0100 -0.0286
+  KTRP_path_X110K13        0.3333  0.2814  0.5167  +0.1833 -0.0519
+  KTRP_path_X115K10        0.3685  0.2152  0.2174  -0.1511 -0.1533
+  KTRP_path_X120K6         1.3138  0.8271  0.4967  -0.8171 -0.4867
+  KTRP_path_X125K30        0.0256  0.0115  0.0220  -0.0035 -0.0141
+  KTRP_path_X129K18        0.0679  0.0664  0.0498  -0.0180 -0.0015
+  KTRP_path_X134K13        0.3559  0.3781  0.1917  -0.1641 +0.0222
+  KTRP_path_X139K10        0.6405  0.8278  1.0476  +0.4072 +0.1873
+  KTRP_path_X143K7         0.7442  0.9290  0.9068  +0.1625 +0.1848
+  KTRP_path_X148K46        0.0458  0.0664  0.0754  +0.0296 +0.0206

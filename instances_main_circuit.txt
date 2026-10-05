@@ -1,0 +1,8 @@
+instances/circuit/KTRP_test_E51_5.txt
+instances/circuit/KTRP_test_E76_7.txt
+instances/circuit/KTRP_test_E76_8.txt
+instances/circuit/KTRP_test_E76_10.txt
+instances/circuit/KTRP_test_E76_14.txt
+instances/circuit/KTRP_test_E76_15.txt
+instances/circuit/KTRP_test_E101_8.txt
+instances/circuit/KTRP_test_E101_14.txt

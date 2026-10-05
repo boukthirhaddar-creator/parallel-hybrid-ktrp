@@ -1,0 +1,12 @@
+instances/circuit/KTRP_test_P16_5.txt
+instances/circuit/KTRP_test_P16_7.txt
+instances/circuit/KTRP_test_P19_2.txt
+instances/circuit/KTRP_test_P19_3.txt
+instances/circuit/KTRP_test_P20_2.txt
+instances/circuit/KTRP_test_P20_3.txt
+instances/circuit/KTRP_test_P21_3.txt
+instances/circuit/KTRP_test_E22_4.txt
+instances/circuit/KTRP_test_P22_7.txt
+instances/circuit/KTRP_test_P23_7.txt
+instances/circuit/KTRP_test_E30_4.txt
+instances/circuit/KTRP_test_E33_4.txt

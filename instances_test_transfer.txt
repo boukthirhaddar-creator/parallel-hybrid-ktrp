@@ -1,0 +1,12 @@
+# Serie X de la CVRPLIB, variante chemin, jamais utilisee pour la conception ni l'entrainement.
+instances/path/KTRP_path_X101K25.txt
+instances/path/KTRP_path_X106K14.txt
+instances/path/KTRP_path_X110K13.txt
+instances/path/KTRP_path_X115K10.txt
+instances/path/KTRP_path_X120K6.txt
+instances/path/KTRP_path_X125K30.txt
+instances/path/KTRP_path_X129K18.txt
+instances/path/KTRP_path_X134K13.txt
+instances/path/KTRP_path_X139K10.txt
+instances/path/KTRP_path_X143K7.txt
+instances/path/KTRP_path_X148K46.txt

@@ -1,0 +1,3 @@
+instances/path/KTRP_path_A45K6.txt
+instances/path/KTRP_path_A60K9.txt
+instances/path/KTRP_path_A80K10.txt

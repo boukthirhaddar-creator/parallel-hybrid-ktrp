@@ -1,0 +1,10 @@
+# Verifying the published tables from the deposited logs
+# (python reproduce_tables.py) needs only these two.
+numpy>=1.24
+scipy>=1.10
+
+# Reproducing the campaigns from scratch additionally needs:
+psutil>=5.9          # hardware recording in run_parallel_study.py
+matplotlib>=3.7      # figures of the parallel study
+
+# Tested with Python 3.11.5 on Windows 10 and Python 3.12 on Linux.

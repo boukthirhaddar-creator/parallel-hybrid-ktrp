@@ -1,0 +1,86 @@
+====================================================================================
+ÉTUDE 4 : APPRENTISSAGE SUR UN FLUX DE RÉSOLUTIONS RÉPÉTÉES
+====================================================================================
+exécutions valides : flux 352, pilote 44
+instances : 11, tours présents : [0, 1, 2, 3, 4, 5, 6, 7]
+
+--- Priors gelés (extrait) ---
+  date de gel : 2026-10-02T23:59:09
+  bras C (corpus 374) : U +0.000, G3 -0.082, G6 -0.049, G12 -0.010, G20 +0.010, G30 +0.132
+  bras D (corpus 44) : U +0.000, G3 +0.071, G6 -0.020, G12 -0.004, G20 -0.041, G30 -0.006
+
+--- Écart moyen (pp) par tour et par bras ---
+  tour            A         B         C         D
+     0       0.8673    0.7542    0.6905    0.7504   (11 paires)
+     1       0.7464    0.7466    0.5123    0.5755   (11 paires)
+     2       0.8286    0.8468    0.7417    0.7899   (11 paires)
+     3       0.5621    0.7962    0.8587    0.5782   (11 paires)
+     4       0.6468    0.6898    0.6456    0.7225   (11 paires)
+     5       0.6868    0.6220    0.6665    0.5826   (11 paires)
+     6       0.8530    1.0784    0.5371    0.8073   (11 paires)
+     7       0.7445    0.4999    0.6321    0.7207   (11 paires)
+
+--- Candidat joué par tour (armes B, C, D) ---
+  tour 0 : [B U:0 G3:0 G6:9 G12:1 G20:1 G30:0] [C U:0 G3:0 G6:6 G12:0 G20:0 G30:5] [D U:0 G3:6 G6:0 G12:0 G20:4 G30:1] 
+  tour 1 : [B U:0 G3:0 G6:6 G12:1 G20:4 G30:0] [C U:0 G3:0 G6:3 G12:0 G20:0 G30:8] [D U:0 G3:4 G6:0 G12:2 G20:4 G30:1] 
+  tour 2 : [B U:0 G3:0 G6:5 G12:2 G20:4 G30:0] [C U:0 G3:0 G6:4 G12:0 G20:0 G30:7] [D U:0 G3:6 G6:0 G12:1 G20:3 G30:1] 
+  tour 3 : [B U:3 G3:0 G6:6 G12:0 G20:1 G30:1] [C U:0 G3:0 G6:3 G12:0 G20:0 G30:8] [D U:0 G3:5 G6:0 G12:1 G20:4 G30:1] 
+  tour 4 : [B U:0 G3:0 G6:10 G12:0 G20:1 G30:0] [C U:0 G3:0 G6:4 G12:0 G20:0 G30:7] [D U:0 G3:5 G6:0 G12:1 G20:4 G30:1] 
+  tour 5 : [B U:0 G3:0 G6:8 G12:0 G20:3 G30:0] [C U:1 G3:0 G6:4 G12:0 G20:0 G30:6] [D U:0 G3:4 G6:0 G12:1 G20:5 G30:1] 
+  tour 6 : [B U:1 G3:0 G6:7 G12:0 G20:3 G30:0] [C U:0 G3:0 G6:5 G12:0 G20:1 G30:5] [D U:0 G3:4 G6:1 G12:1 G20:3 G30:2] 
+  tour 7 : [B U:2 G3:0 G6:6 G12:3 G20:0 G30:0] [C U:0 G3:0 G6:5 G12:0 G20:1 G30:5] [D U:0 G3:6 G6:1 G12:1 G20:3 G30:0] 
+
+====================================================================================
+RÈGLES DE DÉCISION PRÉ-SPÉCIFIÉES (protocole)
+====================================================================================
+
+--- Règle 1 : apprentissage (B contre A, tours 6 à 8) ---
+  B contre A : 33 paires, victoires/égalités/défaites 17/0/16
+  différence moyenne -0.0280 pp, médiane HL -0.0005 pp, IC 95 % [-0.0877, +0.1368]
+  p = 1
+  Apprentissage établi : NON
+  sensibilité instances : 6/11 moyennes négatives, moyenne -0.0280 pp
+
+--- Règle 2a : transfert même famille (D contre B, tours 1 à 3) ---
+  D contre B : 33 paires, victoires/égalités/défaites 18/1/14
+  différence moyenne -0.0772 pp, médiane HL -0.0350 pp, IC 95 % [-0.1265, +0.0457]
+  p = 0.345
+  Accélération établie : NON
+  sensibilité instances : 5/11 moyennes négatives, moyenne -0.0772 pp
+
+--- Règle 2b : transfert même famille (D contre A, tous tours) ---
+  D contre A : 88 paires, victoires/égalités/défaites 48/1/39
+  différence moyenne -0.0510 pp, médiane HL -0.0178 pp, IC 95 % [-0.0614, +0.0236]
+  p = 0.3914
+  Transfert établi : NON
+  sensibilité instances : 8/11 moyennes négatives, moyenne -0.0510 pp
+
+--- Règle 3a : transfert inter-familles (C contre B, tours 1 à 3) ---
+  C contre B : 33 paires, victoires/égalités/défaites 18/0/15
+  différence moyenne -0.1343 pp, médiane HL -0.0256 pp, IC 95 % [-0.1105, +0.0285]
+  p = 0.3257
+  Écart en faveur de C : NON
+  sensibilité instances : 4/11 moyennes négatives, moyenne -0.1343 pp
+
+--- Règle 3b : transfert inter-familles (C contre A, tours 6 à 8) ---
+  C contre A : 33 paires, victoires/égalités/défaites 23/0/10
+  différence moyenne -0.1495 pp, médiane HL -0.0970 pp, IC 95 % [-0.2438, -0.0259]
+  p = 0.01301
+  Écart en faveur de C : OUI
+  sensibilité instances : 9/11 moyennes négatives, moyenne -0.1495 pp
+
+--- Écart moyen par instance et par bras (pp) ---
+  instance                        A         B         C         D   B-A tard   D-A total
+  KTRP_path_X101K25          0.1613    0.1851    0.1699    0.1342     +0.0080     -0.0271
+  KTRP_path_X106K14          0.1507    0.1584    0.1222    0.1475     +0.1149     -0.0032
+  KTRP_path_X110K13          0.8222    0.9078    0.8467    0.5965     +0.0922     -0.2257
+  KTRP_path_X115K10          1.1478    1.2804    1.4968    1.4306     +0.3418     +0.2828
+  KTRP_path_X120K6           2.6200    2.8316    1.9433    2.2961     -0.2314     -0.3239
+  KTRP_path_X125K30          0.0572    0.0477    0.0533    0.0441     -0.0106     -0.0131
+  KTRP_path_X129K18          0.2015    0.1406    0.1767    0.1570     -0.0927     -0.0445
+  KTRP_path_X134K13          0.5962    0.5845    0.4073    0.5374     -0.0939     -0.0588
+  KTRP_path_X139K10          1.4761    1.1592    1.0433    1.1271     -0.4045     -0.3490
+  KTRP_path_X143K7           0.8540    0.9114    0.9306    1.0195     -0.0665     +0.1655
+  KTRP_path_X148K46          0.0741    0.0899    0.0763    0.1098     +0.0352     +0.0356
+
+Code de retour : 0

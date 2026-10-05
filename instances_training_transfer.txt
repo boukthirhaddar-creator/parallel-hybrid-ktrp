@@ -1,0 +1,19 @@
+# Instances de la campagne chemin, sauf celles ou les 50 executions ont toutes donne la meme valeur
+# (P50K7, P51K10, P55K7, P55K10, P55K15) : elles n'apportent aucune information a l'apprentissage.
+instances/path/KTRP_path_P50K8.txt
+instances/path/KTRP_path_P55K8.txt
+instances/path/KTRP_path_P60K10.txt
+instances/path/KTRP_path_P65K10.txt
+instances/path/KTRP_path_P70K10.txt
+instances/path/KTRP_path_P76K4.txt
+instances/path/KTRP_path_P76K5.txt
+instances/path/KTRP_path_E76K14.txt
+instances/path/KTRP_path_E76K15.txt
+instances/path/KTRP_path_CMT1.txt
+instances/path/KTRP_path_CMT2.txt
+instances/path/KTRP_path_CMT3.txt
+instances/path/KTRP_path_CMT4.txt
+instances/path/KTRP_path_CMT5.txt
+instances/path/KTRP_path_CMT11.txt
+instances/path/KTRP_path_CMT12.txt
+instances/path/KTRP_path_P50K10.txt

@@ -1,0 +1,15 @@
+{
+ "fraction": 0.12,
+ "fractions_testees": [
+  0.03,
+  0.06,
+  0.12,
+  0.2,
+  0.3
+ ],
+ "instances": [
+  "F:\\Nouvelle approche pour KTRP\\instances\\chemin\\KTRP_path_A45K6.txt",
+  "F:\\Nouvelle approche pour KTRP\\instances\\chemin\\KTRP_path_A60K9.txt",
+  "F:\\Nouvelle approche pour KTRP\\instances\\chemin\\KTRP_path_A80K10.txt"
+ ]
+}

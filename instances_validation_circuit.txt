@@ -1,0 +1,3 @@
+instances/circuit/KTRP_test_A45K6.txt
+instances/circuit/KTRP_test_A60K9.txt
+instances/circuit/KTRP_test_A80K10.txt

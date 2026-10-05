@@ -1,0 +1,23 @@
+{
+  "_commentaire": "Valeurs de reference de la variante circuit, 20 instances, telles que rapportees au Tableau 11 du manuscrit. ATTENTION : sur les 17 grandes instances, la reference est le meilleur resultat parmi QPSO, k-means, bisecting k-means et CLARANS, methodes publiees entre 2012 et 2019 dont l'une est une publication anterieure des auteurs. Sur P19K3, P21K3 et E22K4 il s'agit d'optima prouves. Cette provenance doit etre rappelee partout ou ces ecarts sont rapportes, conformement a la Section 4.2 du manuscrit.",
+  "P16K5": 785,
+  "P16K7": 847,
+  "P19K3": 933,
+  "P19K2": 1110,
+  "P20K2": 1211,
+  "P20K3": 1015,
+  "P21K3": 1049,
+  "E22K4": 1269,
+  "P22K7": 1105,
+  "P23K7": 1098,
+  "E30K4": 2610,
+  "E33K4": 3897,
+  "E51K5": 2998,
+  "E76K7": 4500,
+  "E76K8": 4473,
+  "E76K10": 4058,
+  "E76K14": 3586,
+  "E76K15": 3511,
+  "E101K8": 4511,
+  "E101K14": 5048
+}

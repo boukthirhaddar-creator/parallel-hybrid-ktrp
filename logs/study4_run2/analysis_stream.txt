@@ -1,0 +1,86 @@
+====================================================================================
+ÉTUDE 4 : APPRENTISSAGE SUR UN FLUX DE RÉSOLUTIONS RÉPÉTÉES
+====================================================================================
+exécutions valides : flux 352, pilote 44
+instances : 11, tours présents : [0, 1, 2, 3, 4, 5, 6, 7]
+
+--- Priors gelés (extrait) ---
+  date de gel : 2026-10-04T10:20:43
+  bras C (corpus 374) : U +0.000, G3 -0.082, G6 -0.049, G12 -0.010, G20 +0.010, G30 +0.132
+  bras D (corpus 44) : U +0.000, G3 -0.049, G6 -0.009, G12 +0.019, G20 -0.003, G30 +0.042
+
+--- Écart moyen (pp) par tour et par bras ---
+  tour            A         B         C         D
+     0       0.5066    0.2504    0.3426    0.4462   (11 paires)
+     1       0.4315    0.4502    0.3848    0.4148   (11 paires)
+     2       0.4122    0.3823    0.3997    0.3378   (11 paires)
+     3       0.3628    0.2983    0.3710    0.4370   (11 paires)
+     4       0.2653    0.5150    0.5301    0.6138   (11 paires)
+     5       0.3698    0.3704    0.3158    0.2704   (11 paires)
+     6       0.4194    0.5244    0.6304    0.3778   (11 paires)
+     7       0.4343    0.1685    0.2999    0.3849   (11 paires)
+
+--- Candidat joué par tour (armes B, C, D) ---
+  tour 0 : [B U:0 G3:0 G6:1 G12:3 G20:3 G30:4] [C U:2 G3:0 G6:1 G12:2 G20:3 G30:3] [D U:0 G3:0 G6:2 G12:5 G20:1 G30:3] 
+  tour 1 : [B U:1 G3:1 G6:0 G12:3 G20:5 G30:1] [C U:0 G3:1 G6:1 G12:4 G20:1 G30:4] [D U:3 G3:1 G6:1 G12:2 G20:3 G30:1] 
+  tour 2 : [B U:2 G3:1 G6:0 G12:3 G20:3 G30:2] [C U:1 G3:1 G6:1 G12:2 G20:1 G30:5] [D U:2 G3:1 G6:2 G12:2 G20:1 G30:3] 
+  tour 3 : [B U:2 G3:3 G6:1 G12:2 G20:3 G30:0] [C U:1 G3:0 G6:0 G12:2 G20:1 G30:7] [D U:3 G3:2 G6:1 G12:3 G20:0 G30:2] 
+  tour 4 : [B U:3 G3:1 G6:1 G12:0 G20:6 G30:0] [C U:1 G3:2 G6:1 G12:2 G20:3 G30:2] [D U:3 G3:1 G6:1 G12:2 G20:2 G30:2] 
+  tour 5 : [B U:2 G3:4 G6:0 G12:1 G20:2 G30:2] [C U:2 G3:1 G6:0 G12:1 G20:2 G30:5] [D U:2 G3:0 G6:3 G12:2 G20:2 G30:2] 
+  tour 6 : [B U:2 G3:5 G6:0 G12:2 G20:2 G30:0] [C U:1 G3:1 G6:2 G12:1 G20:1 G30:5] [D U:2 G3:0 G6:1 G12:2 G20:0 G30:6] 
+  tour 7 : [B U:3 G3:4 G6:0 G12:1 G20:3 G30:0] [C U:1 G3:0 G6:1 G12:5 G20:2 G30:2] [D U:1 G3:1 G6:1 G12:4 G20:0 G30:4] 
+
+====================================================================================
+RÈGLES DE DÉCISION PRÉ-SPÉCIFIÉES (protocole)
+====================================================================================
+
+--- Règle 1 : apprentissage (B contre A, tours 6 à 8) ---
+  B contre A : 33 paires, victoires/égalités/défaites 19/2/12
+  différence moyenne -0.0534 pp, médiane HL -0.0202 pp, IC 95 % [-0.1169, +0.0475]
+  p = 0.4161
+  Apprentissage établi : NON
+  sensibilité instances : 7/11 moyennes négatives, moyenne -0.0534 pp
+
+--- Règle 2a : transfert même famille (D contre B, tours 1 à 3) ---
+  D contre B : 33 paires, victoires/égalités/défaites 14/1/18
+  différence moyenne +0.0387 pp, médiane HL +0.0399 pp, IC 95 % [-0.0439, +0.1549]
+  p = 0.3744
+  Accélération établie : NON (direction opposée)
+  sensibilité instances : 5/11 moyennes négatives, moyenne +0.0387 pp
+
+--- Règle 2b : transfert même famille (D contre A, tous tours) ---
+  D contre A : 88 paires, victoires/égalités/défaites 42/4/42
+  différence moyenne +0.0101 pp, médiane HL +0.0120 pp, IC 95 % [-0.0278, +0.0711]
+  p = 0.6159
+  Transfert établi : NON (direction opposée)
+  sensibilité instances : 2/11 moyennes négatives, moyenne +0.0101 pp
+
+--- Règle 3a : transfert inter-familles (C contre B, tours 1 à 3) ---
+  C contre B : 33 paires, victoires/égalités/défaites 14/3/16
+  différence moyenne +0.0148 pp, médiane HL +0.0009 pp, IC 95 % [-0.0409, +0.0421]
+  p = 0.9672
+  Écart en faveur de C : NON (direction opposée)
+  sensibilité instances : 4/11 moyennes négatives, moyenne +0.0148 pp
+
+--- Règle 3b : transfert inter-familles (C contre A, tours 6 à 8) ---
+  C contre A : 33 paires, victoires/égalités/défaites 10/2/21
+  différence moyenne +0.0075 pp, médiane HL +0.0503 pp, IC 95 % [-0.0026, +0.0980]
+  p = 0.0864
+  Écart en faveur de C : NON (direction opposée)
+  sensibilité instances : 5/11 moyennes négatives, moyenne +0.0075 pp
+
+--- Écart moyen par instance et par bras (pp) ---
+  instance                        A         B         C         D   B-A tard   D-A total
+  KTRP_path_X101K25          0.1290    0.1148    0.1299    0.1304     -0.0233     +0.0014
+  KTRP_path_X106K14          0.1011    0.1565    0.0647    0.1283     -0.0124     +0.0273
+  KTRP_path_X110K13          0.1550    0.1823    0.0737    0.2036     +0.1966     +0.0485
+  KTRP_path_X115K10          0.9169    0.8935    0.9936    1.1502     -0.5162     +0.2332
+  KTRP_path_X120K6           1.3846    0.8338    1.0411    0.8880     -0.3061     -0.4966
+  KTRP_path_X125K30          0.0370    0.0357    0.0511    0.0372     +0.0051     +0.0002
+  KTRP_path_X129K18          0.1087    0.1209    0.1394    0.1377     +0.0449     +0.0290
+  KTRP_path_X134K13          0.3223    0.3575    0.4895    0.5593     -0.0417     +0.2371
+  KTRP_path_X139K10          0.5644    0.5443    0.5419    0.4788     +0.1993     -0.0856
+  KTRP_path_X143K7           0.6184    0.7839    0.9222    0.7332     -0.1003     +0.1147
+  KTRP_path_X148K46          0.0652    0.0459    0.0552    0.0670     -0.0333     +0.0017
+
+Code de retour : 0

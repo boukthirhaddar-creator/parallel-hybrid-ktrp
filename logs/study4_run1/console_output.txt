@@ -1,0 +1,1277 @@
+ÉTUDE 4 PRÉ-SPÉCIFIÉE : 11 instances X, budget 0.6 s/client (60-90 s), 30 époques, 3 agents
+====================================================================================
+PHASE 0 : CAMPAGNE PILOTE (mélange uniforme, 4 graines par instance)
+====================================================================================
+
+  KTRP_path_X101K25 : 100 clients, K = 25, limite 60 s, 4 exécution(s)
+    pilote KTRP_path_X101K25      tour - bras - cand - latence    45946.34  OK
+    pilote KTRP_path_X101K25      tour - bras - cand - latence    45859.03  OK
+ÉTUDE 4 PRÉ-SPÉCIFIÉE : 11 instances X, budget 0.6 s/client (60-90 s), 30 époques, 3 agents
+====================================================================================
+PHASE 0 : CAMPAGNE PILOTE (mélange uniforme, 4 graines par instance)
+====================================================================================
+
+  KTRP_path_X101K25 : 100 clients, K = 25, limite 60 s, 2 exécution(s)
+ÉTUDE 4 PRÉ-SPÉCIFIÉE : 11 instances X, budget 0.6 s/client (60-90 s), 30 époques, 3 agents
+====================================================================================
+PHASE 0 : CAMPAGNE PILOTE (mélange uniforme, 4 graines par instance)
+====================================================================================
+
+  KTRP_path_X101K25 : 100 clients, K = 25, limite 60 s, 2 exécution(s)
+    pilote KTRP_path_X101K25      tour - bras - cand - latence    45938.27  OK
+    pilote KTRP_path_X101K25      tour - bras - cand - latence    45915.18  OK
+
+  KTRP_path_X106K14 : 105 clients, K = 14, limite 63 s, 4 exécution(s)
+    pilote KTRP_path_X106K14      tour - bras - cand - latence    92125.23  OK
+    pilote KTRP_path_X106K14      tour - bras - cand - latence    92120.18  OK
+    pilote KTRP_path_X106K14      tour - bras - cand - latence    92053.22  OK
+    pilote KTRP_path_X106K14      tour - bras - cand - latence    92147.26  OK
+
+  KTRP_path_X110K13 : 109 clients, K = 13, limite 65 s, 4 exécution(s)
+    pilote KTRP_path_X110K13      tour - bras - cand - latence    48913.56  OK
+    pilote KTRP_path_X110K13      tour - bras - cand - latence    49352.96  OK
+ÉTUDE 4 PRÉ-SPÉCIFIÉE : 11 instances X, budget 0.6 s/client (60-90 s), 30 époques, 3 agents
+====================================================================================
+PHASE 0 : CAMPAGNE PILOTE (mélange uniforme, 4 graines par instance)
+====================================================================================
+
+  KTRP_path_X110K13 : 109 clients, K = 13, limite 65 s, 2 exécution(s)
+    pilote KTRP_path_X110K13      tour - bras - cand - latence    49661.72  OK
+    pilote KTRP_path_X110K13      tour - bras - cand - latence    49330.06  OK
+
+  KTRP_path_X115K10 : 114 clients, K = 10, limite 68 s, 4 exécution(s)
+    pilote KTRP_path_X115K10      tour - bras - cand - latence    57450.75  OK
+    pilote KTRP_path_X115K10      tour - bras - cand - latence    57346.69  OK
+    pilote KTRP_path_X115K10      tour - bras - cand - latence    57256.02  OK
+    pilote KTRP_path_X115K10      tour - bras - cand - latence    57641.54  OK
+
+  KTRP_path_X120K6 : 119 clients, K = 6, limite 71 s, 4 exécution(s)
+    pilote KTRP_path_X120K6       tour - bras - cand - latence   108053.14  OK
+    pilote KTRP_path_X120K6       tour - bras - cand - latence   107850.51  OK
+    pilote KTRP_path_X120K6       tour - bras - cand - latence   108448.48  OK
+    pilote KTRP_path_X120K6       tour - bras - cand - latence   107912.43  OK
+
+  KTRP_path_X125K30 : 124 clients, K = 30, limite 74 s, 4 exécution(s)
+    pilote KTRP_path_X125K30      tour - bras - cand - latence   106321.01  OK
+    pilote KTRP_path_X125K30      tour - bras - cand - latence   106389.75  OK
+    pilote KTRP_path_X125K30      tour - bras - cand - latence   106238.04  OK
+    pilote KTRP_path_X125K30      tour - bras - cand - latence   106292.03  OK
+
+  KTRP_path_X129K18 : 128 clients, K = 18, limite 77 s, 4 exécution(s)
+/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+ÉTUDE 4 PRÉ-SPÉCIFIÉE : 11 instances X, budget 0.6 s/client (60-90 s), 30 époques, 3 agents
+====================================================================================
+PHASE 0 : CAMPAGNE PILOTE (mélange uniforme, 4 graines par instance)
+====================================================================================
+
+  KTRP_path_X129K18 : 128 clients, K = 18, limite 77 s, 4 exécution(s)
+    pilote KTRP_path_X129K18      tour - bras - cand - latence    90701.28  OK
+    pilote KTRP_path_X129K18      tour - bras - cand - latence    90668.72  OK
+    pilote KTRP_path_X129K18      tour - bras - cand - latence    90832.27  OK
+    pilote KTRP_path_X129K18      tour - bras - cand - latence    90786.47  OK
+
+  KTRP_path_X134K13 : 133 clients, K = 13, limite 80 s, 4 exécution(s)
+    pilote KTRP_path_X134K13      tour - bras - cand - latence    49794.91  OK
+    pilote KTRP_path_X134K13      tour - bras - cand - latence    49844.46  OK
+    pilote KTRP_path_X134K13      tour - bras - cand - latence    49873.31  OK
+    pilote KTRP_path_X134K13      tour - bras - cand - latence    49790.55  OK
+
+  KTRP_path_X139K10 : 138 clients, K = 10, limite 83 s, 4 exécution(s)
+    pilote KTRP_path_X139K10      tour - bras - cand - latence    73785.43  OK
+    pilote KTRP_path_X139K10      tour - bras - cand - latence    73784.43  OK
+    pilote KTRP_path_X139K10      tour - bras - cand - latence    74794.05  OK
+    pilote KTRP_path_X139K10      tour - bras - cand - latence    73629.05  OK
+
+  KTRP_path_X143K7 : 142 clients, K = 7, limite 85 s, 4 exécution(s)
+    pilote KTRP_path_X143K7       tour - bras - cand - latence   135501.06  OK
+    pilote KTRP_path_X143K7       tour - bras - cand - latence   134976.49  OK
+/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+ÉTUDE 4 PRÉ-SPÉCIFIÉE : 11 instances X, budget 0.6 s/client (60-90 s), 30 époques, 3 agents
+====================================================================================
+PHASE 0 : CAMPAGNE PILOTE (mélange uniforme, 4 graines par instance)
+====================================================================================
+
+  KTRP_path_X143K7 : 142 clients, K = 7, limite 85 s, 2 exécution(s)
+    pilote KTRP_path_X143K7       tour - bras - cand - latence   134288.23  OK
+    pilote KTRP_path_X143K7       tour - bras - cand - latence   134244.65  OK
+
+  KTRP_path_X148K46 : 147 clients, K = 46, limite 88 s, 4 exécution(s)
+    pilote KTRP_path_X148K46      tour - bras - cand - latence    62506.54  OK
+    pilote KTRP_path_X148K46      tour - bras - cand - latence    62429.09  OK
+    pilote KTRP_path_X148K46      tour - bras - cand - latence    62512.53  OK
+    pilote KTRP_path_X148K46      tour - bras - cand - latence    62415.50  OK
+
+====================================================================================
+PHASE 1 : GEL DES PRIORS
+====================================================================================
+  Corpus hérité (C) : 374 exécutions, poids w = [0.866, 0.672, 0.436, 0.317, -0.414]
+  Pilote (D) : 44 exécutions, poids w = [-0.263, 0.288, 0.192, 0.411, 0.202]
+  Avantages prédits C (pp) : {'U': 0.0, 'G3': -0.082, 'G6': -0.049, 'G12': -0.01, 'G20': 0.01, 'G30': 0.132}
+  Avantages prédits D (pp) : {'U': 0.0, 'G3': 0.072, 'G6': -0.02, 'G12': -0.004, 'G20': -0.041, 'G30': -0.006}
+  Priors gelés dans /home/z/my-project/travail/ktrp-replication/logs/etude4/priors.json
+
+====================================================================================
+PHASE 2 : FLUX (4 bras, 8 tours, 11 instances)
+====================================================================================
+
+  KTRP_path_X101K25 : 100 clients, K = 25, limite 60 s, 32 exécution(s) restante(s)
+    flux   KTRP_path_X101K25      tour 0 bras A cand U latence    45910.87  OK
+    flux   KTRP_path_X101K25      tour 0 bras B cand G6 latence    45914.42  OK
+    flux   KTRP_path_X101K25      tour 0 bras C cand G30 latence    45897.50  OK
+    flux   KTRP_path_X101K25      tour 0 bras D cand G3 latence    45842.34  OK
+    flux   KTRP_path_X101K25      tour 1 bras A cand U latence    45870.88  OK
+    flux   KTRP_path_X101K25      tour 1 bras B cand G20 latence    45831.04  OK
+    flux   KTRP_path_X101K25      tour 1 bras C cand G30 latence    45887.93  OK
+    flux   KTRP_path_X101K25      tour 1 bras D cand G20 latence    45903.06  OK
+    flux   KTRP_path_X101K25      tour 2 bras A cand U latence    45881.19  OK
+    flux   KTRP_path_X101K25      tour 2 bras B cand G20 latence    45872.36  OK
+/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+ÉTUDE 4 PRÉ-SPÉCIFIÉE : 11 instances X, budget 0.6 s/client (60-90 s), 30 époques, 3 agents
+====================================================================================
+PHASE 0 : CAMPAGNE PILOTE (mélange uniforme, 4 graines par instance)
+====================================================================================
+
+====================================================================================
+PHASE 1 : GEL DES PRIORS
+====================================================================================
+  Priors déjà gelés le 2026-10-02T23:59:09
+
+====================================================================================
+PHASE 2 : FLUX (4 bras, 8 tours, 11 instances)
+====================================================================================
+  10 exécutions déjà au journal ; états rejoués.
+
+  KTRP_path_X101K25 : 100 clients, K = 25, limite 60 s, 22 exécution(s) restante(s)
+    flux   KTRP_path_X101K25      tour 2 bras C cand G30 latence    45906.69  OK
+    flux   KTRP_path_X101K25      tour 2 bras D cand G3 latence    45849.39  OK
+    flux   KTRP_path_X101K25      tour 3 bras A cand U latence    45852.50  OK
+    flux   KTRP_path_X101K25      tour 3 bras B cand G6 latence    45881.28  OK
+    flux   KTRP_path_X101K25      tour 3 bras C cand G30 latence    45863.15  OK
+    flux   KTRP_path_X101K25      tour 3 bras D cand G20 latence    45888.31  OK
+    flux   KTRP_path_X101K25      tour 4 bras A cand U latence    45807.60  OK
+    flux   KTRP_path_X101K25      tour 4 bras B cand G20 latence    45900.19  OK
+    flux   KTRP_path_X101K25      tour 4 bras C cand G30 latence    45864.35  OK
+    flux   KTRP_path_X101K25      tour 4 bras D cand G3 latence    45876.98  OK
+    flux   KTRP_path_X101K25      tour 5 bras A cand U latence    45905.32  OK
+    flux   KTRP_path_X101K25      tour 5 bras B cand G20 latence    45849.73  OK
+    flux   KTRP_path_X101K25      tour 5 bras C cand G30 latence    45875.96  OK
+    flux   KTRP_path_X101K25      tour 5 bras D cand G3 latence    45838.55  OK
+    flux   KTRP_path_X101K25      tour 6 bras A cand U latence    45957.91  OK
+    flux   KTRP_path_X101K25      tour 6 bras B cand U latence    45965.50  OK
+    flux   KTRP_path_X101K25      tour 6 bras C cand G20 latence    45892.29  OK
+    flux   KTRP_path_X101K25      tour 6 bras D cand G6 latence    45873.94  OK
+/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+ÉTUDE 4 PRÉ-SPÉCIFIÉE : 11 instances X, budget 0.6 s/client (60-90 s), 30 époques, 3 agents
+====================================================================================
+PHASE 0 : CAMPAGNE PILOTE (mélange uniforme, 4 graines par instance)
+====================================================================================
+
+====================================================================================
+PHASE 1 : GEL DES PRIORS
+====================================================================================
+  Priors déjà gelés le 2026-10-02T23:59:09
+
+====================================================================================
+PHASE 2 : FLUX (4 bras, 8 tours, 11 instances)
+====================================================================================
+  28 exécutions déjà au journal ; états rejoués.
+
+  KTRP_path_X101K25 : 100 clients, K = 25, limite 60 s, 4 exécution(s) restante(s)
+    flux   KTRP_path_X101K25      tour 7 bras A cand U latence    45865.53  OK
+    flux   KTRP_path_X101K25      tour 7 bras B cand G6 latence    45924.58  OK
+    flux   KTRP_path_X101K25      tour 7 bras C cand G30 latence    45895.64  OK
+    flux   KTRP_path_X101K25      tour 7 bras D cand G3 latence    45880.04  OK
+
+  KTRP_path_X106K14 : 105 clients, K = 14, limite 63 s, 32 exécution(s) restante(s)
+    flux   KTRP_path_X106K14      tour 0 bras A cand U latence    92178.20  OK
+    flux   KTRP_path_X106K14      tour 0 bras B cand G20 latence    92068.25  OK
+    flux   KTRP_path_X106K14      tour 0 bras C cand G30 latence    92151.65  OK
+    flux   KTRP_path_X106K14      tour 0 bras D cand G20 latence    92151.02  OK
+    flux   KTRP_path_X106K14      tour 1 bras A cand U latence    92158.73  OK
+    flux   KTRP_path_X106K14      tour 1 bras B cand G20 latence    92032.99  OK
+    flux   KTRP_path_X106K14      tour 1 bras C cand G30 latence    92036.22  OK
+    flux   KTRP_path_X106K14      tour 1 bras D cand G3 latence    92201.26  OK
+    flux   KTRP_path_X106K14      tour 2 bras A cand U latence    92131.17  OK
+    flux   KTRP_path_X106K14      tour 2 bras B cand G12 latence    92128.84  OK
+    flux   KTRP_path_X106K14      tour 2 bras C cand G30 latence    92097.90  OK
+    flux   KTRP_path_X106K14      tour 2 bras D cand G3 latence    92043.83  OK
+    flux   KTRP_path_X106K14      tour 3 bras A cand U latence    92224.72  OK
+    flux   KTRP_path_X106K14      tour 3 bras B cand U latence    92170.32  OK
+/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+ÉTUDE 4 PRÉ-SPÉCIFIÉE : 11 instances X, budget 0.6 s/client (60-90 s), 30 époques, 3 agents
+====================================================================================
+PHASE 0 : CAMPAGNE PILOTE (mélange uniforme, 4 graines par instance)
+====================================================================================
+
+====================================================================================
+PHASE 1 : GEL DES PRIORS
+====================================================================================
+  Priors déjà gelés le 2026-10-02T23:59:09
+
+====================================================================================
+PHASE 2 : FLUX (4 bras, 8 tours, 11 instances)
+====================================================================================
+  46 exécutions déjà au journal ; états rejoués.
+
+  KTRP_path_X106K14 : 105 clients, K = 14, limite 63 s, 18 exécution(s) restante(s)
+    flux   KTRP_path_X106K14      tour 3 bras C cand G30 latence    92230.55  OK
+    flux   KTRP_path_X106K14      tour 3 bras D cand G3 latence    92211.25  OK
+    flux   KTRP_path_X106K14      tour 4 bras A cand U latence    92170.98  OK
+    flux   KTRP_path_X106K14      tour 4 bras B cand G6 latence    92202.64  OK
+    flux   KTRP_path_X106K14      tour 4 bras C cand G30 latence    92184.47  OK
+    flux   KTRP_path_X106K14      tour 4 bras D cand G20 latence    92188.94  OK
+    flux   KTRP_path_X106K14      tour 5 bras A cand U latence    92021.12  OK
+    flux   KTRP_path_X106K14      tour 5 bras B cand G20 latence    92225.15  OK
+    flux   KTRP_path_X106K14      tour 5 bras C cand G30 latence    92224.44  OK
+    flux   KTRP_path_X106K14      tour 5 bras D cand G3 latence    92179.26  OK
+    flux   KTRP_path_X106K14      tour 6 bras A cand U latence    92198.13  OK
+    flux   KTRP_path_X106K14      tour 6 bras B cand G20 latence    92214.15  OK
+    flux   KTRP_path_X106K14      tour 6 bras C cand G30 latence    92009.30  OK
+    flux   KTRP_path_X106K14      tour 6 bras D cand G3 latence    92112.74  OK
+    flux   KTRP_path_X106K14      tour 7 bras A cand U latence    92100.85  OK
+    flux   KTRP_path_X106K14      tour 7 bras B cand G12 latence    92198.03  OK
+    flux   KTRP_path_X106K14      tour 7 bras C cand G20 latence    92039.43  OK
+    flux   KTRP_path_X106K14      tour 7 bras D cand G6 latence    92071.69  OK
+
+  KTRP_path_X110K13 : 109 clients, K = 13, limite 65 s, 32 exécution(s) restante(s)
+/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+ÉTUDE 4 PRÉ-SPÉCIFIÉE : 11 instances X, budget 0.6 s/client (60-90 s), 30 époques, 3 agents
+====================================================================================
+PHASE 0 : CAMPAGNE PILOTE (mélange uniforme, 4 graines par instance)
+====================================================================================
+
+====================================================================================
+PHASE 1 : GEL DES PRIORS
+====================================================================================
+  Priors déjà gelés le 2026-10-02T23:59:09
+
+====================================================================================
+PHASE 2 : FLUX (4 bras, 8 tours, 11 instances)
+====================================================================================
+  64 exécutions déjà au journal ; états rejoués.
+
+  KTRP_path_X110K13 : 109 clients, K = 13, limite 65 s, 32 exécution(s) restante(s)
+    flux   KTRP_path_X110K13      tour 0 bras A cand U latence    49336.98  OK
+    flux   KTRP_path_X110K13      tour 0 bras B cand G6 latence    49233.61  OK
+    flux   KTRP_path_X110K13      tour 0 bras C cand G6 latence    49330.06  OK
+    flux   KTRP_path_X110K13      tour 0 bras D cand G3 latence    49313.58  OK
+    flux   KTRP_path_X110K13      tour 1 bras A cand U latence    49184.53  OK
+    flux   KTRP_path_X110K13      tour 1 bras B cand G20 latence    49184.53  OK
+    flux   KTRP_path_X110K13      tour 1 bras C cand G30 latence    49195.17  OK
+    flux   KTRP_path_X110K13      tour 1 bras D cand G12 latence    49310.59  OK
+    flux   KTRP_path_X110K13      tour 2 bras A cand U latence    49344.40  OK
+    flux   KTRP_path_X110K13      tour 2 bras B cand G20 latence    49344.40  OK
+    flux   KTRP_path_X110K13      tour 2 bras C cand G30 latence    49330.06  OK
+    flux   KTRP_path_X110K13      tour 2 bras D cand G3 latence    49344.40  OK
+    flux   KTRP_path_X110K13      tour 3 bras A cand U latence    49344.40  OK
+    flux   KTRP_path_X110K13      tour 3 bras B cand G20 latence    49317.39  OK
+    flux   KTRP_path_X110K13      tour 3 bras C cand G30 latence    49586.10  OK
+    flux   KTRP_path_X110K13      tour 3 bras D cand G3 latence    49308.98  OK
+/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+ÉTUDE 4 PRÉ-SPÉCIFIÉE : 11 instances X, budget 0.6 s/client (60-90 s), 30 époques, 3 agents
+====================================================================================
+PHASE 0 : CAMPAGNE PILOTE (mélange uniforme, 4 graines par instance)
+====================================================================================
+
+====================================================================================
+PHASE 1 : GEL DES PRIORS
+====================================================================================
+  Priors déjà gelés le 2026-10-02T23:59:09
+
+====================================================================================
+PHASE 2 : FLUX (4 bras, 8 tours, 11 instances)
+====================================================================================
+  80 exécutions déjà au journal ; états rejoués.
+
+  KTRP_path_X110K13 : 109 clients, K = 13, limite 65 s, 16 exécution(s) restante(s)
+    flux   KTRP_path_X110K13      tour 4 bras A cand U latence    49196.70  OK
+    flux   KTRP_path_X110K13      tour 4 bras B cand G6 latence    49526.65  OK
+    flux   KTRP_path_X110K13      tour 4 bras C cand G6 latence    49287.72  OK
+    flux   KTRP_path_X110K13      tour 4 bras D cand G3 latence    49080.54  OK
+    flux   KTRP_path_X110K13      tour 5 bras A cand U latence    49330.06  OK
+    flux   KTRP_path_X110K13      tour 5 bras B cand G20 latence    49313.58  OK
+    flux   KTRP_path_X110K13      tour 5 bras C cand G30 latence    49338.32  OK
+    flux   KTRP_path_X110K13      tour 5 bras D cand G20 latence    48913.56  OK
+    flux   KTRP_path_X110K13      tour 6 bras A cand U latence    49344.40  OK
+    flux   KTRP_path_X110K13      tour 6 bras B cand G20 latence    49669.59  OK
+    flux   KTRP_path_X110K13      tour 6 bras C cand G30 latence    49320.47  OK
+    flux   KTRP_path_X110K13      tour 6 bras D cand G20 latence    49457.58  OK
+    flux   KTRP_path_X110K13      tour 7 bras A cand U latence    49444.41  OK
+    flux   KTRP_path_X110K13      tour 7 bras B cand U latence    49271.01  OK
+    flux   KTRP_path_X110K13      tour 7 bras C cand G30 latence    49233.61  OK
+    flux   KTRP_path_X110K13      tour 7 bras D cand G3 latence    48913.56  OK
+
+  KTRP_path_X115K10 : 114 clients, K = 10, limite 68 s, 32 exécution(s) restante(s)
+/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+ÉTUDE 4 PRÉ-SPÉCIFIÉE : 11 instances X, budget 0.6 s/client (60-90 s), 30 époques, 3 agents
+====================================================================================
+PHASE 0 : CAMPAGNE PILOTE (mélange uniforme, 4 graines par instance)
+====================================================================================
+
+====================================================================================
+PHASE 1 : GEL DES PRIORS
+====================================================================================
+  Priors déjà gelés le 2026-10-02T23:59:09
+
+====================================================================================
+PHASE 2 : FLUX (4 bras, 8 tours, 11 instances)
+====================================================================================
+  96 exécutions déjà au journal ; états rejoués.
+
+  KTRP_path_X115K10 : 114 clients, K = 10, limite 68 s, 32 exécution(s) restante(s)
+    flux   KTRP_path_X115K10      tour 0 bras A cand U latence    57622.93  OK
+    flux   KTRP_path_X115K10      tour 0 bras B cand G6 latence    56922.24  OK
+    flux   KTRP_path_X115K10      tour 0 bras C cand G6 latence    56933.16  OK
+    flux   KTRP_path_X115K10      tour 0 bras D cand G3 latence    56795.45  OK
+    flux   KTRP_path_X115K10      tour 1 bras A cand U latence    57575.95  OK
+    flux   KTRP_path_X115K10      tour 1 bras B cand G6 latence    57764.65  OK
+    flux   KTRP_path_X115K10      tour 1 bras C cand G30 latence    57684.90  OK
+    flux   KTRP_path_X115K10      tour 1 bras D cand G3 latence    57595.16  OK
+    flux   KTRP_path_X115K10      tour 2 bras A cand U latence    57540.32  OK
+    flux   KTRP_path_X115K10      tour 2 bras B cand G20 latence    57488.70  OK
+    flux   KTRP_path_X115K10      tour 2 bras C cand G6 latence    57564.19  OK
+    flux   KTRP_path_X115K10      tour 2 bras D cand G3 latence    57831.59  OK
+    flux   KTRP_path_X115K10      tour 3 bras A cand U latence    56640.87  OK
+    flux   KTRP_path_X115K10      tour 3 bras B cand U latence    57319.75  OK
+    flux   KTRP_path_X115K10      tour 3 bras C cand G30 latence    57742.10  OK
+    flux   KTRP_path_X115K10      tour 3 bras D cand G3 latence    57260.40  OK
+/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+ÉTUDE 4 PRÉ-SPÉCIFIÉE : 11 instances X, budget 0.6 s/client (60-90 s), 30 époques, 3 agents
+====================================================================================
+PHASE 0 : CAMPAGNE PILOTE (mélange uniforme, 4 graines par instance)
+====================================================================================
+
+====================================================================================
+PHASE 1 : GEL DES PRIORS
+====================================================================================
+  Priors déjà gelés le 2026-10-02T23:59:09
+
+====================================================================================
+PHASE 2 : FLUX (4 bras, 8 tours, 11 instances)
+====================================================================================
+  112 exécutions déjà au journal ; états rejoués.
+
+  KTRP_path_X115K10 : 114 clients, K = 10, limite 68 s, 16 exécution(s) restante(s)
+    flux   KTRP_path_X115K10      tour 4 bras A cand U latence    57304.21  OK
+    flux   KTRP_path_X115K10      tour 4 bras B cand G6 latence    57209.31  OK
+    flux   KTRP_path_X115K10      tour 4 bras C cand G6 latence    57423.79  OK
+    flux   KTRP_path_X115K10      tour 4 bras D cand G3 latence    57622.93  OK
+    flux   KTRP_path_X115K10      tour 5 bras A cand U latence    56884.16  OK
+    flux   KTRP_path_X115K10      tour 5 bras B cand G6 latence    56788.66  OK
+    flux   KTRP_path_X115K10      tour 5 bras C cand U latence    57707.27  OK
+    flux   KTRP_path_X115K10      tour 5 bras D cand G20 latence    57694.80  OK
+    flux   KTRP_path_X115K10      tour 6 bras A cand U latence    57561.71  OK
+    flux   KTRP_path_X115K10      tour 6 bras B cand G6 latence    57934.23  OK
+    flux   KTRP_path_X115K10      tour 6 bras C cand G6 latence    57307.06  OK
+    flux   KTRP_path_X115K10      tour 6 bras D cand G3 latence    57495.62  OK
+    flux   KTRP_path_X115K10      tour 7 bras A cand U latence    57197.76  OK
+    flux   KTRP_path_X115K10      tour 7 bras B cand U latence    57501.51  OK
+    flux   KTRP_path_X115K10      tour 7 bras C cand G30 latence    57546.71  OK
+    flux   KTRP_path_X115K10      tour 7 bras D cand G3 latence    57313.50  OK
+
+  KTRP_path_X120K6 : 119 clients, K = 6, limite 71 s, 32 exécution(s) restante(s)
+/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+ÉTUDE 4 PRÉ-SPÉCIFIÉE : 11 instances X, budget 0.6 s/client (60-90 s), 30 époques, 3 agents
+====================================================================================
+PHASE 0 : CAMPAGNE PILOTE (mélange uniforme, 4 graines par instance)
+====================================================================================
+
+====================================================================================
+PHASE 1 : GEL DES PRIORS
+====================================================================================
+  Priors déjà gelés le 2026-10-02T23:59:09
+
+====================================================================================
+PHASE 2 : FLUX (4 bras, 8 tours, 11 instances)
+====================================================================================
+  128 exécutions déjà au journal ; états rejoués.
+
+  KTRP_path_X120K6 : 119 clients, K = 6, limite 71 s, 32 exécution(s) restante(s)
+    flux   KTRP_path_X120K6       tour 0 bras A cand U latence   107621.01  OK
+    flux   KTRP_path_X120K6       tour 0 bras B cand G6 latence   108685.21  OK
+    flux   KTRP_path_X120K6       tour 0 bras C cand G6 latence   107923.56  OK
+    flux   KTRP_path_X120K6       tour 0 bras D cand G3 latence   108386.72  OK
+    flux   KTRP_path_X120K6       tour 1 bras A cand U latence   108695.74  OK
+    flux   KTRP_path_X120K6       tour 1 bras B cand G20 latence   108436.75  OK
+    flux   KTRP_path_X120K6       tour 1 bras C cand G30 latence   105396.47  OK
+    flux   KTRP_path_X120K6       tour 1 bras D cand G20 latence   106344.20  OK
+    flux   KTRP_path_X120K6       tour 2 bras A cand U latence   108743.64  OK
+    flux   KTRP_path_X120K6       tour 2 bras B cand G20 latence   108710.63  OK
+    flux   KTRP_path_X120K6       tour 2 bras C cand G30 latence   108508.59  OK
+    flux   KTRP_path_X120K6       tour 2 bras D cand G20 latence   108019.28  OK
+    flux   KTRP_path_X120K6       tour 3 bras A cand U latence   107628.93  OK
+    flux   KTRP_path_X120K6       tour 3 bras B cand U latence   109032.54  OK
+/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+ÉTUDE 4 PRÉ-SPÉCIFIÉE : 11 instances X, budget 0.6 s/client (60-90 s), 30 époques, 3 agents
+====================================================================================
+PHASE 0 : CAMPAGNE PILOTE (mélange uniforme, 4 graines par instance)
+====================================================================================
+
+====================================================================================
+PHASE 1 : GEL DES PRIORS
+====================================================================================
+  Priors déjà gelés le 2026-10-02T23:59:09
+
+====================================================================================
+PHASE 2 : FLUX (4 bras, 8 tours, 11 instances)
+====================================================================================
+  142 exécutions déjà au journal ; états rejoués.
+
+  KTRP_path_X120K6 : 119 clients, K = 6, limite 71 s, 18 exécution(s) restante(s)
+    flux   KTRP_path_X120K6       tour 3 bras C cand G6 latence   107804.64  OK
+    flux   KTRP_path_X120K6       tour 3 bras D cand G3 latence   106703.11  OK
+    flux   KTRP_path_X120K6       tour 4 bras A cand U latence   107774.61  OK
+    flux   KTRP_path_X120K6       tour 4 bras B cand G6 latence   108114.42  OK
+    flux   KTRP_path_X120K6       tour 4 bras C cand G30 latence   107594.71  OK
+    flux   KTRP_path_X120K6       tour 4 bras D cand G20 latence   108260.61  OK
+    flux   KTRP_path_X120K6       tour 5 bras A cand U latence   108118.44  OK
+    flux   KTRP_path_X120K6       tour 5 bras B cand G6 latence   108914.07  OK
+    flux   KTRP_path_X120K6       tour 5 bras C cand G6 latence   108108.59  OK
+    flux   KTRP_path_X120K6       tour 5 bras D cand G20 latence   107814.11  OK
+    flux   KTRP_path_X120K6       tour 6 bras A cand U latence   108400.07  OK
+    flux   KTRP_path_X120K6       tour 6 bras B cand G20 latence   108805.14  OK
+    flux   KTRP_path_X120K6       tour 6 bras C cand G30 latence   106555.73  OK
+    flux   KTRP_path_X120K6       tour 6 bras D cand G3 latence   108813.10  OK
+/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+ÉTUDE 4 PRÉ-SPÉCIFIÉE : 11 instances X, budget 0.6 s/client (60-90 s), 30 époques, 3 agents
+====================================================================================
+PHASE 0 : CAMPAGNE PILOTE (mélange uniforme, 4 graines par instance)
+====================================================================================
+
+====================================================================================
+PHASE 1 : GEL DES PRIORS
+====================================================================================
+  Priors déjà gelés le 2026-10-02T23:59:09
+
+====================================================================================
+PHASE 2 : FLUX (4 bras, 8 tours, 11 instances)
+====================================================================================
+  156 exécutions déjà au journal ; états rejoués.
+
+  KTRP_path_X120K6 : 119 clients, K = 6, limite 71 s, 4 exécution(s) restante(s)
+    flux   KTRP_path_X120K6       tour 7 bras A cand U latence   108280.47  OK
+    flux   KTRP_path_X120K6       tour 7 bras B cand G6 latence   106347.98  OK
+    flux   KTRP_path_X120K6       tour 7 bras C cand G6 latence   107664.54  OK
+    flux   KTRP_path_X120K6       tour 7 bras D cand G3 latence   108190.33  OK
+
+  KTRP_path_X125K30 : 124 clients, K = 30, limite 74 s, 32 exécution(s) restante(s)
+    flux   KTRP_path_X125K30      tour 0 bras A cand U latence   106287.92  OK
+    flux   KTRP_path_X125K30      tour 0 bras B cand G6 latence   106269.81  OK
+    flux   KTRP_path_X125K30      tour 0 bras C cand G30 latence   106302.65  OK
+    flux   KTRP_path_X125K30      tour 0 bras D cand G20 latence   106250.39  OK
+    flux   KTRP_path_X125K30      tour 1 bras A cand U latence   106378.64  OK
+    flux   KTRP_path_X125K30      tour 1 bras B cand G6 latence   106377.76  OK
+    flux   KTRP_path_X125K30      tour 1 bras C cand G30 latence   106388.91  OK
+    flux   KTRP_path_X125K30      tour 1 bras D cand G20 latence   106298.77  OK
+    flux   KTRP_path_X125K30      tour 2 bras A cand U latence   106345.56  OK
+    flux   KTRP_path_X125K30      tour 2 bras B cand G12 latence   106340.28  OK
+/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+ÉTUDE 4 PRÉ-SPÉCIFIÉE : 11 instances X, budget 0.6 s/client (60-90 s), 30 époques, 3 agents
+====================================================================================
+PHASE 0 : CAMPAGNE PILOTE (mélange uniforme, 4 graines par instance)
+====================================================================================
+
+====================================================================================
+PHASE 1 : GEL DES PRIORS
+====================================================================================
+  Priors déjà gelés le 2026-10-02T23:59:09
+
+====================================================================================
+PHASE 2 : FLUX (4 bras, 8 tours, 11 instances)
+====================================================================================
+  170 exécutions déjà au journal ; états rejoués.
+
+  KTRP_path_X125K30 : 124 clients, K = 30, limite 74 s, 22 exécution(s) restante(s)
+    flux   KTRP_path_X125K30      tour 2 bras C cand G6 latence   106299.34  OK
+    flux   KTRP_path_X125K30      tour 2 bras D cand G3 latence   106331.28  OK
+    flux   KTRP_path_X125K30      tour 3 bras A cand U latence   106271.66  OK
+    flux   KTRP_path_X125K30      tour 3 bras B cand G6 latence   106269.26  OK
+    flux   KTRP_path_X125K30      tour 3 bras C cand G30 latence   106315.31  OK
+    flux   KTRP_path_X125K30      tour 3 bras D cand G20 latence   106287.50  OK
+    flux   KTRP_path_X125K30      tour 4 bras A cand U latence   106294.51  OK
+    flux   KTRP_path_X125K30      tour 4 bras B cand G6 latence   106274.03  OK
+    flux   KTRP_path_X125K30      tour 4 bras C cand G30 latence   106247.89  OK
+    flux   KTRP_path_X125K30      tour 4 bras D cand G20 latence   106294.09  OK
+    flux   KTRP_path_X125K30      tour 5 bras A cand U latence   106252.15  OK
+    flux   KTRP_path_X125K30      tour 5 bras B cand G6 latence   106277.98  OK
+    flux   KTRP_path_X125K30      tour 5 bras C cand G30 latence   106263.11  OK
+    flux   KTRP_path_X125K30      tour 5 bras D cand G20 latence   106304.55  OK
+/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+ÉTUDE 4 PRÉ-SPÉCIFIÉE : 11 instances X, budget 0.6 s/client (60-90 s), 30 époques, 3 agents
+====================================================================================
+PHASE 0 : CAMPAGNE PILOTE (mélange uniforme, 4 graines par instance)
+====================================================================================
+
+====================================================================================
+PHASE 1 : GEL DES PRIORS
+====================================================================================
+  Priors déjà gelés le 2026-10-02T23:59:09
+
+====================================================================================
+PHASE 2 : FLUX (4 bras, 8 tours, 11 instances)
+====================================================================================
+  184 exécutions déjà au journal ; états rejoués.
+
+  KTRP_path_X125K30 : 124 clients, K = 30, limite 74 s, 8 exécution(s) restante(s)
+    flux   KTRP_path_X125K30      tour 6 bras A cand U latence   106344.97  OK
+    flux   KTRP_path_X125K30      tour 6 bras B cand G6 latence   106300.73  OK
+    flux   KTRP_path_X125K30      tour 6 bras C cand G6 latence   106318.77  OK
+    flux   KTRP_path_X125K30      tour 6 bras D cand G3 latence   106316.93  OK
+    flux   KTRP_path_X125K30      tour 7 bras A cand U latence   106294.04  OK
+    flux   KTRP_path_X125K30      tour 7 bras B cand G6 latence   106278.61  OK
+    flux   KTRP_path_X125K30      tour 7 bras C cand G30 latence   106300.47  OK
+    flux   KTRP_path_X125K30      tour 7 bras D cand G20 latence   106274.21  OK
+
+  KTRP_path_X129K18 : 128 clients, K = 18, limite 77 s, 32 exécution(s) restante(s)
+    flux   KTRP_path_X129K18      tour 0 bras A cand U latence    90740.64  OK
+    flux   KTRP_path_X129K18      tour 0 bras B cand G6 latence    90675.57  OK
+    flux   KTRP_path_X129K18      tour 0 bras C cand G30 latence    90895.28  OK
+    flux   KTRP_path_X129K18      tour 0 bras D cand G20 latence    90719.47  OK
+    flux   KTRP_path_X129K18      tour 1 bras A cand U latence    90787.44  OK
+    flux   KTRP_path_X129K18      tour 1 bras B cand G12 latence    90790.78  OK
+/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+ÉTUDE 4 PRÉ-SPÉCIFIÉE : 11 instances X, budget 0.6 s/client (60-90 s), 30 époques, 3 agents
+====================================================================================
+PHASE 0 : CAMPAGNE PILOTE (mélange uniforme, 4 graines par instance)
+====================================================================================
+
+====================================================================================
+PHASE 1 : GEL DES PRIORS
+====================================================================================
+  Priors déjà gelés le 2026-10-02T23:59:09
+
+====================================================================================
+PHASE 2 : FLUX (4 bras, 8 tours, 11 instances)
+====================================================================================
+  198 exécutions déjà au journal ; états rejoués.
+
+  KTRP_path_X129K18 : 128 clients, K = 18, limite 77 s, 26 exécution(s) restante(s)
+    flux   KTRP_path_X129K18      tour 1 bras C cand G6 latence    90655.41  OK
+    flux   KTRP_path_X129K18      tour 1 bras D cand G3 latence    90699.15  OK
+    flux   KTRP_path_X129K18      tour 2 bras A cand U latence    90718.10  OK
+    flux   KTRP_path_X129K18      tour 2 bras B cand G6 latence    90560.63  OK
+    flux   KTRP_path_X129K18      tour 2 bras C cand G30 latence    90698.62  OK
+    flux   KTRP_path_X129K18      tour 2 bras D cand G20 latence    90721.48  OK
+    flux   KTRP_path_X129K18      tour 3 bras A cand U latence    90729.62  OK
+    flux   KTRP_path_X129K18      tour 3 bras B cand G6 latence    90674.13  OK
+    flux   KTRP_path_X129K18      tour 3 bras C cand G30 latence    90769.96  OK
+    flux   KTRP_path_X129K18      tour 3 bras D cand G20 latence    90737.46  OK
+    flux   KTRP_path_X129K18      tour 4 bras A cand U latence    90711.80  OK
+    flux   KTRP_path_X129K18      tour 4 bras B cand G6 latence    90797.54  OK
+    flux   KTRP_path_X129K18      tour 4 bras C cand G30 latence    90723.57  OK
+    flux   KTRP_path_X129K18      tour 4 bras D cand G20 latence    90710.89  OK
+/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+ÉTUDE 4 PRÉ-SPÉCIFIÉE : 11 instances X, budget 0.6 s/client (60-90 s), 30 époques, 3 agents
+====================================================================================
+PHASE 0 : CAMPAGNE PILOTE (mélange uniforme, 4 graines par instance)
+====================================================================================
+
+====================================================================================
+PHASE 1 : GEL DES PRIORS
+====================================================================================
+  Priors déjà gelés le 2026-10-02T23:59:09
+
+====================================================================================
+PHASE 2 : FLUX (4 bras, 8 tours, 11 instances)
+====================================================================================
+  212 exécutions déjà au journal ; états rejoués.
+
+  KTRP_path_X129K18 : 128 clients, K = 18, limite 77 s, 12 exécution(s) restante(s)
+    flux   KTRP_path_X129K18      tour 5 bras A cand U latence    90774.34  OK
+    flux   KTRP_path_X129K18      tour 5 bras B cand G6 latence    90677.83  OK
+    flux   KTRP_path_X129K18      tour 5 bras C cand G6 latence    90633.16  OK
+    flux   KTRP_path_X129K18      tour 5 bras D cand G3 latence    90596.97  OK
+    flux   KTRP_path_X129K18      tour 6 bras A cand U latence    90735.76  OK
+    flux   KTRP_path_X129K18      tour 6 bras B cand G6 latence    90678.53  OK
+    flux   KTRP_path_X129K18      tour 6 bras C cand G30 latence    90701.34  OK
+    flux   KTRP_path_X129K18      tour 6 bras D cand G20 latence    90630.30  OK
+    flux   KTRP_path_X129K18      tour 7 bras A cand U latence    90746.97  OK
+    flux   KTRP_path_X129K18      tour 7 bras B cand G6 latence    90648.90  OK
+    flux   KTRP_path_X129K18      tour 7 bras C cand G6 latence    90687.54  OK
+    flux   KTRP_path_X129K18      tour 7 bras D cand G20 latence    90806.44  OK
+
+  KTRP_path_X134K13 : 133 clients, K = 13, limite 80 s, 32 exécution(s) restante(s)
+    flux   KTRP_path_X134K13      tour 0 bras A cand U latence    49741.50  OK
+    flux   KTRP_path_X134K13      tour 0 bras B cand G12 latence    49796.48  OK
+/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+ÉTUDE 4 PRÉ-SPÉCIFIÉE : 11 instances X, budget 0.6 s/client (60-90 s), 30 époques, 3 agents
+====================================================================================
+PHASE 0 : CAMPAGNE PILOTE (mélange uniforme, 4 graines par instance)
+====================================================================================
+
+====================================================================================
+PHASE 1 : GEL DES PRIORS
+====================================================================================
+  Priors déjà gelés le 2026-10-02T23:59:09
+
+====================================================================================
+PHASE 2 : FLUX (4 bras, 8 tours, 11 instances)
+====================================================================================
+  226 exécutions déjà au journal ; états rejoués.
+
+  KTRP_path_X134K13 : 133 clients, K = 13, limite 80 s, 30 exécution(s) restante(s)
+    flux   KTRP_path_X134K13      tour 0 bras C cand G6 latence    49796.54  OK
+    flux   KTRP_path_X134K13      tour 0 bras D cand G3 latence    49768.70  OK
+    flux   KTRP_path_X134K13      tour 1 bras A cand U latence    49834.88  OK
+    flux   KTRP_path_X134K13      tour 1 bras B cand G6 latence    49962.11  OK
+    flux   KTRP_path_X134K13      tour 1 bras C cand G30 latence    49564.28  OK
+    flux   KTRP_path_X134K13      tour 1 bras D cand G20 latence    49746.09  OK
+    flux   KTRP_path_X134K13      tour 2 bras A cand U latence    49850.88  OK
+    flux   KTRP_path_X134K13      tour 2 bras B cand G6 latence    49967.89  OK
+    flux   KTRP_path_X134K13      tour 2 bras C cand G30 latence    49876.06  OK
+    flux   KTRP_path_X134K13      tour 2 bras D cand G20 latence    49819.80  OK
+    flux   KTRP_path_X134K13      tour 3 bras A cand U latence    49922.10  OK
+    flux   KTRP_path_X134K13      tour 3 bras B cand G6 latence    49876.56  OK
+    flux   KTRP_path_X134K13      tour 3 bras C cand G30 latence    49905.25  OK
+    flux   KTRP_path_X134K13      tour 3 bras D cand G20 latence    49886.34  OK
+/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+ÉTUDE 4 PRÉ-SPÉCIFIÉE : 11 instances X, budget 0.6 s/client (60-90 s), 30 époques, 3 agents
+====================================================================================
+PHASE 0 : CAMPAGNE PILOTE (mélange uniforme, 4 graines par instance)
+====================================================================================
+
+====================================================================================
+PHASE 1 : GEL DES PRIORS
+====================================================================================
+  Priors déjà gelés le 2026-10-02T23:59:09
+
+====================================================================================
+PHASE 2 : FLUX (4 bras, 8 tours, 11 instances)
+====================================================================================
+  240 exécutions déjà au journal ; états rejoués.
+
+  KTRP_path_X134K13 : 133 clients, K = 13, limite 80 s, 16 exécution(s) restante(s)
+    flux   KTRP_path_X134K13      tour 4 bras A cand U latence    49928.47  OK
+    flux   KTRP_path_X134K13      tour 4 bras B cand G6 latence    49767.86  OK
+    flux   KTRP_path_X134K13      tour 4 bras C cand G6 latence    49742.58  OK
+    flux   KTRP_path_X134K13      tour 4 bras D cand G3 latence    49586.59  OK
+    flux   KTRP_path_X134K13      tour 5 bras A cand U latence    49774.41  OK
+    flux   KTRP_path_X134K13      tour 5 bras B cand G6 latence    49719.27  OK
+    flux   KTRP_path_X134K13      tour 5 bras C cand G30 latence    49747.88  OK
+    flux   KTRP_path_X134K13      tour 5 bras D cand G20 latence    49923.87  OK
+    flux   KTRP_path_X134K13      tour 6 bras A cand U latence    50017.86  OK
+    flux   KTRP_path_X134K13      tour 6 bras B cand G6 latence    50046.01  OK
+    flux   KTRP_path_X134K13      tour 6 bras C cand G6 latence    49777.85  OK
+    flux   KTRP_path_X134K13      tour 6 bras D cand G20 latence    50003.56  OK
+    flux   KTRP_path_X134K13      tour 7 bras A cand U latence    49808.21  OK
+    flux   KTRP_path_X134K13      tour 7 bras B cand G12 latence    49695.52  OK
+/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+ÉTUDE 4 PRÉ-SPÉCIFIÉE : 11 instances X, budget 0.6 s/client (60-90 s), 30 époques, 3 agents
+====================================================================================
+PHASE 0 : CAMPAGNE PILOTE (mélange uniforme, 4 graines par instance)
+====================================================================================
+
+====================================================================================
+PHASE 1 : GEL DES PRIORS
+====================================================================================
+  Priors déjà gelés le 2026-10-02T23:59:09
+
+====================================================================================
+PHASE 2 : FLUX (4 bras, 8 tours, 11 instances)
+====================================================================================
+  254 exécutions déjà au journal ; états rejoués.
+
+  KTRP_path_X134K13 : 133 clients, K = 13, limite 80 s, 2 exécution(s) restante(s)
+    flux   KTRP_path_X134K13      tour 7 bras C cand G6 latence    49718.70  OK
+    flux   KTRP_path_X134K13      tour 7 bras D cand G3 latence    49910.05  OK
+
+  KTRP_path_X139K10 : 138 clients, K = 10, limite 83 s, 32 exécution(s) restante(s)
+    flux   KTRP_path_X139K10      tour 0 bras A cand U latence    75065.73  OK
+    flux   KTRP_path_X139K10      tour 0 bras B cand G6 latence    74827.66  OK
+    flux   KTRP_path_X139K10      tour 0 bras C cand G30 latence    74767.21  OK
+    flux   KTRP_path_X139K10      tour 0 bras D cand G20 latence    74829.73  OK
+    flux   KTRP_path_X139K10      tour 1 bras A cand U latence    74043.29  OK
+    flux   KTRP_path_X139K10      tour 1 bras B cand G6 latence    74076.78  OK
+    flux   KTRP_path_X139K10      tour 1 bras C cand G6 latence    74868.85  OK
+    flux   KTRP_path_X139K10      tour 1 bras D cand G3 latence    74008.75  OK
+    flux   KTRP_path_X139K10      tour 2 bras A cand U latence    74477.80  OK
+    flux   KTRP_path_X139K10      tour 2 bras B cand G6 latence    74703.65  OK
+/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+ÉTUDE 4 PRÉ-SPÉCIFIÉE : 11 instances X, budget 0.6 s/client (60-90 s), 30 époques, 3 agents
+====================================================================================
+PHASE 0 : CAMPAGNE PILOTE (mélange uniforme, 4 graines par instance)
+====================================================================================
+
+====================================================================================
+PHASE 1 : GEL DES PRIORS
+====================================================================================
+  Priors déjà gelés le 2026-10-02T23:59:09
+
+====================================================================================
+PHASE 2 : FLUX (4 bras, 8 tours, 11 instances)
+====================================================================================
+  266 exécutions déjà au journal ; états rejoués.
+
+  KTRP_path_X139K10 : 138 clients, K = 10, limite 83 s, 22 exécution(s) restante(s)
+    flux   KTRP_path_X139K10      tour 2 bras C cand G6 latence    74029.93  OK
+    flux   KTRP_path_X139K10      tour 2 bras D cand G3 latence    74679.37  OK
+    flux   KTRP_path_X139K10      tour 3 bras A cand U latence    74433.64  OK
+    flux   KTRP_path_X139K10      tour 3 bras B cand G30 latence    74480.63  OK
+    flux   KTRP_path_X139K10      tour 3 bras C cand G30 latence    74389.50  OK
+    flux   KTRP_path_X139K10      tour 3 bras D cand G12 latence    73865.03  OK
+    flux   KTRP_path_X139K10      tour 4 bras A cand U latence    74939.96  OK
+    flux   KTRP_path_X139K10      tour 4 bras B cand G6 latence    73900.07  OK
+    flux   KTRP_path_X139K10      tour 4 bras C cand G30 latence    73909.50  OK
+    flux   KTRP_path_X139K10      tour 4 bras D cand G3 latence    74676.27  OK
+    flux   KTRP_path_X139K10      tour 5 bras A cand U latence    74759.22  OK
+    flux   KTRP_path_X139K10      tour 5 bras B cand G6 latence    74263.19  OK
+/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+ÉTUDE 4 PRÉ-SPÉCIFIÉE : 11 instances X, budget 0.6 s/client (60-90 s), 30 époques, 3 agents
+====================================================================================
+PHASE 0 : CAMPAGNE PILOTE (mélange uniforme, 4 graines par instance)
+====================================================================================
+
+====================================================================================
+PHASE 1 : GEL DES PRIORS
+====================================================================================
+  Priors déjà gelés le 2026-10-02T23:59:09
+
+====================================================================================
+PHASE 2 : FLUX (4 bras, 8 tours, 11 instances)
+====================================================================================
+  278 exécutions déjà au journal ; états rejoués.
+
+  KTRP_path_X139K10 : 138 clients, K = 10, limite 83 s, 10 exécution(s) restante(s)
+    flux   KTRP_path_X139K10      tour 5 bras C cand G6 latence    73812.11  OK
+    flux   KTRP_path_X139K10      tour 5 bras D cand G3 latence    73518.82  OK
+    flux   KTRP_path_X139K10      tour 6 bras A cand U latence    74451.03  OK
+    flux   KTRP_path_X139K10      tour 6 bras B cand G6 latence    74736.59  OK
+    flux   KTRP_path_X139K10      tour 6 bras C cand G30 latence    74364.67  OK
+    flux   KTRP_path_X139K10      tour 6 bras D cand G12 latence    73985.70  OK
+    flux   KTRP_path_X139K10      tour 7 bras A cand U latence    74661.80  OK
+    flux   KTRP_path_X139K10      tour 7 bras B cand G12 latence    73980.08  OK
+    flux   KTRP_path_X139K10      tour 7 bras C cand G6 latence    74145.10  OK
+    flux   KTRP_path_X139K10      tour 7 bras D cand G20 latence    75215.96  OK
+
+  KTRP_path_X143K7 : 142 clients, K = 7, limite 85 s, 32 exécution(s) restante(s)
+    flux   KTRP_path_X143K7       tour 0 bras A cand U latence   135291.94  OK
+    flux   KTRP_path_X143K7       tour 0 bras B cand G6 latence   134763.15  OK
+/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+ÉTUDE 4 PRÉ-SPÉCIFIÉE : 11 instances X, budget 0.6 s/client (60-90 s), 30 époques, 3 agents
+====================================================================================
+PHASE 0 : CAMPAGNE PILOTE (mélange uniforme, 4 graines par instance)
+====================================================================================
+
+====================================================================================
+PHASE 1 : GEL DES PRIORS
+====================================================================================
+  Priors déjà gelés le 2026-10-02T23:59:09
+
+====================================================================================
+PHASE 2 : FLUX (4 bras, 8 tours, 11 instances)
+====================================================================================
+  290 exécutions déjà au journal ; états rejoués.
+
+  KTRP_path_X143K7 : 142 clients, K = 7, limite 85 s, 30 exécution(s) restante(s)
+    flux   KTRP_path_X143K7       tour 0 bras C cand G6 latence   134230.90  OK
+    flux   KTRP_path_X143K7       tour 0 bras D cand G3 latence   135261.71  OK
+    flux   KTRP_path_X143K7       tour 1 bras A cand U latence   134261.47  OK
+    flux   KTRP_path_X143K7       tour 1 bras B cand G6 latence   134023.31  OK
+    flux   KTRP_path_X143K7       tour 1 bras C cand G30 latence   134252.57  OK
+    flux   KTRP_path_X143K7       tour 1 bras D cand G12 latence   134677.51  OK
+    flux   KTRP_path_X143K7       tour 2 bras A cand U latence   134378.61  OK
+    flux   KTRP_path_X143K7       tour 2 bras B cand G6 latence   134302.03  OK
+    flux   KTRP_path_X143K7       tour 2 bras C cand G6 latence   134209.06  OK
+    flux   KTRP_path_X143K7       tour 2 bras D cand G30 latence   133932.90  OK
+    flux   KTRP_path_X143K7       tour 3 bras A cand U latence   133845.45  OK
+    flux   KTRP_path_X143K7       tour 3 bras B cand G6 latence   134175.70  OK
+/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+ÉTUDE 4 PRÉ-SPÉCIFIÉE : 11 instances X, budget 0.6 s/client (60-90 s), 30 époques, 3 agents
+====================================================================================
+PHASE 0 : CAMPAGNE PILOTE (mélange uniforme, 4 graines par instance)
+====================================================================================
+
+====================================================================================
+PHASE 1 : GEL DES PRIORS
+====================================================================================
+  Priors déjà gelés le 2026-10-02T23:59:09
+
+====================================================================================
+PHASE 2 : FLUX (4 bras, 8 tours, 11 instances)
+====================================================================================
+  302 exécutions déjà au journal ; états rejoués.
+
+  KTRP_path_X143K7 : 142 clients, K = 7, limite 85 s, 18 exécution(s) restante(s)
+    flux   KTRP_path_X143K7       tour 3 bras C cand G6 latence   134782.07  OK
+    flux   KTRP_path_X143K7       tour 3 bras D cand G3 latence   134885.04  OK
+    flux   KTRP_path_X143K7       tour 4 bras A cand U latence   133110.37  OK
+    flux   KTRP_path_X143K7       tour 4 bras B cand G6 latence   134500.83  OK
+    flux   KTRP_path_X143K7       tour 4 bras C cand G30 latence   134982.41  OK
+    flux   KTRP_path_X143K7       tour 4 bras D cand G12 latence   134264.41  OK
+    flux   KTRP_path_X143K7       tour 5 bras A cand U latence   134542.40  OK
+    flux   KTRP_path_X143K7       tour 5 bras B cand G6 latence   133791.56  OK
+    flux   KTRP_path_X143K7       tour 5 bras C cand G6 latence   133975.48  OK
+    flux   KTRP_path_X143K7       tour 5 bras D cand G30 latence   134485.73  OK
+    flux   KTRP_path_X143K7       tour 6 bras A cand U latence   134342.66  OK
+    flux   KTRP_path_X143K7       tour 6 bras B cand G6 latence   134890.47  OK
+/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+ÉTUDE 4 PRÉ-SPÉCIFIÉE : 11 instances X, budget 0.6 s/client (60-90 s), 30 époques, 3 agents
+====================================================================================
+PHASE 0 : CAMPAGNE PILOTE (mélange uniforme, 4 graines par instance)
+====================================================================================
+
+====================================================================================
+PHASE 1 : GEL DES PRIORS
+====================================================================================
+  Priors déjà gelés le 2026-10-02T23:59:09
+
+====================================================================================
+PHASE 2 : FLUX (4 bras, 8 tours, 11 instances)
+====================================================================================
+  314 exécutions déjà au journal ; états rejoués.
+
+  KTRP_path_X143K7 : 142 clients, K = 7, limite 85 s, 6 exécution(s) restante(s)
+    flux   KTRP_path_X143K7       tour 6 bras C cand G6 latence   134136.62  OK
+    flux   KTRP_path_X143K7       tour 6 bras D cand G30 latence   134374.27  OK
+    flux   KTRP_path_X143K7       tour 7 bras A cand U latence   134203.80  OK
+    flux   KTRP_path_X143K7       tour 7 bras B cand G6 latence   134141.11  OK
+    flux   KTRP_path_X143K7       tour 7 bras C cand G30 latence   134223.72  OK
+    flux   KTRP_path_X143K7       tour 7 bras D cand G12 latence   133857.53  OK
+
+  KTRP_path_X148K46 : 147 clients, K = 46, limite 88 s, 32 exécution(s) restante(s)
+    flux   KTRP_path_X148K46      tour 0 bras A cand U latence    62478.95  OK
+    flux   KTRP_path_X148K46      tour 0 bras B cand G6 latence    62482.36  OK
+    flux   KTRP_path_X148K46      tour 0 bras C cand G6 latence    62457.57  OK
+    flux   KTRP_path_X148K46      tour 0 bras D cand G30 latence    62493.34  OK
+    flux   KTRP_path_X148K46      tour 1 bras A cand U latence    62474.43  OK
+    flux   KTRP_path_X148K46      tour 1 bras B cand G6 latence    62482.47  OK
+/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+ÉTUDE 4 PRÉ-SPÉCIFIÉE : 11 instances X, budget 0.6 s/client (60-90 s), 30 époques, 3 agents
+====================================================================================
+PHASE 0 : CAMPAGNE PILOTE (mélange uniforme, 4 graines par instance)
+====================================================================================
+
+====================================================================================
+PHASE 1 : GEL DES PRIORS
+====================================================================================
+  Priors déjà gelés le 2026-10-02T23:59:09
+
+====================================================================================
+PHASE 2 : FLUX (4 bras, 8 tours, 11 instances)
+====================================================================================
+  326 exécutions déjà au journal ; états rejoués.
+
+  KTRP_path_X148K46 : 147 clients, K = 46, limite 88 s, 26 exécution(s) restante(s)
+    flux   KTRP_path_X148K46      tour 1 bras C cand G6 latence    62476.80  OK
+    flux   KTRP_path_X148K46      tour 1 bras D cand G30 latence    62493.38  OK
+    flux   KTRP_path_X148K46      tour 2 bras A cand U latence    62473.82  OK
+    flux   KTRP_path_X148K46      tour 2 bras B cand G6 latence    62497.23  OK
+    flux   KTRP_path_X148K46      tour 2 bras C cand G30 latence    62465.15  OK
+    flux   KTRP_path_X148K46      tour 2 bras D cand G12 latence    62501.96  OK
+    flux   KTRP_path_X148K46      tour 3 bras A cand U latence    62504.11  OK
+    flux   KTRP_path_X148K46      tour 3 bras B cand G6 latence    62466.83  OK
+    flux   KTRP_path_X148K46      tour 3 bras C cand G6 latence    62462.40  OK
+    flux   KTRP_path_X148K46      tour 3 bras D cand G30 latence    62511.45  OK
+    flux   KTRP_path_X148K46      tour 4 bras A cand U latence    62460.71  OK
+    flux   KTRP_path_X148K46      tour 4 bras B cand G6 latence    62476.12  OK
+/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+ÉTUDE 4 PRÉ-SPÉCIFIÉE : 11 instances X, budget 0.6 s/client (60-90 s), 30 époques, 3 agents
+====================================================================================
+PHASE 0 : CAMPAGNE PILOTE (mélange uniforme, 4 graines par instance)
+====================================================================================
+
+====================================================================================
+PHASE 1 : GEL DES PRIORS
+====================================================================================
+  Priors déjà gelés le 2026-10-02T23:59:09
+
+====================================================================================
+PHASE 2 : FLUX (4 bras, 8 tours, 11 instances)
+====================================================================================
+  338 exécutions déjà au journal ; états rejoués.
+
+  KTRP_path_X148K46 : 147 clients, K = 46, limite 88 s, 14 exécution(s) restante(s)
+    flux   KTRP_path_X148K46      tour 4 bras C cand G6 latence    62474.95  OK
+    flux   KTRP_path_X148K46      tour 4 bras D cand G30 latence    62496.54  OK
+    flux   KTRP_path_X148K46      tour 5 bras A cand U latence    62450.26  OK
+    flux   KTRP_path_X148K46      tour 5 bras B cand G6 latence    62492.12  OK
+    flux   KTRP_path_X148K46      tour 5 bras C cand G30 latence    62495.41  OK
+    flux   KTRP_path_X148K46      tour 5 bras D cand G12 latence    62519.79  OK
+    flux   KTRP_path_X148K46      tour 6 bras A cand U latence    62488.91  OK
+    flux   KTRP_path_X148K46      tour 6 bras B cand G6 latence    62480.55  OK
+    flux   KTRP_path_X148K46      tour 6 bras C cand G6 latence    62451.95  OK
+    flux   KTRP_path_X148K46      tour 6 bras D cand G30 latence    62518.36  OK
+    flux   KTRP_path_X148K46      tour 7 bras A cand U latence    62452.26  OK
+    flux   KTRP_path_X148K46      tour 7 bras B cand G6 latence    62484.66  OK
+/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+ÉTUDE 4 PRÉ-SPÉCIFIÉE : 11 instances X, budget 0.6 s/client (60-90 s), 30 époques, 3 agents
+====================================================================================
+PHASE 0 : CAMPAGNE PILOTE (mélange uniforme, 4 graines par instance)
+====================================================================================
+
+====================================================================================
+PHASE 1 : GEL DES PRIORS
+====================================================================================
+  Priors déjà gelés le 2026-10-02T23:59:09
+
+====================================================================================
+PHASE 2 : FLUX (4 bras, 8 tours, 11 instances)
+====================================================================================
+  350 exécutions déjà au journal ; états rejoués.
+
+  KTRP_path_X148K46 : 147 clients, K = 46, limite 88 s, 2 exécution(s) restante(s)
+    flux   KTRP_path_X148K46      tour 7 bras C cand G6 latence    62510.00  OK
+    flux   KTRP_path_X148K46      tour 7 bras D cand G3 latence    62426.67  OK
+
+  États finaux des banditis :
+    bras B : candidat le mieux noté G12 (mu = [-1.00134, -1.0, -1.00007, -0.99981, -1.00106, -1.00326], n = [7.0, 1.0, 58.0, 8.0, 18.0, 2.0])
+    bras C : candidat le mieux noté G30 (mu = [-1.00038, -1.00082, -0.99949, -1.0001, -0.99983, -0.99947], n = [13.0, 12.0, 46.0, 12.0, 14.0, 63.0])
+    bras D : candidat le mieux noté G12 (mu = [-1.0, -0.99966, -1.00008, -0.99945, -1.00042, -0.99964], n = [12.0, 52.0, 14.0, 20.0, 42.0, 20.0])
+
+Étude 4 terminée. Analyse : python analyse_apprentissage.py
+
+Code de retour : 0
+====================================================================================
+ÉTUDE 4b (amendement 1) : TRANSFERT DE L'ÉTAT APPRIS SUR GRAINES NOUVELLES
+====================================================================================
+
+  KTRP_path_X101K25 : 100 clients, K = 25, limite 60 s, 18 exécution(s) restante(s)
+    repli  KTRP_path_X101K25      tour 0 bras A2 cand U latence    45908.35  OK
+    repli  KTRP_path_X101K25      tour 0 bras B2 cand G12 latence    45903.53  OK
+    repli  KTRP_path_X101K25      tour 0 bras C2 cand G20 latence    45908.92  OK
+    repli  KTRP_path_X101K25      tour 1 bras A2 cand U latence    45917.85  OK
+    repli  KTRP_path_X101K25      tour 1 bras B2 cand G6 latence    45908.77  OK
+    repli  KTRP_path_X101K25      tour 1 bras C2 cand G3 latence    45876.57  OK
+    repli  KTRP_path_X101K25      tour 2 bras A2 cand U latence    45930.73  OK
+    repli  KTRP_path_X101K25      tour 2 bras B2 cand G12 latence    45914.28  OK
+    repli  KTRP_path_X101K25      tour 2 bras C2 cand G6 latence    45902.74  OK
+    repli  KTRP_path_X101K25      tour 3 bras A2 cand U latence    45876.64  OK
+    repli  KTRP_path_X101K25      tour 3 bras B2 cand G3 latence    45925.88  OK
+    repli  KTRP_path_X101K25      tour 3 bras C2 cand U latence    45898.65  OK
+    repli  KTRP_path_X101K25      tour 4 bras A2 cand U latence    45920.08  OK
+    repli  KTRP_path_X101K25      tour 4 bras B2 cand G3 latence    45908.38  OK
+    repli  KTRP_path_X101K25      tour 4 bras C2 cand G6 latence    45869.60  OK
+    repli  KTRP_path_X101K25      tour 5 bras A2 cand U latence    45911.09  OK
+    repli  KTRP_path_X101K25      tour 5 bras B2 cand G6 latence    45901.41  OK
+    repli  KTRP_path_X101K25      tour 5 bras C2 cand G12 latence    45905.08  OK
+
+  KTRP_path_X106K14 : 105 clients, K = 14, limite 63 s, 18 exécution(s) restante(s)
+/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+====================================================================================
+ÉTUDE 4b (amendement 1) : TRANSFERT DE L'ÉTAT APPRIS SUR GRAINES NOUVELLES
+====================================================================================
+
+  KTRP_path_X106K14 : 105 clients, K = 14, limite 63 s, 18 exécution(s) restante(s)
+    repli  KTRP_path_X106K14      tour 0 bras A2 cand U latence    92222.50  OK
+    repli  KTRP_path_X106K14      tour 0 bras B2 cand G12 latence    92169.16  OK
+    repli  KTRP_path_X106K14      tour 0 bras C2 cand G20 latence    92238.68  OK
+    repli  KTRP_path_X106K14      tour 1 bras A2 cand U latence    92164.83  OK
+    repli  KTRP_path_X106K14      tour 1 bras B2 cand G6 latence    92154.42  OK
+    repli  KTRP_path_X106K14      tour 1 bras C2 cand G3 latence    92201.04  OK
+    repli  KTRP_path_X106K14      tour 2 bras A2 cand U latence    92201.58  OK
+    repli  KTRP_path_X106K14      tour 2 bras B2 cand G12 latence    92245.15  OK
+    repli  KTRP_path_X106K14      tour 2 bras C2 cand G6 latence    92237.74  OK
+    repli  KTRP_path_X106K14      tour 3 bras A2 cand U latence    92190.50  OK
+    repli  KTRP_path_X106K14      tour 3 bras B2 cand G3 latence    91982.03  OK
+    repli  KTRP_path_X106K14      tour 3 bras C2 cand U latence    92192.38  OK
+    repli  KTRP_path_X106K14      tour 4 bras A2 cand U latence    91992.80  OK
+    repli  KTRP_path_X106K14      tour 4 bras B2 cand G3 latence    92204.69  OK
+    repli  KTRP_path_X106K14      tour 4 bras C2 cand G6 latence    92200.42  OK
+    repli  KTRP_path_X106K14      tour 5 bras A2 cand U latence    92078.47  OK
+/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+====================================================================================
+ÉTUDE 4b (amendement 1) : TRANSFERT DE L'ÉTAT APPRIS SUR GRAINES NOUVELLES
+====================================================================================
+
+  KTRP_path_X106K14 : 105 clients, K = 14, limite 63 s, 2 exécution(s) restante(s)
+    repli  KTRP_path_X106K14      tour 5 bras B2 cand G12 latence    92207.37  OK
+    repli  KTRP_path_X106K14      tour 5 bras C2 cand G20 latence    92183.32  OK
+
+  KTRP_path_X110K13 : 109 clients, K = 13, limite 65 s, 18 exécution(s) restante(s)
+    repli  KTRP_path_X110K13      tour 0 bras A2 cand U latence    48913.56  OK
+    repli  KTRP_path_X110K13      tour 0 bras B2 cand G6 latence    49375.40  OK
+    repli  KTRP_path_X110K13      tour 0 bras C2 cand G3 latence    49342.74  OK
+    repli  KTRP_path_X110K13      tour 1 bras A2 cand U latence    49212.06  OK
+    repli  KTRP_path_X110K13      tour 1 bras B2 cand G12 latence    49313.58  OK
+    repli  KTRP_path_X110K13      tour 1 bras C2 cand G6 latence    49330.06  OK
+    repli  KTRP_path_X110K13      tour 2 bras A2 cand U latence    49119.11  OK
+    repli  KTRP_path_X110K13      tour 2 bras B2 cand G3 latence    48913.56  OK
+    repli  KTRP_path_X110K13      tour 2 bras C2 cand U latence    49567.60  OK
+    repli  KTRP_path_X110K13      tour 3 bras A2 cand U latence    49055.99  OK
+    repli  KTRP_path_X110K13      tour 3 bras B2 cand G3 latence    49482.97  OK
+    repli  KTRP_path_X110K13      tour 3 bras C2 cand G6 latence    49435.14  OK
+    repli  KTRP_path_X110K13      tour 4 bras A2 cand U latence    49080.54  OK
+    repli  KTRP_path_X110K13      tour 4 bras B2 cand G3 latence    49344.40  OK
+/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+====================================================================================
+ÉTUDE 4b (amendement 1) : TRANSFERT DE L'ÉTAT APPRIS SUR GRAINES NOUVELLES
+====================================================================================
+
+  KTRP_path_X110K13 : 109 clients, K = 13, limite 65 s, 4 exécution(s) restante(s)
+    repli  KTRP_path_X110K13      tour 4 bras C2 cand G20 latence    49344.40  OK
+    repli  KTRP_path_X110K13      tour 5 bras A2 cand U latence    49266.89  OK
+    repli  KTRP_path_X110K13      tour 5 bras B2 cand G12 latence    49330.06  OK
+    repli  KTRP_path_X110K13      tour 5 bras C2 cand G3 latence    49371.42  OK
+
+  KTRP_path_X115K10 : 114 clients, K = 10, limite 68 s, 18 exécution(s) restante(s)
+    repli  KTRP_path_X115K10      tour 0 bras A2 cand U latence    57358.28  OK
+    repli  KTRP_path_X115K10      tour 0 bras B2 cand G6 latence    57334.79  OK
+    repli  KTRP_path_X115K10      tour 0 bras C2 cand G6 latence    56574.33  OK
+    repli  KTRP_path_X115K10      tour 1 bras A2 cand U latence    57238.39  OK
+    repli  KTRP_path_X115K10      tour 1 bras B2 cand G12 latence    57249.44  OK
+    repli  KTRP_path_X115K10      tour 1 bras C2 cand U latence    57122.05  OK
+    repli  KTRP_path_X115K10      tour 2 bras A2 cand U latence    57972.18  OK
+    repli  KTRP_path_X115K10      tour 2 bras B2 cand G3 latence    57705.82  OK
+    repli  KTRP_path_X115K10      tour 2 bras C2 cand G6 latence    57671.68  OK
+    repli  KTRP_path_X115K10      tour 3 bras A2 cand U latence    57326.70  OK
+/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+====================================================================================
+ÉTUDE 4b (amendement 1) : TRANSFERT DE L'ÉTAT APPRIS SUR GRAINES NOUVELLES
+====================================================================================
+
+  KTRP_path_X115K10 : 114 clients, K = 10, limite 68 s, 8 exécution(s) restante(s)
+    repli  KTRP_path_X115K10      tour 3 bras B2 cand G12 latence    57145.09  OK
+    repli  KTRP_path_X115K10      tour 3 bras C2 cand G20 latence    57628.78  OK
+    repli  KTRP_path_X115K10      tour 4 bras A2 cand U latence    57750.83  OK
+    repli  KTRP_path_X115K10      tour 4 bras B2 cand G6 latence    57600.36  OK
+    repli  KTRP_path_X115K10      tour 4 bras C2 cand G3 latence    57646.26  OK
+    repli  KTRP_path_X115K10      tour 5 bras A2 cand U latence    57669.33  OK
+    repli  KTRP_path_X115K10      tour 5 bras B2 cand G12 latence    57533.41  OK
+    repli  KTRP_path_X115K10      tour 5 bras C2 cand G6 latence    57621.15  OK
+
+  KTRP_path_X120K6 : 119 clients, K = 6, limite 71 s, 18 exécution(s) restante(s)
+    repli  KTRP_path_X120K6       tour 0 bras A2 cand U latence   107893.07  OK
+    repli  KTRP_path_X120K6       tour 0 bras B2 cand G3 latence   109241.42  OK
+    repli  KTRP_path_X120K6       tour 0 bras C2 cand U latence   108990.71  OK
+    repli  KTRP_path_X120K6       tour 1 bras A2 cand U latence   108308.02  OK
+    repli  KTRP_path_X120K6       tour 1 bras B2 cand G12 latence   108322.41  OK
+    repli  KTRP_path_X120K6       tour 1 bras C2 cand G6 latence   108796.65  OK
+    repli  KTRP_path_X120K6       tour 2 bras A2 cand U latence   108681.34  OK
+    repli  KTRP_path_X120K6       tour 2 bras B2 cand G6 latence   105563.33  OK
+/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+====================================================================================
+ÉTUDE 4b (amendement 1) : TRANSFERT DE L'ÉTAT APPRIS SUR GRAINES NOUVELLES
+====================================================================================
+
+  KTRP_path_X120K6 : 119 clients, K = 6, limite 71 s, 10 exécution(s) restante(s)
+    repli  KTRP_path_X120K6       tour 2 bras C2 cand G20 latence   108324.19  OK
+    repli  KTRP_path_X120K6       tour 3 bras A2 cand U latence   109016.14  OK
+    repli  KTRP_path_X120K6       tour 3 bras B2 cand G12 latence   108768.13  OK
+    repli  KTRP_path_X120K6       tour 3 bras C2 cand G3 latence   108494.69  OK
+    repli  KTRP_path_X120K6       tour 4 bras A2 cand U latence   107333.82  OK
+    repli  KTRP_path_X120K6       tour 4 bras B2 cand G6 latence   107855.72  OK
+    repli  KTRP_path_X120K6       tour 4 bras C2 cand G6 latence   108470.17  OK
+    repli  KTRP_path_X120K6       tour 5 bras A2 cand U latence   106051.12  OK
+    repli  KTRP_path_X120K6       tour 5 bras B2 cand G12 latence   107902.73  OK
+    repli  KTRP_path_X120K6       tour 5 bras C2 cand U latence   107491.45  OK
+
+  KTRP_path_X125K30 : 124 clients, K = 30, limite 74 s, 18 exécution(s) restante(s)
+    repli  KTRP_path_X125K30      tour 0 bras A2 cand U latence   106302.40  OK
+    repli  KTRP_path_X125K30      tour 0 bras B2 cand G3 latence   106276.84  OK
+    repli  KTRP_path_X125K30      tour 0 bras C2 cand G6 latence   106298.18  OK
+    repli  KTRP_path_X125K30      tour 1 bras A2 cand U latence   106301.65  OK
+/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+====================================================================================
+ÉTUDE 4b (amendement 1) : TRANSFERT DE L'ÉTAT APPRIS SUR GRAINES NOUVELLES
+====================================================================================
+
+  KTRP_path_X125K30 : 124 clients, K = 30, limite 74 s, 14 exécution(s) restante(s)
+    repli  KTRP_path_X125K30      tour 1 bras B2 cand G12 latence   106318.54  OK
+    repli  KTRP_path_X125K30      tour 1 bras C2 cand G20 latence   106348.87  OK
+    repli  KTRP_path_X125K30      tour 2 bras A2 cand U latence   106294.72  OK
+    repli  KTRP_path_X125K30      tour 2 bras B2 cand G6 latence   106322.03  OK
+    repli  KTRP_path_X125K30      tour 2 bras C2 cand G3 latence   106279.34  OK
+    repli  KTRP_path_X125K30      tour 3 bras A2 cand U latence   106275.88  OK
+    repli  KTRP_path_X125K30      tour 3 bras B2 cand G12 latence   106305.44  OK
+    repli  KTRP_path_X125K30      tour 3 bras C2 cand G6 latence   106276.30  OK
+    repli  KTRP_path_X125K30      tour 4 bras A2 cand U latence   106235.59  OK
+    repli  KTRP_path_X125K30      tour 4 bras B2 cand G3 latence   106243.22  OK
+    repli  KTRP_path_X125K30      tour 4 bras C2 cand U latence   106248.72  OK
+    repli  KTRP_path_X125K30      tour 5 bras A2 cand U latence   106293.49  OK
+/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+====================================================================================
+ÉTUDE 4b (amendement 1) : TRANSFERT DE L'ÉTAT APPRIS SUR GRAINES NOUVELLES
+====================================================================================
+
+  KTRP_path_X125K30 : 124 clients, K = 30, limite 74 s, 2 exécution(s) restante(s)
+    repli  KTRP_path_X125K30      tour 5 bras B2 cand G12 latence   106308.99  OK
+    repli  KTRP_path_X125K30      tour 5 bras C2 cand G20 latence   106313.05  OK
+
+  KTRP_path_X129K18 : 128 clients, K = 18, limite 77 s, 18 exécution(s) restante(s)
+    repli  KTRP_path_X129K18      tour 0 bras A2 cand U latence    90825.22  OK
+    repli  KTRP_path_X129K18      tour 0 bras B2 cand G6 latence    90709.19  OK
+    repli  KTRP_path_X129K18      tour 0 bras C2 cand G3 latence    90663.45  OK
+    repli  KTRP_path_X129K18      tour 1 bras A2 cand U latence    90676.09  OK
+    repli  KTRP_path_X129K18      tour 1 bras B2 cand G12 latence    90818.15  OK
+    repli  KTRP_path_X129K18      tour 1 bras C2 cand G6 latence    90715.19  OK
+    repli  KTRP_path_X129K18      tour 2 bras A2 cand U latence    90774.67  OK
+    repli  KTRP_path_X129K18      tour 2 bras B2 cand G3 latence    90736.53  OK
+    repli  KTRP_path_X129K18      tour 2 bras C2 cand U latence    90711.97  OK
+    repli  KTRP_path_X129K18      tour 3 bras A2 cand U latence    90776.31  OK
+    repli  KTRP_path_X129K18      tour 3 bras B2 cand G3 latence    90674.24  OK
+    repli  KTRP_path_X129K18      tour 3 bras C2 cand G6 latence    90719.59  OK
+/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+====================================================================================
+ÉTUDE 4b (amendement 1) : TRANSFERT DE L'ÉTAT APPRIS SUR GRAINES NOUVELLES
+====================================================================================
+
+  KTRP_path_X129K18 : 128 clients, K = 18, limite 77 s, 6 exécution(s) restante(s)
+    repli  KTRP_path_X129K18      tour 4 bras A2 cand U latence    90647.29  OK
+    repli  KTRP_path_X129K18      tour 4 bras B2 cand G12 latence    90734.19  OK
+    repli  KTRP_path_X129K18      tour 4 bras C2 cand G20 latence    90668.49  OK
+    repli  KTRP_path_X129K18      tour 5 bras A2 cand U latence    90691.80  OK
+    repli  KTRP_path_X129K18      tour 5 bras B2 cand G6 latence    90740.22  OK
+    repli  KTRP_path_X129K18      tour 5 bras C2 cand G3 latence    90612.49  OK
+
+  KTRP_path_X134K13 : 133 clients, K = 13, limite 80 s, 18 exécution(s) restante(s)
+    repli  KTRP_path_X134K13      tour 0 bras A2 cand U latence    49711.87  OK
+    repli  KTRP_path_X134K13      tour 0 bras B2 cand G12 latence    50067.22  OK
+    repli  KTRP_path_X134K13      tour 0 bras C2 cand G6 latence    49731.20  OK
+    repli  KTRP_path_X134K13      tour 1 bras A2 cand U latence    49767.76  OK
+    repli  KTRP_path_X134K13      tour 1 bras B2 cand G3 latence    49919.52  OK
+    repli  KTRP_path_X134K13      tour 1 bras C2 cand U latence    49789.18  OK
+    repli  KTRP_path_X134K13      tour 2 bras A2 cand U latence    49840.72  OK
+    repli  KTRP_path_X134K13      tour 2 bras B2 cand G3 latence    49751.47  OK
+/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+====================================================================================
+ÉTUDE 4b (amendement 1) : TRANSFERT DE L'ÉTAT APPRIS SUR GRAINES NOUVELLES
+====================================================================================
+
+  KTRP_path_X134K13 : 133 clients, K = 13, limite 80 s, 10 exécution(s) restante(s)
+    repli  KTRP_path_X134K13      tour 2 bras C2 cand G20 latence    49990.88  OK
+    repli  KTRP_path_X134K13      tour 3 bras A2 cand U latence    49908.06  OK
+    repli  KTRP_path_X134K13      tour 3 bras B2 cand G12 latence    49841.74  OK
+    repli  KTRP_path_X134K13      tour 3 bras C2 cand G3 latence    49662.48  OK
+    repli  KTRP_path_X134K13      tour 4 bras A2 cand U latence    49774.52  OK
+    repli  KTRP_path_X134K13      tour 4 bras B2 cand G6 latence    49807.49  OK
+    repli  KTRP_path_X134K13      tour 4 bras C2 cand G6 latence    49854.15  OK
+    repli  KTRP_path_X134K13      tour 5 bras A2 cand U latence    49850.67  OK
+    repli  KTRP_path_X134K13      tour 5 bras B2 cand G12 latence    49818.18  OK
+    repli  KTRP_path_X134K13      tour 5 bras C2 cand U latence    49829.56  OK
+
+  KTRP_path_X139K10 : 138 clients, K = 10, limite 83 s, 18 exécution(s) restante(s)
+    repli  KTRP_path_X139K10      tour 0 bras A2 cand U latence    74315.67  OK
+    repli  KTRP_path_X139K10      tour 0 bras B2 cand G3 latence    74661.15  OK
+/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+====================================================================================
+ÉTUDE 4b (amendement 1) : TRANSFERT DE L'ÉTAT APPRIS SUR GRAINES NOUVELLES
+====================================================================================
+
+  KTRP_path_X139K10 : 138 clients, K = 10, limite 83 s, 16 exécution(s) restante(s)
+    repli  KTRP_path_X139K10      tour 0 bras C2 cand G20 latence    74284.89  OK
+    repli  KTRP_path_X139K10      tour 1 bras A2 cand U latence    74877.83  OK
+    repli  KTRP_path_X139K10      tour 1 bras B2 cand G12 latence    74384.90  OK
+    repli  KTRP_path_X139K10      tour 1 bras C2 cand G3 latence    74688.00  OK
+    repli  KTRP_path_X139K10      tour 2 bras A2 cand U latence    74631.03  OK
+    repli  KTRP_path_X139K10      tour 2 bras B2 cand G6 latence    73935.74  OK
+    repli  KTRP_path_X139K10      tour 2 bras C2 cand G6 latence    75037.01  OK
+    repli  KTRP_path_X139K10      tour 3 bras A2 cand U latence    73268.75  OK
+    repli  KTRP_path_X139K10      tour 3 bras B2 cand G12 latence    73478.89  OK
+    repli  KTRP_path_X139K10      tour 3 bras C2 cand U latence    74780.88  OK
+    repli  KTRP_path_X139K10      tour 4 bras A2 cand U latence    73271.92  OK
+    repli  KTRP_path_X139K10      tour 4 bras B2 cand G3 latence    74681.37  OK
+/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+====================================================================================
+ÉTUDE 4b (amendement 1) : TRANSFERT DE L'ÉTAT APPRIS SUR GRAINES NOUVELLES
+====================================================================================
+
+  KTRP_path_X139K10 : 138 clients, K = 10, limite 83 s, 4 exécution(s) restante(s)
+    repli  KTRP_path_X139K10      tour 4 bras C2 cand G20 latence    73253.60  OK
+    repli  KTRP_path_X139K10      tour 5 bras A2 cand U latence    73995.71  OK
+    repli  KTRP_path_X139K10      tour 5 bras B2 cand G12 latence    74352.29  OK
+    repli  KTRP_path_X139K10      tour 5 bras C2 cand G20 latence    74769.65  OK
+
+  KTRP_path_X143K7 : 142 clients, K = 7, limite 85 s, 18 exécution(s) restante(s)
+    repli  KTRP_path_X143K7       tour 0 bras A2 cand U latence   134094.73  OK
+    repli  KTRP_path_X143K7       tour 0 bras B2 cand G6 latence   134025.74  OK
+    repli  KTRP_path_X143K7       tour 0 bras C2 cand G6 latence   134494.20  OK
+    repli  KTRP_path_X143K7       tour 1 bras A2 cand U latence   133921.12  OK
+    repli  KTRP_path_X143K7       tour 1 bras B2 cand G12 latence   134660.96  OK
+    repli  KTRP_path_X143K7       tour 1 bras C2 cand U latence   133023.17  OK
+    repli  KTRP_path_X143K7       tour 2 bras A2 cand U latence   134297.21  OK
+    repli  KTRP_path_X143K7       tour 2 bras B2 cand G3 latence   133365.19  OK
+/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+====================================================================================
+ÉTUDE 4b (amendement 1) : TRANSFERT DE L'ÉTAT APPRIS SUR GRAINES NOUVELLES
+====================================================================================
+
+  KTRP_path_X143K7 : 142 clients, K = 7, limite 85 s, 10 exécution(s) restante(s)
+    repli  KTRP_path_X143K7       tour 2 bras C2 cand G20 latence   133767.75  OK
+    repli  KTRP_path_X143K7       tour 3 bras A2 cand U latence   134264.69  OK
+    repli  KTRP_path_X143K7       tour 3 bras B2 cand G12 latence   134207.25  OK
+    repli  KTRP_path_X143K7       tour 3 bras C2 cand G20 latence   134110.90  OK
+    repli  KTRP_path_X143K7       tour 4 bras A2 cand U latence   133804.71  OK
+    repli  KTRP_path_X143K7       tour 4 bras B2 cand G6 latence   134358.70  OK
+    repli  KTRP_path_X143K7       tour 4 bras C2 cand G20 latence   134375.76  OK
+    repli  KTRP_path_X143K7       tour 5 bras A2 cand U latence   134585.78  OK
+    repli  KTRP_path_X143K7       tour 5 bras B2 cand G12 latence   135000.36  OK
+    repli  KTRP_path_X143K7       tour 5 bras C2 cand U latence   134640.32  OK
+
+  KTRP_path_X148K46 : 147 clients, K = 46, limite 88 s, 18 exécution(s) restante(s)
+    repli  KTRP_path_X148K46      tour 0 bras A2 cand U latence    62451.53  OK
+    repli  KTRP_path_X148K46      tour 0 bras B2 cand G3 latence    62467.31  OK
+/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+====================================================================================
+ÉTUDE 4b (amendement 1) : TRANSFERT DE L'ÉTAT APPRIS SUR GRAINES NOUVELLES
+====================================================================================
+
+  KTRP_path_X148K46 : 147 clients, K = 46, limite 88 s, 16 exécution(s) restante(s)
+    repli  KTRP_path_X148K46      tour 0 bras C2 cand G20 latence    62446.28  OK
+    repli  KTRP_path_X148K46      tour 1 bras A2 cand U latence    62494.87  OK
+    repli  KTRP_path_X148K46      tour 1 bras B2 cand G12 latence    62469.75  OK
+    repli  KTRP_path_X148K46      tour 1 bras C2 cand G3 latence    62476.91  OK
+    repli  KTRP_path_X148K46      tour 2 bras A2 cand U latence    62497.33  OK
+    repli  KTRP_path_X148K46      tour 2 bras B2 cand G6 latence    62475.69  OK
+    repli  KTRP_path_X148K46      tour 2 bras C2 cand G6 latence    62521.16  OK
+    repli  KTRP_path_X148K46      tour 3 bras A2 cand U latence    62469.51  OK
+    repli  KTRP_path_X148K46      tour 3 bras B2 cand G12 latence    62493.87  OK
+    repli  KTRP_path_X148K46      tour 3 bras C2 cand U latence    62442.44  OK
+    repli  KTRP_path_X148K46      tour 4 bras A2 cand U latence    62468.46  OK
+    repli  KTRP_path_X148K46      tour 4 bras B2 cand G3 latence    62463.79  OK
+/home/z/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+====================================================================================
+ÉTUDE 4b (amendement 1) : TRANSFERT DE L'ÉTAT APPRIS SUR GRAINES NOUVELLES
+====================================================================================
+
+  KTRP_path_X148K46 : 147 clients, K = 46, limite 88 s, 4 exécution(s) restante(s)
+    repli  KTRP_path_X148K46      tour 4 bras C2 cand G20 latence    62500.95  OK
+    repli  KTRP_path_X148K46      tour 5 bras A2 cand U latence    62541.03  OK
+    repli  KTRP_path_X148K46      tour 5 bras B2 cand G12 latence    62478.05  OK
+    repli  KTRP_path_X148K46      tour 5 bras C2 cand G3 latence    62465.59  OK
+
+  États finaux des banditis de la réplication :
+    bras B2 : candidat le mieux noté G12 (mu = [-1.00134, -1.0, -1.00007, -0.99985, -1.00106, -1.00326], n = [7.0, 1.0, 58.0, 9.0, 18.0, 2.0])
+    bras C2 : candidat le mieux noté G30 (mu = [-1.00038, -1.00075, -0.99949, -1.0001, -0.99988, -0.99947], n = [13.0, 13.0, 46.0, 12.0, 15.0, 63.0])
+
+Réplication terminée. Analyse : python analyse_apprentissage.py

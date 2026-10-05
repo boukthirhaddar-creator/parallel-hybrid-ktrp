@@ -1,0 +1,91 @@
+{
+ "date_gel": "2026-09-28T07:15:20",
+ "bornes_classes": [
+  6.0,
+  10.0
+ ],
+ "fenetres": {
+  "W0": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "W1": [
+   0,
+   1,
+   2
+  ],
+  "W2": [
+   1,
+   2,
+   3
+  ],
+  "W3": [
+   2,
+   3,
+   4
+  ]
+ },
+ "marge": 0.02,
+ "graines_entrainement": [
+  1009,
+  1013,
+  1019
+ ],
+ "regle": {
+  "courtes": "W2",
+  "moyennes": "W3",
+  "longues": "W3"
+ },
+ "tableau": {
+  "courtes": {
+   "instances": [
+    "KTRP_path_E76K14",
+    "KTRP_path_E76K15",
+    "KTRP_path_P50K10",
+    "KTRP_path_P60K10"
+   ],
+   "ecart_moyen": {
+    "W0": 0.1714,
+    "W1": 0.2387,
+    "W2": 0.1412,
+    "W3": 0.2194
+   }
+  },
+  "moyennes": {
+   "instances": [
+    "KTRP_path_CMT2",
+    "KTRP_path_P50K8",
+    "KTRP_path_P55K8",
+    "KTRP_path_P65K10",
+    "KTRP_path_P70K10"
+   ],
+   "ecart_moyen": {
+    "W0": 0.5673,
+    "W1": 0.7016,
+    "W2": 0.6721,
+    "W3": 0.0257
+   }
+  },
+  "longues": {
+   "instances": [
+    "KTRP_path_CMT1",
+    "KTRP_path_CMT11",
+    "KTRP_path_CMT12",
+    "KTRP_path_CMT3",
+    "KTRP_path_CMT4",
+    "KTRP_path_CMT5",
+    "KTRP_path_P76K4",
+    "KTRP_path_P76K5"
+   ],
+   "ecart_moyen": {
+    "W0": 0.3211,
+    "W1": 0.998,
+    "W2": 0.5829,
+    "W3": 0.2918
+   }
+  }
+ }
+}

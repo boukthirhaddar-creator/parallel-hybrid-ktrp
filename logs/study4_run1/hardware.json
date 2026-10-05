@@ -1,0 +1,10 @@
+{
+ "horodatage": "2026-10-02T23:19:12",
+ "machine": "c-6ac01e6a-14810412-89ffaac93237",
+ "systeme": "Linux",
+ "version": "#1 SMP Thu Jul 30 12:54:59 UTC 2026",
+ "processeur": "Intel(R) Xeon(R) Processor",
+ "logique": 2,
+ "python": "3.12.14",
+ "remarque": "c\u0153urs mis \u00e0 disposition du processus Python"
+}

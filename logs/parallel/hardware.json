@@ -1,0 +1,14 @@
+{
+ "date": "2026-09-28T22:16:47",
+ "systeme": "Windows-10-10.0.19045-SP0",
+ "processeur": "AMD64 Family 25 Model 1 Stepping 1, AuthenticAMD",
+ "coeurs_logiques": 16,
+ "python": "3.11.5",
+ "methode": "partagee",
+ "coeurs_physiques": 16,
+ "frequence_mhz": {
+  "actuelle": 2845,
+  "max": 2845
+ },
+ "memoire_totale_go": 64.0
+}
