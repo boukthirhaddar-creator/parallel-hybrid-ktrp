@@ -3,6 +3,19 @@
 TABLE 3. Exact optima of the circuit variant
 ==============================================================================
 Instance   Published   Optimum  Status
+E22K4           1269      1269  optimal
+P16K5            785       778  not optimal (+0.9 %)
+P16K7            847       824  not optimal (+2.8 %)
+P16K8              -       858  not published
+P19K2           1110      1110  optimal
+P19K3            933       933  optimal
+P20K2           1211      1211  optimal
+P20K3           1015      1015  optimal
+P21K2              -      1262  not published
+P21K3           1049      1049  optimal
+P22K2              -      1339  not published
+P22K7           1105      1066  not optimal (+3.7 %)
+P23K7           1098      1054  not optimal (+4.2 %)
 
 ==============================================================================
 TABLE 4. Circuit variant, mean relative gap at fractions of the limit
@@ -88,7 +101,7 @@ RANDOM vs. PRIVATE            52/108/60   -0.011   +0.000 [ -0.000, +0.000]     
 RANDOM vs. SHARED             64/105/51   -0.054   -0.000 [ -0.002, +0.000]       0.271
 
 ==============================================================================
-TABLE 0. Path variant, instance-level sensitivity analysis (Section 5.3 text)
+Path variant, instance-level sensitivity analysis (Section 5.3 text)
 ==============================================================================
   RANDOM vs. FIX-3: 17 better / 5 tied / 0 worse, p = 1.53e-05, median improvement 0.95 %
   RANDOM vs. FIX-CAL: 16 better / 6 tied / 0 worse, p = 3.05e-05, median improvement 0.24 %
@@ -242,7 +255,19 @@ P = 3           +2.72     +1.87     +1.21     +0.91     +0.45
 P = 4           +2.73     +1.88     +1.29     +0.75     +0.32
 
 ==============================================================================
-TABLE 22. Circuit variant, per-instance results
+TABLE C1. Study 4, first execution
+==============================================================================
+Phase        Comparison            Pairs      W/T/L     Mean                HL [95% CI]        p  p (Holm)
+Stream       B vs A, rounds 6-8       33    17/0/16   -0.028   -0.000 [ -0.088, +0.137]    1.000     1.000
+Stream       D vs B, rounds 1-3       33    18/1/14   -0.077   -0.035 [ -0.130, +0.049]    0.345     1.000
+Stream       D vs A, all rounds       88    48/1/39   -0.051   -0.018 [ -0.063, +0.025]    0.391     1.000
+Stream       C vs B, rounds 1-3       33    18/0/15   -0.134   -0.026 [ -0.111, +0.029]    0.326     1.000
+Stream       C vs A, rounds 6-8       33    23/0/10   -0.150   -0.097 [ -0.244, -0.026]    0.013     0.065
+Replication  B2 vs A2                 66    32/0/34   +0.063   +0.023 [ -0.026, +0.122]    0.399     0.506
+Replication  C2 vs A2                 66    29/0/37   +0.115   +0.028 [ -0.021, +0.140]    0.253     0.506
+
+==============================================================================
+TABLE C2. Circuit variant, per-instance results
 ==============================================================================
 Instance  Stat        FIX-3    FIX-CAL     RANDOM    PRIVATE     SHARED
 E101k14   mean      4487.10    4507.80    4490.40    4488.00    4486.70
@@ -271,7 +296,7 @@ E76k8     mean      3894.30    3871.80    3864.60    3866.40    3863.50
           best      3889.00    3851.00    3845.00    3845.00    3845.00
 
 ==============================================================================
-TABLE 23. Path variant, per-instance summary
+TABLE C3. Path variant, per-instance summary
 ==============================================================================
 Instance   Cust.   K  Reference      FIX-3    FIX-CAL     RANDOM       Best
 P50K7         49   7    1547.89    1547.89    1547.89    1547.89    1547.89
@@ -297,5 +322,5 @@ CMT11        120   7    7200.68    7362.61    7299.65    7263.60    7204.32
 CMT4         150  12    4953.94    5182.97    5113.55    5059.11    4976.63
 CMT5         199  17    5748.36    5934.00    5864.70    5848.98    5827.83
 
-Tables 1, 2, 20 and 21 are not derived from the run logs: the first two position the work in the literature, and the last two document the
+Tables 1, 2, A1 and A2 are not derived from the run logs: the first two position the work in the literature, and the last two document the
 distance convention and the objective, which are verified by build_instances.py.
