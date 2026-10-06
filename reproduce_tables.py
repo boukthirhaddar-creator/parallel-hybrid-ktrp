@@ -640,6 +640,119 @@ def table_15() -> None:
     print("  adjusted value below that of the smaller one; both are therefore equal here.")
 
 
+
+# ---------------------------------------------------------------------------
+# figures
+# ---------------------------------------------------------------------------
+# Hues are fixed in this order and never cycled. The four are separable under
+# deuteranopia and protanopia, and line style and marker repeat the distinction
+# so that the curves survive a greyscale print.
+ARM_COLOUR = {"A": "#0072B2", "B": "#D55E00", "C": "#009E73", "D": "#5D3A9B"}
+ARM_STYLE = {"A": ("-", "o"), "B": ("--", "s"), "C": ("-.", "^"), "D": (":", "D")}
+ARM_NAME = {"A": "A (RANDOM)", "B": "B (LEARN)",
+            "C": "C (legacy prior)", "D": "D (pilot prior)"}
+BETTER, WORSE, TIED = "#0072B2", "#D55E00", "#8a8a8a"
+
+
+def _style(ax) -> None:
+    """Recessive grid and axes, so the data carries the ink."""
+    ax.grid(True, color="#d8d8d8", linewidth=0.6, zorder=0)
+    ax.set_axisbelow(True)
+    for side in ("top", "right"):
+        ax.spines[side].set_visible(False)
+    for side in ("left", "bottom"):
+        ax.spines[side].set_color("#666666")
+        ax.spines[side].set_linewidth(0.8)
+    ax.tick_params(colors="#444444", labelsize=9, length=3, width=0.8)
+
+
+def figure_instance_level(path: str = "fig_instance_level_circuit.pdf") -> str:
+    """Per-instance difference between RANDOM and FIX-3 against route length.
+
+    The decision rule of Section 5.2 is taken over runs; this figure shows how
+    the same difference is distributed over the instances, which is the
+    sensitivity analysis the text reports.
+    """
+    import matplotlib
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+
+    runs, _ = load_campaign("circuit")
+    means = instance_means(runs)
+    info = {r["instance"]: (r["n_clients"], r["K"]) for r in runs}
+    rows = []
+    for inst, by_method in means.items():
+        n, k = info[inst]
+        delta = (by_method["HASARD"] - by_method["IND-3"]) / by_method["IND-3"] * 100
+        rows.append((n / k, short(inst), delta))
+    rows.sort()
+
+    fig, ax = plt.subplots(figsize=(5.15, 3.0))
+    _style(ax)
+    labels = [f"{name}   L = {length:.1f}" for length, name, _ in rows]
+    values = [d for *_, d in rows]
+    def hue(v: float) -> str:
+        return TIED if abs(v) < 5e-4 else (BETTER if v < 0 else WORSE)
+
+    ax.barh(range(len(rows)), values, height=0.62, zorder=3,
+            color=[hue(v) for v in values])
+    ax.axvline(0, color="#444444", linewidth=0.9, zorder=4)
+    ax.set_yticks(range(len(rows)))
+    ax.set_yticklabels(labels)
+    ax.set_xlabel("Mean latency of RANDOM minus that of FIX-3 (%)")
+    ax.set_ylabel("Instance, by mean route length $L = n/K$")
+    for i, v in enumerate(values):
+        off = -0.06 if v < 0 else 0.06
+        text = "0.000 (tied)" if abs(v) < 5e-4 else f"{v:+.3f}"
+        ax.text(v + off, i, text, va="center", fontsize=8,
+                ha="right" if v < 0 else "left", color="#333333", zorder=5)
+    ax.set_xlim(min(values) * 1.28, max(values) * 4.2 + 0.08)
+    fig.tight_layout()
+    fig.savefig(os.path.join(ROOT, path))
+    plt.close(fig)
+    return path
+
+
+def figure_stream_curves(path: str = "fig_stream_curves.pdf") -> str:
+    """Mean relative gap by round, for the four arms of Study 4."""
+    import matplotlib
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+
+    runs, _ = load_stream("stream.jsonl")
+    arms = sorted({r["bras"] for r in runs})
+    rounds = sorted({r["tour"] for r in runs})
+
+    fig, ax = plt.subplots(figsize=(5.15, 3.1))
+    _style(ax)
+    for arm in arms:
+        y = [st.fmean([r["gap"] for r in runs if r["tour"] == t and r["bras"] == arm])
+             for t in rounds]
+        line, marker = ARM_STYLE[arm]
+        ax.plot([t + 1 for t in rounds], y, line, marker=marker, markersize=5,
+                linewidth=1.6, color=ARM_COLOUR[arm], label=ARM_NAME[arm], zorder=3)
+    ax.set_xlabel("Round of the stream")
+    ax.set_ylabel("Mean relative gap (percentage points)")
+    ax.set_xticks([t + 1 for t in rounds])
+    ax.set_ylim(0, None)
+    ax.legend(frameon=False, fontsize=9, ncol=2, loc="upper center",
+              bbox_to_anchor=(0.5, 1.18))
+    fig.tight_layout()
+    fig.savefig(os.path.join(ROOT, path))
+    plt.close(fig)
+    return path
+
+
+def make_figures() -> int:
+    try:
+        import matplotlib  # noqa: F401
+    except ImportError:
+        print("matplotlib is required for the figures; see requirements.txt")
+        return 1
+    for fn in (figure_instance_level, figure_stream_curves):
+        print(f"  written  {fn()}")
+    return 0
+
 # ---------------------------------------------------------------------------
 # consistency check against the published values
 # ---------------------------------------------------------------------------
@@ -728,6 +841,8 @@ def run_check() -> int:
 def main(argv: Sequence[str]) -> int:
     if "--check" in argv:
         return run_check()
+    if "--figures" in argv:
+        return make_figures()
     # Tables are selected by the label they carry in the paper: a number for the
     # body, a letter and a number for the appendices, as in "C1".
     wanted = {a.upper() for a in argv if not a.startswith("-")}

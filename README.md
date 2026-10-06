@@ -55,6 +55,18 @@ logs; the first two position the work in the literature, and the last two are
 produced by `build_instances.py`, which verifies the distance convention and the
 objective.
 
+Two of the figures are drawn from the same logs:
+
+```bash
+python reproduce_tables.py --figures
+```
+
+This writes `fig_instance_level_circuit.pdf`, the per-instance difference between
+RANDOM and FIX-3 ordered by mean route length, which is Figure 3 of the paper, and
+`fig_stream_curves.pdf`, the mean relative gap by round for the four arms of
+Study 4, which is Figure 4. The remaining figures are drawings of the architecture
+and of the neighbourhood moves, and a distribution of the time to reach a target.
+
 The output of the latter command, as produced on our machine, is stored in
 `results/tables_from_logs.txt` for comparison.
 
@@ -76,7 +88,8 @@ The output of the latter command, as produced on our machine, is stored in
 ├── run_replication.py      Study 4b, confirmatory replication on fresh seeds
 ├── analyse_replication.py  analysis of Study 4b
 ├── run_parallel_study.py   parallel measurements
-├── reproduce_tables.py     regenerates from the logs every table derived from them
+├── reproduce_tables.py     regenerates from the logs every table derived from them,
+│                          and, with --figures, the two figures drawn from them
 ├── instances_*.txt         instance lists used by the study scripts
 ├── bks_circuit.json        reference values, circuit variant, with provenance
 ├── bks_path.json           reference values, path variant, with provenance
@@ -95,6 +108,8 @@ The output of the latter command, as produced on our machine, is stored in
 │   ├── study4_run2/        second execution, identical to logs/study4
 │   ├── study4/             the copy the analysis scripts read
 │   └── parallel/           throughput, time-to-target, recorded hardware
+├── fig_instance_level_circuit.pdf   Figure 3, written by --figures
+├── fig_stream_curves.pdf            Figure 4, written by --figures
 ├── results/                output of reproduce_tables.py
 ├── PROTOCOLS.md            the protocols, frozen before the corresponding runs
 ├── PROTOCOL_STUDY4.md      full protocol of Study 4
