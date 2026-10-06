@@ -187,12 +187,15 @@ def table_3() -> Dict[str, int]:
         if not k.startswith("_")}
     optima: Dict[str, int] = {}
     folder = os.path.join(ROOT, "exact")
+    prefix = "circuit_optimum_"
     for fname in sorted(os.listdir(folder)):
-        if not fname.startswith("optimum_circuit_"):
+        if not fname.startswith(prefix) or not fname.endswith(".txt"):
             continue
         text = open(os.path.join(folder, fname), encoding="utf-8").read().split("\n")
-        name = fname[len("optimum_circuit_"):-4].replace("_", "K")
+        name = fname[len(prefix):-len(".txt")].replace("_", "K").upper()
         optima[name] = int(float(text[0].split()[1]))
+    if not optima:
+        raise SystemExit(f"no file matching {prefix}*.txt found in {folder}")
     print(f"{'Instance':9s} {'Published':>10s} {'Optimum':>9s}  Status")
     for name in sorted(optima, key=lambda x: (len(x), x)):
         ref = published.get(name)
@@ -281,7 +284,9 @@ def table_7(verbose: bool = True) -> None:
 
 
 def path_instance_level() -> None:
-    header(0, "Path variant, instance-level sensitivity analysis (Section 5.3 text)")
+    # Reported in the text of Section 5.3 rather than as a numbered table.
+    print(f"\n{'=' * 78}\nPath variant, instance-level sensitivity analysis "
+          f"(Section 5.3 text)\n{'=' * 78}")
     runs, _ = load_campaign("path")
     means = instance_means(runs)
     insts = sorted(means)
@@ -437,8 +442,54 @@ def table_19() -> None:
         print(f"P = {P:<6d} " + "".join(f"{c:+10.2f}" for c in cells))
 
 
-def table_22() -> None:
-    header(22, "Circuit variant, per-instance results")
+def table_c1() -> None:
+    """The first execution of Study 4, reported in Appendix C of the paper.
+
+    This table was produced by the pre-specified analysis scripts rather than by
+    the present one, and those scripts use the normal approximation with
+    continuity correction, dropping tied pairs before estimating the median. The
+    two conventions agree to within a thousandth on every comparison, but the
+    table is regenerated here with the statistic that produced it, so that the
+    printed figures match the paper exactly rather than approximately.
+    """
+    import analyse_stream_study as pre
+
+    header("C1", "Study 4, first execution")
+    stream, _ = load_stream("stream.jsonl", "study4_run1")
+    repli, _ = load_stream("replication.jsonl", "study4_run1")
+    rows = [("Stream", a, b, w, stream_paired(stream, a, b, r)) for a, b, r, w in (
+        ("B", "A", STREAM_ROUNDS_LATE, "rounds 6-8"),
+        ("D", "B", STREAM_ROUNDS_EARLY, "rounds 1-3"),
+        ("D", "A", None, "all rounds"),
+        ("C", "B", STREAM_ROUNDS_EARLY, "rounds 1-3"),
+        ("C", "A", STREAM_ROUNDS_LATE, "rounds 6-8"))]
+    repli_rows = [("Replication", a, "A2", "", stream_paired(repli, a, "A2"))
+                  for a in ("B2", "C2")]
+
+    def stats(d: Sequence[float]):
+        p, hl = pre.wilcoxon(list(d), [0.0] * len(d))
+        lo, hi = pre.intervalle_hl([x for x in d if abs(x) > 1e-12])
+        return p, hl, lo, hi
+
+    # Holm covers the five comparisons of the stream and, separately, the two of
+    # the replication, exactly as the protocol fixes it.
+    adjusted = holm([stats(d)[0] for *_, d in rows])
+    repli_adjusted = holm([stats(d)[0] for *_, d in repli_rows])
+    print(f"{'Phase':12s} {'Comparison':20s} {'Pairs':>6s} {'W/T/L':>10s} "
+          f"{'Mean':>8s} {'HL [95% CI]':>26s} {'p':>8s} {'p (Holm)':>9s}")
+    for (phase, a, b, window, d), adj in zip(rows + repli_rows,
+                                             list(adjusted) + list(repli_adjusted)):
+        win = sum(1 for x in d if x < -1e-12)
+        loss = sum(1 for x in d if x > 1e-12)
+        p, hl, lo, hi = stats(d)
+        label = f"{a} vs {b}" + (f", {window}" if window else "")
+        print(f"{phase:12s} {label:20s} {len(d):6d} "
+              f"{f'{win}/{len(d) - win - loss}/{loss}':>10s} {st.fmean(d):+8.3f} "
+              f"{hl:+8.3f} [{lo:+7.3f},{hi:+7.3f}] {p:8.3f} {adj:9.3f}")
+
+
+def table_c2() -> None:
+    header("C2", "Circuit variant, per-instance results")
     runs, _ = load_campaign("circuit")
     acc: Dict[Tuple[str, str], List[float]] = {}
     for r in runs:
@@ -455,8 +506,8 @@ def table_22() -> None:
                   "".join(f"{c:11.2f}" for c in cells))
 
 
-def table_23() -> None:
-    header(23, "Path variant, per-instance summary")
+def table_c3() -> None:
+    header("C3", "Path variant, per-instance summary")
     runs, _ = load_campaign("path")
     refs = {k: v for k, v in json.load(
         open(os.path.join(ROOT, "bks_path.json"), encoding="utf-8")).items()
@@ -609,6 +660,8 @@ PUBLISHED = {
     "run 1 stream C vs A late losses": 10,
     "run 1 replication C2 vs A2 losses": 37,
     "pooled replication C2 vs A2 pairs": 132,
+    "run 1 stream C vs A late p": 0.013,
+    "run 1 stream C vs A late p (Holm)": 0.065,
 }
 
 
@@ -648,6 +701,16 @@ def run_check() -> int:
     dc1 = stream_paired(r1, "C2", "A2")
     got["run 1 replication C2 vs A2 losses"] = sum(1 for x in dc1 if x > 1e-12)
     got["pooled replication C2 vs A2 pairs"] = len(dc) + len(dc1)
+    # Appendix table C1 is produced by the pre-specified analysis statistic, so
+    # the check applies that statistic rather than the one used for the body.
+    import analyse_stream_study as pre
+    run1_rows = [stream_paired(s1, a, b, r) for a, b, r in (
+        ("B", "A", STREAM_ROUNDS_LATE), ("D", "B", STREAM_ROUNDS_EARLY),
+        ("D", "A", None), ("C", "B", STREAM_ROUNDS_EARLY),
+        ("C", "A", STREAM_ROUNDS_LATE))]
+    run1_p = [pre.wilcoxon(list(x), [0.0] * len(x))[0] for x in run1_rows]
+    got["run 1 stream C vs A late p"] = run1_p[4]
+    got["run 1 stream C vs A late p (Holm)"] = holm(run1_p)[4]
 
     print(f"\n{'=' * 78}\nCONSISTENCY CHECK AGAINST THE PUBLISHED VALUES\n{'=' * 78}")
     failures = 0
@@ -665,10 +728,12 @@ def run_check() -> int:
 def main(argv: Sequence[str]) -> int:
     if "--check" in argv:
         return run_check()
-    wanted = {int(a) for a in argv if a.isdigit()}
+    # Tables are selected by the label they carry in the paper: a number for the
+    # body, a letter and a number for the appendices, as in "C1".
+    wanted = {a.upper() for a in argv if not a.startswith("-")}
 
-    def want(n: int) -> bool:
-        return not wanted or n in wanted
+    def want(n) -> bool:
+        return not wanted or str(n).upper() in wanted
 
     if want(3):
         table_3()
@@ -706,11 +771,13 @@ def main(argv: Sequence[str]) -> int:
         table_18()
     if want(19):
         table_19()
-    if want(22):
-        table_22()
-    if want(23):
-        table_23()
-    print("\nTables 1, 2, 20 and 21 are not derived from the run logs: the first two "
+    if want("C1"):
+        table_c1()
+    if want("C2"):
+        table_c2()
+    if want("C3"):
+        table_c3()
+    print("\nTables 1, 2, A1 and A2 are not derived from the run logs: the first two "
           "position the work in the literature, and the last two document the\n"
           "distance convention and the objective, which are verified by "
           "build_instances.py.")

@@ -2,9 +2,8 @@
 
 Code, instances, protocols and complete run logs for the paper
 
-> **Parallel Multi-Agent Tabu Search with Adaptive Tenure for the K-Traveling
-> Repairman Problem: A Pre-specified Assessment of Learning, Cooperation and
-> Transfer**
+> **A Parallel Hybrid Framework Combining Multi-Agent Reinforcement Learning and
+> Adaptive Tabu Search for the K-Traveling Repairman Problem**
 > S. Jmal, B. Haddar, H. Chabchoub. *The Journal of Supercomputing*.
 
 The paper studies a parallel framework in which several tabu search agents share a
@@ -20,10 +19,12 @@ a stream of repeated solves on one family of instances and transfers knowledge a
 a soft, full-support prior that keeps adapting. That study was executed twice, on
 two machines, and both executions are deposited and reported. Neither establishes
 a benefit of learning or of transfer. The contribution is a bounded absence rather
-than a finding: pooled over both executions, the intervals place any effect of
-accumulated or inherited knowledge within four hundredths of a percentage point of
-the control, which also excludes the deficit of 0.120 percentage points that the
-frozen transfer incurred.
+than a finding: pooled over both executions, the intervals place any median effect
+of accumulated or inherited knowledge within four hundredths of a percentage point
+of the control. On that median scale the pooled interval also excludes the deficit
+of the frozen transfer, whose median was 0.138 percentage points. On the scale of
+the mean it does not: the pooled bootstrap interval reaches 0.128 and so contains
+the mean deficit of 0.120.
 
 This repository contains everything needed to verify those claims without running
 the solver, and to reproduce them from scratch if desired.
@@ -37,16 +38,22 @@ pip install -r requirements.txt
 python reproduce_tables.py --check
 ```
 
-The check recomputes twelve headline values from the deposited logs, covering all
-four studies, and compares them with the values printed in the paper. It exits
-with status 0 when all agree.
+The check recomputes eighteen headline values from the deposited logs, covering all
+four studies and both executions of the fourth, and compares them with the values
+printed in the paper. It exits with status 0 when all agree.
 
-To print every table of the paper from the logs:
+To print the tables of the paper from the logs:
 
 ```bash
-python reproduce_tables.py          # all tables
-python reproduce_tables.py 5 14 17  # selected tables, by their number in the paper
+python reproduce_tables.py             # every table derived from the logs
+python reproduce_tables.py 5 14 C1     # selected tables, by their label in the paper
 ```
+
+Tables are named as the paper names them: a number for the body, a letter and a
+number for the appendices. Tables 1, 2, A1 and A2 are not derived from the run
+logs; the first two position the work in the literature, and the last two are
+produced by `build_instances.py`, which verifies the distance convention and the
+objective.
 
 The output of the latter command, as produced on our machine, is stored in
 `results/tables_from_logs.txt` for comparison.
@@ -69,7 +76,7 @@ The output of the latter command, as produced on our machine, is stored in
 ├── run_replication.py      Study 4b, confirmatory replication on fresh seeds
 ├── analyse_replication.py  analysis of Study 4b
 ├── run_parallel_study.py   parallel measurements
-├── reproduce_tables.py     regenerates every table of the paper from the logs
+├── reproduce_tables.py     regenerates from the logs every table derived from them
 ├── instances_*.txt         instance lists used by the study scripts
 ├── bks_circuit.json        reference values, circuit variant, with provenance
 ├── bks_path.json           reference values, path variant, with provenance
@@ -102,13 +109,11 @@ The Python files sit at the repository root because that is the working director
 in which they were executed; they resolve their paths relative to their own
 location, so moving them into a subdirectory would require editing them.
 
-```
-
 ---
 
 ## Reproducing from scratch
 
-The three studies are independent and can be run in any order. Each writes to a
+The four studies are independent and can be run in any order. Each writes to a
 log directory and resumes where it stopped if interrupted.
 
 ### Preliminaries
@@ -279,7 +284,7 @@ claim is made, and `reproduce_tables.py` prints both analyses.
 ## Availability of this repository
 
 This copy is served from an anonymised mirror at
-<https://anonymous.4open.science/r/parallel-hybrid-ktrp-0BDE/>, which remains
+<https://anonymous.4open.science/r/parallel-hybrid-ktrp-CCDE/>, which remains
 accessible until 30 October 2027. It will be replaced by a permanent public
 repository with a citable identifier once the paper is accepted, and the present
 section will then carry that identifier.

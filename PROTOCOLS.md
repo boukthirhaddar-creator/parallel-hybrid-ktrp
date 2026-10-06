@@ -1,10 +1,9 @@
-# The three protocols
+# The protocols
 
-This document states, in English, the protocols of the three studies reported in
-the paper. Each was written down and frozen before the corresponding runs were
-executed. The original working documents, in French, are kept in `protocols/` as
-the historical record; this file is their faithful summary and adds nothing to
-them.
+This document states, in English, the protocols of the four studies reported in
+the paper, together with those of the confirmatory replication and of the parallel
+measurements. Each was written down and frozen before the corresponding runs were
+executed, and this file is the record deposited alongside the logs it governs.
 
 We describe the protocols as **pre-specified** rather than pre-registered. They
 were fixed before the runs and are deposited here with the logs, but they were not

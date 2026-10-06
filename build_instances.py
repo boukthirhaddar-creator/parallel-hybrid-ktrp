@@ -49,7 +49,7 @@ CIRCUIT = {
     'E51K5': ('E-n51-k5', 5), 'E76K7': ('E-n76-k7', 7), 'E76K8': ('E-n76-k7', 8),
     'E76K10': ('E-n76-k7', 10), 'E76K14': ('E-n76-k7', 14), 'E76K15': ('E-n76-k7', 15),
     'E101K8': ('E-n101-k8', 8), 'E101K14': ('E-n101-k8', 14),
-    # Not in Table 11 of the paper; present in the original instance directory
+    # Not evaluated in the paper; present in the original instance directory
     'P16K8': ('P-n16-k8', 8), 'P21K2': ('P-n21-k2', 2), 'P22K2': ('P-n22-k2', 2),
 }
 CHEMIN = {
@@ -63,7 +63,7 @@ CHEMIN = {
     'P55K8': ('P-n55-k8', 8), 'P55K10': ('P-n55-k10', 10), 'P55K15': ('P-n55-k15', 15),
     'P60K10': ('P-n60-k10', 10), 'P65K10': ('P-n65-k10', 10), 'P70K10': ('P-n70-k10', 10),
     'P76K4': ('P-n76-k4', 4), 'P76K5': ('P-n76-k5', 5),
-    # E51K5 and E76K10 of Table 16 are the same instances as CMT1 and CMT2
+    # E51K5 and E76K10 of the circuit suite are the same instances as CMT1 and CMT2
     'CMT1': ('E-n51-k5', 5), 'CMT2': ('E-n76-k10', 10), 'CMT3': ('E-n101-k8', 8),
     'CMT4': ('M-n151-k12', 12), 'CMT5': ('M-n200-k17', 17), 'CMT11': ('M-n121-k7', 7),
     'CMT12': ('M-n101-k10', 10),
