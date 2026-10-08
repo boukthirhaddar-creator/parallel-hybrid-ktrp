@@ -537,10 +537,14 @@ def table_c1() -> None:
 
     This table was produced by the pre-specified analysis scripts rather than by
     the present one, and those scripts use the normal approximation with
-    continuity correction, dropping tied pairs before estimating the median. The
-    two conventions agree to within a thousandth on every comparison, but the
-    table is regenerated here with the statistic that produced it, so that the
-    printed figures match the paper exactly rather than approximately.
+    continuity correction, dropping tied pairs before estimating the median. On
+    the comparisons of either execution the two conventions differ by less than
+    one hundredth, raw values and Holm-adjusted values alike, and place every
+    comparison on the same side of the level; the widest gap is the adjusted
+    0.0582 against 0.0650 for arm C against the control over the late rounds of
+    the first execution. The table is nonetheless regenerated here with the
+    statistic that produced it, so that the printed figures match the paper
+    exactly rather than approximately.
     """
     import analyse_stream_study as pre
 

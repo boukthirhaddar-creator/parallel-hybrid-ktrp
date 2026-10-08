@@ -194,6 +194,18 @@ the rules fixed in `PROTOCOL_STUDY4.md`. The third runs the replication of
 `PROTOCOL_STUDY4_AMENDMENT.md` on fresh seeds, and the fourth analyses it under its
 rules. All scripts resume where they stopped.
 
+The two analysis scripts carry the statistic fixed in advance for the first
+execution, the normal approximation with continuity correction, and they keep it
+whichever logs they are pointed at. Tables 14 and 15 of the paper, which report
+the second execution, follow instead the rule stated in Section 4.7 and
+implemented in `reproduce_tables.py`. Run on the logs of the second execution,
+the two conventions differ by less than one hundredth and agree on every
+comparison, so the figures these scripts print there are close to the published
+ones without being identical to them. Table C1, which reports the first
+execution, is printed by `reproduce_tables.py` under the pre-specified statistic
+that produced it, and matches the paper exactly. The quick verification above is
+therefore the path to compare against the published tables figure for figure.
+
 ### Parallel measurements
 
 Run these alone on the machine, with no other computation in progress:
