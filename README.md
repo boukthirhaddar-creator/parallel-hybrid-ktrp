@@ -20,7 +20,7 @@ a soft, full-support prior that keeps adapting. That study was executed twice, o
 two machines, and both executions are deposited and reported. Neither establishes
 a benefit of learning or of transfer. The contribution is a bounded absence rather
 than a finding: pooled over both executions, the intervals place any median effect
-of accumulated or inherited knowledge within four hundredths of a percentage point
+of accumulated or inherited knowledge within five hundredths of a percentage point
 of the control. On that median scale the pooled interval also excludes the deficit
 of the frozen transfer, whose median was 0.138 percentage points. On the scale of
 the mean it does not: the pooled bootstrap interval reaches 0.128 and so contains
@@ -38,7 +38,7 @@ pip install -r requirements.txt
 python reproduce_tables.py --check
 ```
 
-The check recomputes eighteen headline values from the deposited logs, covering all
+The check recomputes twenty-seven headline values from the deposited logs, covering all
 four studies and both executions of the fourth, and compares them with the values
 printed in the paper. It exits with status 0 when all agree.
 
@@ -243,6 +243,13 @@ they are the schema of data already recorded, and renaming them would mean
 rewriting the deposited logs, that is altering the record rather than describing
 it. The glossary below covers every key a reader will meet. Instance names are
 left unchanged for the same reason, since they appear as values inside the logs.
+
+`logs/study4_run1/console_output.txt` is in the same position. It is the console
+trace recorded while the first execution ran, so it is in French and names the
+script under the name it then carried, `analyse_apprentissage.py`, which is now
+`analyse_stream_study.py`. It is left exactly as it was written: it is a record of
+what happened, and editing it to match the current names would make it a
+reconstruction rather than a trace.
 
 | Key or identifier | Meaning |
 |---|---|

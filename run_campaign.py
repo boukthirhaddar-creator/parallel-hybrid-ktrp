@@ -64,7 +64,7 @@ METHODES = ['IND-3', 'IND-OPT', 'HASARD', 'PRIVEE', 'PARTAGEE']
 # Ten distinct seeds, one per run and per instance. All configurations share the
 # same seeds, which pairs the runs.
 GRAINES = [1009, 1013, 1019, 1021, 1031, 1033, 1039, 1049, 1051, 1061]
-GRAINES_CALIBRATION = [2003, 2011, 2017]
+GRAINES_CALIBRATION = [2003, 2011, 2017, 2027, 2029, 2039, 2053, 2063, 2069, 2081]
 
 PROCESSUS = 3
 

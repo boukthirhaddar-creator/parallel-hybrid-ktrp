@@ -25,6 +25,7 @@ Only the standard library and SciPy are required.
 """
 from __future__ import annotations
 
+import decimal
 import json
 import math
 import os
@@ -55,7 +56,14 @@ EXPLORATORY = [("HASARD", "IND-3"), ("HASARD", "IND-OPT"),
 # statistics
 # ---------------------------------------------------------------------------
 def wilcoxon_p(diffs: Sequence[float]) -> float:
-    """Two-sided Wilcoxon signed-rank p-value on the non-zero differences."""
+    """Two-sided Wilcoxon signed-rank p-value on the non-zero differences.
+
+    A pair counts as tied when the two latencies differ by at most 1e-12. On the
+    path variant the latencies are double-precision sums, so two runs that return
+    the same tour can differ by about 1e-13 through summation order alone; such a
+    pair is a tie, not a difference. The same threshold defines the W/T/L counts,
+    so the counts and the p-value of a row always rest on the same convention.
+    """
     d = [x for x in diffs if abs(x) > 1e-12]
     if not d:
         return 1.0
@@ -171,6 +179,20 @@ def short(instance: str) -> str:
         head, k = base.rsplit("_", 1)
         return f"{head}k{k}"
     return base
+
+
+def signed3(value: float) -> str:
+    """Three decimals with a sign, rounding a half away from zero.
+
+    A value stored in the logs as a decimal ending in a half at the fourth
+    decimal, such as ``0.0195``, is held in binary slightly below that half, so
+    ``%.3f`` prints ``0.019`` where the decimal it was written as rounds to
+    ``0.020``. Rounding the written decimal rather than its binary image keeps
+    the printed value and the one in the paper identical.
+    """
+    d = decimal.Decimal(repr(value)).quantize(decimal.Decimal("0.001"),
+                                              rounding=decimal.ROUND_HALF_UP)
+    return f"{d:+.3f}"
 
 
 # ---------------------------------------------------------------------------
@@ -298,6 +320,31 @@ def path_instance_level() -> None:
         print(f"  {LABEL[a]} vs. {LABEL[b]}: {better} better / "
               f"{len(d) - better - worse} tied / {worse} worse, "
               f"p = {wilcoxon_p(nz):.2e}, median improvement {abs(st.median(nz)):.2f} %")
+
+
+def transfer_paired() -> List[float]:
+    """Paired differences of the transfer study, TRANSFER minus RANDOM.
+
+    The two arms are paired on the instance and the seed, and each run is
+    expressed as a relative gap to the best latency traced on its instance, the
+    same quantity Table 11 averages. A positive difference is a run in which the
+    frozen policy did worse than random variation.
+    """
+    runs = [r for r in read_jsonl(os.path.join(LOGS, "transfer", "test.jsonl"))
+            if r["valide"]]
+    best: Dict[str, float] = {}
+    for r in runs:
+        best[r["instance"]] = min(best.get(r["instance"], math.inf), r["latence"])
+    cells: Dict[Tuple[str, int], Dict[str, float]] = {}
+    for r in runs:
+        arm = ("TRANSFER" if r["etiquette"].startswith("TRANSFERT")
+               else "RANDOM" if r["etiquette"].startswith("HASARD") else None)
+        if arm is None:
+            continue
+        gap = (r["latence"] - best[r["instance"]]) / best[r["instance"]] * 100
+        cells.setdefault((r["instance"], r["graine"]), {})[arm] = gap
+    return [c["TRANSFER"] - c["RANDOM"] for c in cells.values()
+            if "TRANSFER" in c and "RANDOM" in c]
 
 
 def table_11() -> None:
@@ -567,7 +614,7 @@ def table_12() -> None:
         block = priors[arm]
         values = block["valeurs_predites_pp"]
         print(f"{label:22s} {block['corpus']:5d} " +
-              "".join(f"{values[c]:+9.3f}" for c in candidates))
+              "".join(f"{signed3(values[c]):>9s}" for c in candidates))
     print(f"\n  Policy frozen on {priors['date_gel']}, before any run of the stream.")
 
 
@@ -775,6 +822,20 @@ PUBLISHED = {
     "pooled replication C2 vs A2 pairs": 132,
     "run 1 stream C vs A late p": 0.013,
     "run 1 stream C vs A late p (Holm)": 0.065,
+    "path SHARED vs FIX-3 p (Holm)": 3.8e-22,
+    "path FIX-CAL vs SHARED p (Holm)": 2.6e-11,
+    "path RANDOM vs FIX-3 p": 6.2e-23,
+    "circuit SHARED vs FIX-3 p (Holm)": 8.1e-07,
+    # Quantities the paper states in its prose rather than in a table: the
+    # Hodges-Lehmann estimate of the transfer deficit with the upper end of its
+    # interval, and the pooled replication figures on which the bound announced
+    # in the abstract rests. They are checked here because a value that appears
+    # in no table is the one a later edit is most likely to leave behind.
+    "transfer HL": 0.138,
+    "transfer HL interval upper": 0.179,
+    "pooled replication C2 vs A2 p": 0.930,
+    "pooled replication B2 vs A2 p": 0.683,
+    "pooled replication B2 vs A2 interval upper": 0.045,
 }
 
 
@@ -814,6 +875,14 @@ def run_check() -> int:
     dc1 = stream_paired(r1, "C2", "A2")
     got["run 1 replication C2 vs A2 losses"] = sum(1 for x in dc1 if x > 1e-12)
     got["pooled replication C2 vs A2 pairs"] = len(dc) + len(dc1)
+    dt = transfer_paired()
+    got["transfer HL"] = hodges_lehmann(dt)
+    got["transfer HL interval upper"] = hl_interval(dt)[1]
+    db1 = stream_paired(r1, "B2", "A2")
+    pooled_c, pooled_b = dc + dc1, db + db1
+    got["pooled replication C2 vs A2 p"] = wilcoxon_p(pooled_c)
+    got["pooled replication B2 vs A2 p"] = wilcoxon_p(pooled_b)
+    got["pooled replication B2 vs A2 interval upper"] = hl_interval(pooled_b)[1]
     # Appendix table C1 is produced by the pre-specified analysis statistic, so
     # the check applies that statistic rather than the one used for the body.
     import analyse_stream_study as pre
@@ -824,13 +893,25 @@ def run_check() -> int:
     run1_p = [pre.wilcoxon(list(x), [0.0] * len(x))[0] for x in run1_rows]
     got["run 1 stream C vs A late p"] = run1_p[4]
     got["run 1 stream C vs A late p (Holm)"] = holm(run1_p)[4]
+    for variant, runset in (("path", path), ("circuit", circuit)):
+        rows = [paired(runset, a, b) for a, b in DECISION_RULE]
+        adj = holm([wilcoxon_p(x) for x in rows])
+        key = dict(zip(DECISION_RULE, adj))
+        got[f"{variant} SHARED vs FIX-3 p (Holm)"] = key[("PARTAGEE", "IND-3")]
+        if variant == "path":
+            got["path FIX-CAL vs SHARED p (Holm)"] = key[("IND-OPT", "PARTAGEE")]
+            got["path RANDOM vs FIX-3 p"] = wilcoxon_p(paired(runset, "HASARD", "IND-3"))
 
     print(f"\n{'=' * 78}\nCONSISTENCY CHECK AGAINST THE PUBLISHED VALUES\n{'=' * 78}")
     failures = 0
     for key, expected in PUBLISHED.items():
         actual = got[key]
-        same = (abs(actual - expected) < 1e-9 if isinstance(expected, int)
-                else abs(actual - expected) < 0.0015)
+        if isinstance(expected, int):
+            same = abs(actual - expected) < 1e-9
+        elif expected < 1e-3:                 # p-values, compared in relative terms
+            same = abs(actual - expected) <= 0.05 * expected
+        else:
+            same = abs(actual - expected) < 0.0015
         failures += 0 if same else 1
         print(f"  {'OK  ' if same else 'FAIL'}  {key:42s} published {expected}, "
               f"recomputed {actual}")
