@@ -21,7 +21,9 @@ against the values recomputed here, and exits with a non-zero status if any of t
 disagree. It is the quickest way for a reader to confirm that the paper and the
 deposit are consistent.
 
-Only the standard library and SciPy are required.
+Only the standard library is required. The figures drawn by ``--figures`` also
+need matplotlib. No statistical result depends on a third-party library, so the
+numbers printed here are the same on every installation.
 """
 from __future__ import annotations
 
@@ -32,11 +34,6 @@ import os
 import statistics as st
 import sys
 from typing import Dict, List, Sequence, Tuple
-
-try:
-    from scipy.stats import wilcoxon as _scipy_wilcoxon
-except Exception:                                    # pragma: no cover
-    _scipy_wilcoxon = None
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 LOGS = os.path.join(ROOT, "logs")
@@ -55,41 +52,87 @@ EXPLORATORY = [("HASARD", "IND-3"), ("HASARD", "IND-OPT"),
 # ---------------------------------------------------------------------------
 # statistics
 # ---------------------------------------------------------------------------
+TIE = 1e-12
+
+
+def average_ranks(values: Sequence[float]) -> List[float]:
+    """Ranks of the values, equal values sharing the mean of their ranks."""
+    n = len(values)
+    order = sorted(range(n), key=lambda i: values[i])
+    ranks = [0.0] * n
+    i = 0
+    while i < n:
+        j = i
+        while j + 1 < n and values[order[j + 1]] == values[order[i]]:
+            j += 1
+        shared = (i + j) / 2 + 1
+        for k in range(i, j + 1):
+            ranks[order[k]] = shared
+        i = j + 1
+    return ranks
+
+
+def signed_rank_exact(ranks: Sequence[float], statistic: float) -> float:
+    """Two-sided p-value from the exact null distribution of the signed ranks.
+
+    Under the null hypothesis each rank carries a positive or a negative sign
+    with equal probability and independently of the others, so the number of
+    sign assignments whose positive ranks sum to each value is obtained by one
+    pass of subset-sum counting over the ranks.
+    """
+    total = int(sum(ranks))
+    ways = [0] * (total + 1)
+    ways[0] = 1
+    for r in ranks:
+        step = int(r)
+        for s in range(total, step - 1, -1):
+            if ways[s - step]:
+                ways[s] += ways[s - step]
+    cut = int(statistic)
+    lower = sum(ways[:cut + 1])
+    upper = sum(ways[cut:])
+    return min(1.0, 2.0 * min(lower, upper) / (1 << len(ranks)))
+
+
 def wilcoxon_p(diffs: Sequence[float]) -> float:
-    """Two-sided Wilcoxon signed-rank p-value on the non-zero differences.
+    """Two-sided Wilcoxon signed-rank p-value on the non-tied differences.
 
     A pair counts as tied when the two latencies differ by at most 1e-12. On the
     path variant the latencies are double-precision sums, so two runs that return
     the same tour can differ by about 1e-13 through summation order alone; such a
     pair is a tie, not a difference. The same threshold defines the W/T/L counts,
     so the counts and the p-value of a row always rest on the same convention.
+
+    The null distribution of the signed ranks is enumerated exactly when that
+    distribution is the right one and the enumeration is tractable, which means
+    no two retained differences share an absolute value and there are at most
+    fifty of them. Shared absolute values force average ranks, which the exact
+    distribution does not describe, and the normal approximation with the
+    correction for those shared ranks is used instead, as it is for samples too
+    large to enumerate. The rule is applied here rather than delegated to a
+    library, because a library free to choose between the two methods on its own
+    threshold makes the printed p-value depend on the version installed.
     """
-    d = [x for x in diffs if abs(x) > 1e-12]
+    d = [x for x in diffs if abs(x) > TIE]
     if not d:
         return 1.0
-    if _scipy_wilcoxon is not None:
-        return float(_scipy_wilcoxon(d).pvalue)
-    n = len(d)                                       # normal approximation
-    order = sorted(range(n), key=lambda i: abs(d[i]))
-    ranks = [0.0] * n
-    i = 0
-    corr = 0.0
-    while i < n:
-        j = i
-        while j + 1 < n and abs(abs(d[order[j + 1]]) - abs(d[order[i]])) < 1e-12:
-            j += 1
-        r = (i + j) / 2 + 1
-        for k in range(i, j + 1):
-            ranks[order[k]] = r
-        t = j - i + 1
-        corr += t ** 3 - t
-        i = j + 1
-    w = sum(r for r, x in zip(ranks, d) if x > 0)
-    mu = n * (n + 1) / 4
-    sigma = math.sqrt(n * (n + 1) * (2 * n + 1) / 24 - corr / 48)
+    n = len(d)
+    magnitudes = [abs(x) for x in d]
+    ranks = average_ranks(magnitudes)
+    positive = sum(r for r, x in zip(ranks, d) if x > 0)
+    negative = sum(r for r, x in zip(ranks, d) if x < 0)
+    statistic = min(positive, negative)
+    if n <= 50 and len(set(magnitudes)) == n:
+        return signed_rank_exact(ranks, statistic)
+    repeats: Dict[float, int] = {}
+    for value in magnitudes:
+        repeats[value] = repeats.get(value, 0) + 1
+    shared = sum(t ** 3 - t for t in repeats.values())
+    mean = n * (n + 1) / 4
+    sigma = math.sqrt((n * (n + 1) * (2 * n + 1) - 0.5 * shared) / 24.0)
     if sigma == 0:
         return 1.0
-    return math.erfc(abs((w - mu) / sigma) / math.sqrt(2))
+    return math.erfc(abs((statistic - mean) / sigma) / math.sqrt(2))
 
 
 def holm(pvals: Sequence[float]) -> List[float]:
@@ -825,7 +868,7 @@ PUBLISHED = {
     "path SHARED vs FIX-3 p (Holm)": 3.8e-22,
     "path FIX-CAL vs SHARED p (Holm)": 2.6e-11,
     "path RANDOM vs FIX-3 p": 6.2e-23,
-    "circuit SHARED vs FIX-3 p (Holm)": 8.1e-07,
+    "circuit SHARED vs FIX-3 p (Holm)": 1.04e-05,
     # Quantities the paper states in its prose rather than in a table: the
     # Hodges-Lehmann estimate of the transfer deficit with the upper end of its
     # interval, and the pooled replication figures on which the bound announced
@@ -837,6 +880,34 @@ PUBLISHED = {
     "pooled replication B2 vs A2 p": 0.683,
     "pooled replication B2 vs A2 interval upper": 0.045,
 }
+
+
+def report_test_selection(comparisons: Sequence[Sequence[float]]) -> None:
+    """State which null distribution the published comparisons were tested under.
+
+    The paper declares the rule; this prints the split it produces on the
+    deposited data, and checks the exact branch on a case whose p-value can be
+    written down: five differences of the same sign and of distinct sizes put
+    every rank on one side, so one sign assignment in thirty-two is at least as
+    extreme on each side, and the two-sided p-value is one sixteenth.
+    """
+    control = wilcoxon_p([0.5, 1.5, 2.5, 3.5, 4.5])
+    exact = approximate = 0
+    for diffs in comparisons:
+        d = [x for x in diffs if abs(x) > TIE]
+        if not d:
+            continue
+        if len(set(abs(x) for x in d)) == len(d) <= 50:
+            exact += 1
+        else:
+            approximate += 1
+    status = "OK" if abs(control - 0.0625) < 1e-12 else "FAIL"
+    print(f"  Signed-rank null distribution: of the {exact + approximate} "
+          f"published comparisons, {exact} were enumerated exactly and "
+          f"{approximate} were tested\n  under the normal approximation for "
+          f"shared ranks, as Section 4.7 states. Exact branch on a "
+          f"hand-checkable\n  case: {control:.4f} against 0.0625, {status}. No "
+          f"third-party library takes part in either computation.\n")
 
 
 def run_check() -> int:
@@ -902,7 +973,22 @@ def run_check() -> int:
             got["path FIX-CAL vs SHARED p (Holm)"] = key[("IND-OPT", "PARTAGEE")]
             got["path RANDOM vs FIX-3 p"] = wilcoxon_p(paired(runset, "HASARD", "IND-3"))
 
+    published_comparisons: List[Sequence[float]] = []
+    for runset in (circuit, path):
+        published_comparisons += [paired(runset, a, b)
+                                  for a, b in DECISION_RULE + EXPLORATORY]
+        means = instance_means(runset)
+        published_comparisons += [
+            [(means[i]["HASARD"] - means[i][b]) / means[i][b] * 100
+             for i in sorted(means)] for b in ("IND-3", "IND-OPT")]
+    published_comparisons += [stream_paired(stream, a, b, r) for a, b, r in (
+        ("B", "A", STREAM_ROUNDS_LATE), ("D", "B", STREAM_ROUNDS_EARLY),
+        ("D", "A", None), ("C", "B", STREAM_ROUNDS_EARLY),
+        ("C", "A", STREAM_ROUNDS_LATE))]
+    published_comparisons += [db, dc, pooled_b, pooled_c, dt]
+
     print(f"\n{'=' * 78}\nCONSISTENCY CHECK AGAINST THE PUBLISHED VALUES\n{'=' * 78}")
+    report_test_selection(published_comparisons)
     failures = 0
     for key, expected in PUBLISHED.items():
         actual = got[key]

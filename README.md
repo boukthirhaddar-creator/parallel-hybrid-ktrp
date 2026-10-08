@@ -34,13 +34,23 @@ the solver, and to reproduce them from scratch if desired.
 ## Quick verification, under one minute
 
 ```bash
-pip install -r requirements.txt
 python reproduce_tables.py --check
 ```
 
+Nothing needs to be installed first. The reconstruction of the tables uses only
+the standard library, and every statistic it prints, the Wilcoxon signed-rank
+$p$-values included, is computed in the deposited sources. The output therefore
+does not depend on which version of any third-party package happens to be
+present, and a reader who installs nothing obtains the same numbers as one who
+installs everything in `requirements.txt`.
+
 The check recomputes twenty-seven headline values from the deposited logs, covering all
 four studies and both executions of the fourth, and compares them with the values
-printed in the paper. It exits with status 0 when all agree.
+printed in the paper. It exits with status 0 when all agree. It opens by stating
+which null distribution each published comparison was tested under, the exact
+enumeration of the signed ranks or the normal approximation that shared ranks
+require, so that the rule declared in Section 4.7 of the paper can be read off
+the run itself.
 
 To print the tables of the paper from the logs:
 
@@ -133,7 +143,12 @@ log directory and resumes where it stopped if interrupted.
 
 ### Preliminaries
 
+Running the campaigns, unlike reconstructing the tables, needs the two packages
+listed in `requirements.txt`: `psutil`, for the hardware configuration that the
+parallel study records, and `matplotlib`, for the figures.
+
 ```bash
+pip install -r requirements.txt
 python build_instances.py     # regenerate the instances and verify both objectives
 python selfcheck.py          # self-checks on the kernel
 ```

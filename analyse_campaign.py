@@ -20,7 +20,6 @@ the time limit, and a CSV file.
 """
 import csv
 import json
-import math
 import os
 import statistics as st
 import sys
@@ -46,38 +45,18 @@ def _abs(p):
 
 
 def wilcoxon(x: List[float], y: List[float]) -> Tuple[float, int]:
-    """Two-sided Wilcoxon signed-rank test; zero differences are discarded."""
+    """Two-sided Wilcoxon signed-rank test; tied pairs are discarded.
+
+    The test itself is the one defined in reproduce_tables.py, so that this
+    script and the reconstruction of the published tables cannot drift apart,
+    and so that neither of them depends on a third-party library for the choice
+    between the exact null distribution and the normal approximation.
+    """
+    from reproduce_tables import wilcoxon_p
     diffs = [a - b for a, b in zip(x, y) if abs(a - b) > 1e-12]
-    n = len(diffs)
-    if n == 0:
+    if not diffs:
         return 1.0, 0
-    try:
-        from scipy.stats import wilcoxon as _w
-        return float(_w(x, y, zero_method='wilcox').pvalue), n
-    except Exception:
-        pass
-    # Normal approximation with a correction for ties.
-    abs_d = sorted((abs(d), i) for i, d in enumerate(diffs))
-    rangs = [0.0] * n
-    i = 0
-    corr = 0.0
-    while i < n:
-        j = i
-        while j + 1 < n and abs(abs_d[j + 1][0] - abs_d[i][0]) < 1e-12:
-            j += 1
-        r = (i + j) / 2 + 1
-        for k in range(i, j + 1):
-            rangs[abs_d[k][1]] = r
-        t = j - i + 1
-        corr += t ** 3 - t
-        i = j + 1
-    w_plus = sum(r for r, d in zip(rangs, diffs) if d > 0)
-    mu = n * (n + 1) / 4
-    sigma = math.sqrt(n * (n + 1) * (2 * n + 1) / 24 - corr / 48)
-    if sigma == 0:
-        return 1.0, n
-    z = (w_plus - mu) / sigma
-    return math.erfc(abs(z) / math.sqrt(2)), n
+    return wilcoxon_p(diffs), len(diffs)
 
 
 def holm(pvals: List[float]) -> List[float]:
