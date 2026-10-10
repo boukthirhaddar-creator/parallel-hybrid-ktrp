@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this software or these data, please cite the paper below."
-title: "Replication package: A Parallel Hybrid Framework Combining Multi-Agent Reinforcement Learning and Adaptive Tabu Search for the K-Traveling Repairman Problem"
+title: "Replication package: Parallel Multi-Agent Tabu Search for the K-Traveling Repairman Problem: A Pre-specified Assessment of Learning, Cooperation and Transfer"
 authors:
   - family-names: Jmal
     given-names: Sirine
@@ -12,7 +12,7 @@ authors:
 license: MIT
 preferred-citation:
   type: article
-  title: "A Parallel Hybrid Framework Combining Multi-Agent Reinforcement Learning and Adaptive Tabu Search for the K-Traveling Repairman Problem"
+  title: "Parallel Multi-Agent Tabu Search for the K-Traveling Repairman Problem: A Pre-specified Assessment of Learning, Cooperation and Transfer"
   authors:
     - family-names: Jmal
       given-names: Sirine

@@ -2,8 +2,8 @@
 
 Code, instances, protocols and complete run logs for the paper
 
-> **A Parallel Hybrid Framework Combining Multi-Agent Reinforcement Learning and
-> Adaptive Tabu Search for the K-Traveling Repairman Problem**
+> **Parallel Multi-Agent Tabu Search for the K-Traveling Repairman Problem:
+> A Pre-specified Assessment of Learning, Cooperation and Transfer**
 > S. Jmal, B. Haddar, H. Chabchoub. *The Journal of Supercomputing*.
 
 The paper studies a parallel framework in which several tabu search agents share a
