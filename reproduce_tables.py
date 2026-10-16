@@ -539,6 +539,50 @@ def table_19() -> None:
                     for r in runs if r["P"] == P and str(s) in r["releves"]]
             cells.append(st.fmean(vals) if vals else float("nan"))
         print(f"P = {P:<6d} " + "".join(f"{c:+10.2f}" for c in cells))
+    last = max(instants)
+    print(f"\n  Mean gap at {last} s, instance by instance:")
+    for inst in sorted({r["instance"] for r in runs}):
+        cells = []
+        for P in (1, 2, 3, 4):
+            vals = [(r["releves"][str(last)] - r["reference"]) / r["reference"] * 100
+                    for r in runs if r["P"] == P and r["instance"] == inst]
+            cells.append(st.fmean(vals))
+        print(f"    {short(inst):9s} " + "".join(f"P{P} {c:+6.2f}%  "
+                                                 for P, c in zip((1, 2, 3, 4), cells)))
+
+
+def table_c4() -> None:
+    """Median instant of the last improvement, as a fraction of the budget.
+
+    The kernel records, for every run, the wall-clock instant at which the best
+    solution of that run was obtained. A small value means that the trajectory
+    stopped improving early. The quantity is descriptive and no test is computed
+    on it: on the smaller instances every configuration reaches its own best
+    quickly, so the median there reflects the difficulty of the instance as much
+    as the behaviour of the configuration, which is why the subset of instances
+    with at least ninety-nine customers is reported beside the whole suite.
+    """
+    header("C4", "Instant of the last improvement, as a fraction of the budget")
+    print(f"{'Configuration':14s} {'circuit all':>12s} {'circuit >=99':>13s} "
+          f"{'path all':>10s} {'path >=99':>11s}")
+    blocks = []
+    for variant in ("circuit", "path"):
+        runs, _ = load_campaign(variant)
+        blocks.append([r for r in runs])
+        blocks.append([r for r in runs if r["n_clients"] >= 99])
+    for code in METHODS:
+        name = LABEL[code]
+        cells = []
+        for block in blocks:
+            v = [r["temps_meilleure_s"] / r["limite_s"]
+                 for r in block if r["methode"] == code]
+            cells.append(st.median(v))
+        print(f"{name:14s} {cells[0]:12.3f} {cells[1]:13.3f} "
+              f"{cells[2]:10.3f} {cells[3]:11.3f}")
+    for i, lab in enumerate(("circuit all", "circuit >=99", "path all", "path >=99")):
+        n = len({r["instance"] for r in blocks[i]})
+        print(f"  {lab}: {n} instances, {len(blocks[i]) // len(METHODS)} runs "
+              f"per configuration")
 
 
 def table_c1() -> None:
@@ -890,6 +934,13 @@ PUBLISHED = {
     "transfer HL": 0.138,
     "transfer HL interval upper": 0.179,
     "transfer p": 9.6e-08,
+    # Quantities of Section 6.1 and Section 5.7.2 that the prose states and that
+    # Table C4 and the per-instance block of Table 19 regenerate.
+    "last improvement, circuit >=99, FIX-3": 0.610,
+    "last improvement, path >=99, FIX-3": 0.665,
+    "last improvement, circuit >=99, earliest varying": 0.738,
+    "E101k8 mean gap at 240 s, P = 1": 0.543,
+    "E101k8 mean gap at 240 s, P = 4": 0.093,
     "pooled replication C2 vs A2 p": 0.930,
     "pooled replication B2 vs A2 p": 0.683,
     "pooled replication B2 vs A2 interval upper": 0.045,
@@ -964,6 +1015,22 @@ def run_check() -> int:
     got["transfer HL"] = hodges_lehmann(dt)
     got["transfer HL interval upper"] = hl_interval(dt)[1]
     got["transfer p"] = wilcoxon_p(dt)
+    for variant, key in (("circuit", "circuit >=99"), ("path", "path >=99")):
+        runs, _ = load_campaign(variant)
+        big = [r for r in runs if r["n_clients"] >= 99]
+        frac = {name: st.median([r["temps_meilleure_s"] / r["limite_s"]
+                                 for r in big if r["methode"] == code])
+                for code, name in LABEL.items()}
+        got[f"last improvement, {key}, FIX-3"] = frac["FIX-3"]
+        if variant == "circuit":
+            got[f"last improvement, {key}, earliest varying"] = min(
+                frac[n] for n in ("RANDOM", "PRIVATE", "SHARED"))
+    tgt = [r for r in read_jsonl(os.path.join(LOGS, "parallel", "targets.jsonl"))
+           if r["valide"] and r["instance"].endswith("E101_8")]
+    for P in (1, 4):
+        got[f"E101k8 mean gap at 240 s, P = {P}"] = st.fmean(
+            [(r["releves"]["240"] - r["reference"]) / r["reference"] * 100
+             for r in tgt if r["P"] == P])
     db1 = stream_paired(r1, "B2", "A2")
     pooled_c, pooled_b = dc + dc1, db + db1
     got["pooled replication C2 vs A2 p"] = wilcoxon_p(pooled_c)
@@ -1074,6 +1141,8 @@ def main(argv: Sequence[str]) -> int:
         table_c2()
     if want("C3"):
         table_c3()
+    if want("C4"):
+        table_c4()
     print("\nTables 1, 2, A1 and A2 are not derived from the run logs: the first two "
           "position the work in the literature, and the last two document the\n"
           "distance convention and the objective, which are verified by "

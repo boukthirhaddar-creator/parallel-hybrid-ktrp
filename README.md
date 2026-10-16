@@ -44,7 +44,7 @@ does not depend on which version of any third-party package happens to be
 present, and a reader who installs nothing obtains the same numbers as one who
 installs everything in `requirements.txt`.
 
-The check recomputes twenty-eight headline values from the deposited logs, covering all
+The check recomputes thirty-three headline values from the deposited logs, covering all
 four studies and both executions of the fourth, and compares them with the values
 printed in the paper. It exits with status 0 when all agree. It opens by stating
 which null distribution each published comparison was tested under, the exact
