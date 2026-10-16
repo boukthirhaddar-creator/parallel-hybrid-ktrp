@@ -124,6 +124,10 @@ X148K46         147    3.20      0.116     0.054
 All                              0.386     0.266
 
   Pre-specified test: 110 pairs, 18 wins / 87 losses, mean difference +0.120 pt, p = 4.56e-08, transfer established: no
+  Recomputed under the tie convention of the paper: p = 9.61e-08, Hodges-Lehmann +0.138 [+0.087, +0.179]
+  The verdict above was recorded before that convention was applied uniformly: it kept
+  the four pairs that differ by about 1e-13, which the convention counts as ties and the
+  win, tie and loss counts already treat as such. The verdict is the same either way.
 
 ==============================================================================
 TABLE 12. Study 4, priors estimated on each corpus
