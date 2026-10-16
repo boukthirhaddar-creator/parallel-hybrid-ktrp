@@ -258,6 +258,12 @@ P = 2           +2.85     +1.88     +1.21     +0.89     +0.52
 P = 3           +2.72     +1.87     +1.21     +0.91     +0.45
 P = 4           +2.73     +1.88     +1.29     +0.75     +0.32
 
+  Mean gap at 240 s, instance by instance:
+    CMT11     P1  +1.22%  P2  +0.76%  P3  +0.47%  P4  +0.39%  
+    CMT3      P1  +1.17%  P2  +0.98%  P3  +0.89%  P4  +0.78%  
+    E101k8    P1  +0.54%  P2  +0.33%  P3  +0.42%  P4  +0.09%  
+    E76k10    P1  +0.00%  P2  +0.00%  P3  +0.00%  P4  +0.00%  
+
 ==============================================================================
 TABLE C1. Study 4, first execution
 ==============================================================================
@@ -325,6 +331,20 @@ CMT12        100  10    3530.24    3595.52    3535.99    3533.18    3532.53
 CMT11        120   7    7200.68    7362.61    7299.65    7263.60    7204.32
 CMT4         150  12    4953.94    5182.97    5113.55    5059.11    4976.63
 CMT5         199  17    5748.36    5934.00    5864.70    5848.98    5827.83
+
+==============================================================================
+TABLE C4. Instant of the last improvement, as a fraction of the budget
+==============================================================================
+Configuration   circuit all  circuit >=99   path all   path >=99
+FIX-3                 0.175         0.610      0.210       0.665
+FIX-CAL               0.452         0.559      0.266       0.734
+RANDOM                0.512         0.738      0.447       0.852
+PRIVATE               0.375         0.789      0.353       0.755
+SHARED                0.358         0.811      0.370       0.809
+  circuit all: 8 instances, 80 runs per configuration
+  circuit >=99: 2 instances, 20 runs per configuration
+  path all: 22 instances, 220 runs per configuration
+  path >=99: 5 instances, 50 runs per configuration
 
 Tables 1, 2, A1 and A2 are not derived from the run logs: the first two position the work in the literature, and the last two document the
 distance convention and the objective, which are verified by build_instances.py.
