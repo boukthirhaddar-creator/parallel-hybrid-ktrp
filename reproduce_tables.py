@@ -419,6 +419,15 @@ def table_11() -> None:
           f"{verdict['victoires']} wins / {verdict['defaites']} losses, "
           f"mean difference {verdict['ecart_moyen']:+.3f} pt, p = {verdict['p']:.3g}, "
           f"transfer established: {'yes' if verdict['etabli'] else 'no'}")
+    d = transfer_paired()
+    lo, hi = hl_interval(d)
+    print(f"  Recomputed under the tie convention of the paper: "
+          f"p = {wilcoxon_p(d):.3g}, Hodges-Lehmann {hodges_lehmann(d):+.3f} "
+          f"[{lo:+.3f}, {hi:+.3f}]")
+    print("  The verdict above was recorded before that convention was applied "
+          "uniformly: it kept\n  the four pairs that differ by about 1e-13, which "
+          "the convention counts as ties and the\n  win, tie and loss counts "
+          "already treat as such. The verdict is the same either way.")
 
 
 def table_16() -> None:
@@ -880,6 +889,7 @@ PUBLISHED = {
     # in no table is the one a later edit is most likely to leave behind.
     "transfer HL": 0.138,
     "transfer HL interval upper": 0.179,
+    "transfer p": 9.6e-08,
     "pooled replication C2 vs A2 p": 0.930,
     "pooled replication B2 vs A2 p": 0.683,
     "pooled replication B2 vs A2 interval upper": 0.045,
@@ -953,6 +963,7 @@ def run_check() -> int:
     dt = transfer_paired()
     got["transfer HL"] = hodges_lehmann(dt)
     got["transfer HL interval upper"] = hl_interval(dt)[1]
+    got["transfer p"] = wilcoxon_p(dt)
     db1 = stream_paired(r1, "B2", "A2")
     pooled_c, pooled_b = dc + dc1, db + db1
     got["pooled replication C2 vs A2 p"] = wilcoxon_p(pooled_c)
